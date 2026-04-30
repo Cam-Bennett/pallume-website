@@ -95,26 +95,27 @@ export default function TheWorkPage() {
                   padding: "40px 0",
                   borderBottom:
                     i < articles.length - 1
-                      ? "1px solid rgba(255,255,255,0.06)"
+                      ? "1px solid #E5E1D8"
                       : "none",
                   cursor: "pointer",
                 }}
                 className="group"
               >
                 <h2
-                  className="font-heading font-bold text-text-main mb-3 group-hover:text-primary"
+                  className="font-heading font-bold mb-3 group-hover:text-primary"
                   style={{
                     fontSize: "clamp(1.2rem, 2.5vw, 1.6rem)",
                     lineHeight: 1.2,
                     letterSpacing: "-0.01em",
+                    color: "#1A1A1A",
                     transition: "color 150ms ease",
                   }}
                 >
                   {article.title}
                 </h2>
                 <p
-                  className="font-body text-text-soft mb-4"
-                  style={{ fontSize: "16px", lineHeight: 1.7, maxWidth: "580px" }}
+                  className="font-body mb-4"
+                  style={{ fontSize: "16px", lineHeight: 1.7, maxWidth: "580px", color: "#6B7280" }}
                 >
                   {article.excerpt}
                 </p>
@@ -140,8 +141,8 @@ export default function TheWorkPage() {
             {theWork.cta.eyebrow}
           </p>
           <p
-            className="font-body text-text-soft mb-8"
-            style={{ fontSize: "17px", lineHeight: 1.8 }}
+            className="font-body mb-8"
+            style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280" }}
           >
             {theWork.cta.body}
           </p>
