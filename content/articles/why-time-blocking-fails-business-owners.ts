@@ -47,7 +47,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "The day starts with good intentions. The calendar is blocked. The plan is clear. Then someone needs something. A client has a question. A team member has a problem. A message arrives that feels urgent. The first block gets pushed. Then the second. By Tuesday, the week looks nothing like Monday's plan.",
+      text: "The day starts with good intentions. The calendar is blocked. The plan is clear. Then someone needs something. A client has a question. A team member has a problem. A message arrives that feels urgent. The first block gets pushed. Then the second. By Tuesday, the week is already off track.",
     },
     {
       type: "paragraph",
