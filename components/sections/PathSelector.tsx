@@ -55,18 +55,11 @@ export default function PathSelector() {
               {path.title}
             </h3>
             <p
-              className="font-sans mb-6 flex-1"
+              className="font-sans flex-1"
               style={{ fontSize: "15px", lineHeight: 1.7, color: "#6B7280" }}
             >
               {path.description}
             </p>
-            <a
-              href={path.id === "C" ? "/#qualifier" : `/?path=${path.id.toLowerCase()}#qualifier`}
-              className="font-sans font-semibold text-sm transition-colors duration-150"
-              style={{ color: path.color, textDecoration: "none" }}
-            >
-              {path.cta}
-            </a>
           </div>
         ))}
       </div>
