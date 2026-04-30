@@ -150,7 +150,7 @@ export const identityFrame = {
   ],
   forYouLabel: "This is for you if:",
   forYou: [
-    "You run a service business and your strategy is right — execution is where it breaks down",
+    "You run a service business and your strategy is solid — execution is where it breaks down",
     "You're highly self-aware but perpetually behind your own potential",
     "You've read the frameworks, understand the principles, and can't consistently apply them alone",
     "You want a system, not a cheerleader",
