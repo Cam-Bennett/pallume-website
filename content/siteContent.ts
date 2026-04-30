@@ -920,7 +920,7 @@ export const pricing = {
       {
         question: "Is there a minimum commitment?",
         answer: [
-          "Three months is the recommended baseline. That's the minimum time for the system to accumulate real pattern data and produce results you can measure. Month-to-month is available but the system won't show what it's capable of in less than 90 days.",
+          "Three months is the recommended baseline. That's the minimum time for the system to accumulate real pattern data and produce results you can measure. The minimum commitment is two months.",
         ],
       },
       {
