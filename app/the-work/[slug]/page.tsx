@@ -272,9 +272,9 @@ export default function ArticlePage({ params }: Props) {
             className="font-body text-text-soft mb-8"
             style={{ fontSize: "16px", lineHeight: 1.8 }}
           >
-            Five questions. 90 seconds. No sales call until there&apos;s a fit.
+            Nine questions. 5 minutes. If it&apos;s a fit, we&apos;ll talk.
           </p>
-          <Btn as="a" href="/#qualifier" size="lg">
+          <Btn as="a" href="/apply" size="lg">
             See If You Qualify
           </Btn>
         </div>
