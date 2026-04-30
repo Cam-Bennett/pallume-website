@@ -84,7 +84,7 @@ const article: Article = {
     {
       type: "bold-paragraph",
       label: "A gratitude entry.",
-      text: "One thing. Brief. This isn't soft — it's a reset. It moves my head out of reactive mode before the day begins.",
+      text: "One thing. Brief. This isn't soft — it's a reset. It moves my head out of reactive mode before the day begins and helps me remember things that matter.",
     },
     {
       type: "bold-paragraph",
