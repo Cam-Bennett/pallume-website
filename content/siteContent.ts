@@ -400,7 +400,7 @@ export const founder = {
   imageAlt: "Camden Bennett, founder of Pallume",
   bio: [
     "I know what it looks like to end every day exhausted with nothing moved forward. I lived that pattern for years — available to everyone, responsive to everything, in control of nothing.",
-    "15 years in the Navy — first as a Diver, then as an Intelligence Officer. Both jobs run on the same requirement: accurate information, clearly interpreted, acted on without hesitation. I came back to Wyoming after 20 years away, built the #1 brokerage in Sublette County, and found myself right back in reactive mode.",
+    "15 years in the Navy — first as a Diver, then as an Intelligence Officer. Both jobs run on the same structured requirements: accurate information, clearly interpreted, acted on by strict guidelines and SOPs. I came back to Wyoming after 20 years away, started running the #1 real estate brokerage in Sublette County, and now had the freedom to manage my own time and direct my own efforts. Without the strict military structure I was used to, I came face to face with the ugly reality of reactive mode for the first time. Pallume is my response.",
     "What changed wasn't a book or a framework. It was building a system from scratch — around my specific goals, my actual patterns, and the ways I consistently got stuck — then running it every morning until the evidence showed up in my days. I deployed it on myself before I offered it to anyone else.",
   ],
   pullQuote: "I won't coach someone through something I haven't lived.",
