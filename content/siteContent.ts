@@ -593,7 +593,7 @@ export const faq = {
       answer: [
         "Traditional coaching produces insights. Valuable ones. But insights without daily structure fade within days.",
         "Pallume produces a system that operates between sessions — a daily check-in that captures what's actually happening in your work, surfaces the patterns your coach needs to see, and keeps the priorities Camden identified with you in front of you every morning.",
-        "The system requires your engagement. That's not a caveat — it's the mechanism. What's different from a journal or a coaching call is what happens with your engagement: it gets read, analyzed, and responded to every week. The data accumulates. The coaching gets more precise over time because it's built on months of your actual behavioral data, not a 50-minute snapshot.",
+        "The system requires your engagement. That's not a caveat — it's the mechanism. What's different from a journal or a coaching call is what happens with your engagement: it gets read, analyzed, and responded to every week. The data accumulates. The coaching gets more precise over time because it's built on weeks or months of your actual behavioral data, not a 50-minute snapshot.",
       ],
     },
     {
