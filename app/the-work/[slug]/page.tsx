@@ -40,11 +40,12 @@ function renderSection(section: ArticleSection, i: number) {
       return (
         <h2
           key={i}
-          className="font-heading font-bold text-text-main"
+          className="font-heading font-bold"
           style={{
             fontSize: "clamp(1.2rem, 2.2vw, 1.5rem)",
             lineHeight: 1.25,
             letterSpacing: "-0.01em",
+            color: "#1A1A1A",
             marginTop: "48px",
             marginBottom: "16px",
           }}
@@ -56,10 +57,11 @@ function renderSection(section: ArticleSection, i: number) {
       return (
         <h3
           key={i}
-          className="font-heading font-semibold text-text-main"
+          className="font-heading font-semibold"
           style={{
             fontSize: "clamp(1rem, 1.8vw, 1.2rem)",
             lineHeight: 1.3,
+            color: "#1A1A1A",
             marginTop: "32px",
             marginBottom: "12px",
           }}
@@ -71,10 +73,11 @@ function renderSection(section: ArticleSection, i: number) {
       return (
         <p
           key={i}
-          className="font-body text-text-soft"
+          className="font-body"
           style={{
             fontSize: "17px",
             lineHeight: 1.8,
+            color: "#6B7280",
             fontStyle: "italic",
             paddingLeft: "24px",
             borderLeft: "2px solid rgba(200,155,60,0.4)",
@@ -89,14 +92,15 @@ function renderSection(section: ArticleSection, i: number) {
       return (
         <p
           key={i}
-          className="font-body text-text-soft"
+          className="font-body"
           style={{
             fontSize: "17px",
             lineHeight: 1.8,
+            color: "#6B7280",
             marginBottom: "16px",
           }}
         >
-          <strong className="text-text-main font-semibold">
+          <strong style={{ color: "#1A1A1A", fontWeight: 600 }}>
             {section.label}{" "}
           </strong>
           {section.text}
@@ -107,10 +111,11 @@ function renderSection(section: ArticleSection, i: number) {
       return (
         <p
           key={i}
-          className="font-body text-text-soft"
+          className="font-body"
           style={{
             fontSize: "17px",
             lineHeight: 1.8,
+            color: "#6B7280",
             marginBottom: "24px",
           }}
         >
