@@ -222,7 +222,7 @@ export const features = {
     {
       title: "Your Morning Log",
       description:
-        "Capture your day before it captures you. Brain dump. Open tasks. Unfinished decisions. Ideas that'll disappear if you don't write them down. 10 minutes of structure that clears your head and sets your priority. This isn't journaling — it's a daily operating briefing. And the AI reads every word.",
+        "Capture your day before it captures you. Brain dump. Open tasks. Unfinished decisions. Ideas that'll disappear if you don't write them down. 10 minutes of structure that clears your head and sets your priority. This isn't journaling — it's a daily ops brief. And the AI reads every word.",
       whichMeans:
         "You stop starting the day in reactive mode. The first 10 minutes produce a clear priority — and that priority protects the next two hours.",
     },
