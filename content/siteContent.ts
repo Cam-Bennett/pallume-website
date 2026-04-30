@@ -34,8 +34,8 @@ export const hero = {
 export const empathy = {
   headline: "Here's what your day is actually costing you.",
   paragraphs: [
-    "Here's the moment most business owners recognize. It's 4pm. You've been working since 7. You're exhausted. And when you try to name what actually moved forward today — you struggle.",
-    "Emails answered. Fires handled. Questions fielded. The reactive layer of the business got your full attention and your best hours.",
+    "It's a moment most business owners recognize. 4pm. You've been working since 7. You're exhausted. And when you try to name what actually moved forward today — you struggle.",
+    "Emails answered. Fires put out. Questions fielded. The reactive layer of the business got your full attention and your best hours.",
     "The work that would have actually mattered — the proposal, the strategy, the thing you've been trying to carve out two hours for — is still where it was this morning.",
     "That's what happens when capable people have no architecture protecting their most important work from everything else competing for it.",
   ],
