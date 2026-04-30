@@ -99,7 +99,7 @@ const article: Article = {
     {
       type: "bold-paragraph",
       label: "Protected time matched to actual energy, not intention.",
-      text: "High-cognitive work belongs in the morning, before the day's interruptions accumulate and before the afternoon drop. That's not a preference — it's physiology. A system designed around how you actually function protects the right hours for the right work.",
+      text: "For most people, high-cognitive work belongs in the morning, before the day's interruptions accumulate and before the afternoon drop. That's not a preference — it's physiology. A system designed around how you actually function protects the right hours for the right work.",
     },
     {
       type: "bold-paragraph",
