@@ -208,7 +208,7 @@ export const howItWorks = {
       number: "03",
       title: "Refine",
       description:
-        "Each week, your system generates a summary. Camden runs it through his system and sends coaching feedback — what you're doing well, what the data shows you're avoiding, and the next layer of your system. The pattern recognition gets sharper the longer you use it, and the system grows with you.",
+        "Once a week, it generates a weekly summary. You send that summary to your coach. The coach reads it, identifies the patterns the AI surfaced, and sends coaching feedback — what's working, what the data shows you're avoiding, and what the system needs to handle better. When it's appropriate, the system is adjusted.",
     },
   ],
 };
