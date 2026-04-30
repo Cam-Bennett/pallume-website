@@ -33,12 +33,14 @@ export default function CTA() {
         >
           {cta.trustLine}
         </p>
-        <p
-          className="font-sans"
-          style={{ fontSize: "13px", color: "#6B7280" }}
-        >
-          {cta.contact}
-        </p>
+        {cta.contact && (
+          <p
+            className="font-sans"
+            style={{ fontSize: "13px", color: "#6B7280" }}
+          >
+            {cta.contact}
+          </p>
+        )}
       </div>
     </SectionWrapper>
   );

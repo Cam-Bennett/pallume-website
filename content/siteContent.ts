@@ -136,7 +136,7 @@ export const pathSelector = {
       color: "#7C3AED",
       title: "Custom",
       description:
-        "If your situation doesn't fit PATH A or PATH B, PATH C offers a custom solution that emerges during intake. It can be more than either path, less, or simply different. Custom deliverables — research briefs, strategic documents, knowledge bases — are built alongside your Pallume Journal when your situation calls for it.",
+        "If your situation doesn't fit PATH A or PATH B, PATH C is a fully custom engagement scoped during intake. The scope, structure, and deliverables are built around your specific situation — not a template. Custom research briefs, strategic documents, knowledge bases, and systems are designed from scratch when your situation calls for it.",
       cta: "Tell me about your situation →",
     },
   ],
@@ -470,7 +470,7 @@ export const cta = {
     "Pallume works with a limited number of clients at a time. Nine questions. Takes five minutes. Camden reviews every application personally and responds within one business day.",
   buttonLabel: "Apply Now",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
-  contact: "camden@pallume.com",
+  contact: "",
 };
 
 export const footer = {
@@ -901,7 +901,7 @@ export const pricing = {
     ],
     price: "Custom quote based on scope.",
     scopeParagraph:
-      "PATH C scope is determined during the discovery conversation. Every engagement includes Pallume Journal as the foundation — custom deliverables are scoped and built on top of it.",
+      "PATH C scope is determined during the discovery conversation. Every engagement is custom — deliverables, structure, and timeline are scoped together before anything is built.",
     cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
   },
   riskReversal: {
@@ -941,7 +941,7 @@ export const pricing = {
     headline: "The system starts at $1,000/month.",
     subheadline:
       "",
-    cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
+    cta: { label: "Apply for a Discovery Call", href: "/apply" },
     microCopy:
       "No commitment until there's a fit. Camden reviews every application personally.",
   },
