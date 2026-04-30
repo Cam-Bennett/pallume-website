@@ -115,7 +115,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "A notebook doesn't remember what you wrote last Tuesday. A calendar doesn't notice that you've rescheduled the same task four times in three weeks. An app can remind you. It can't tell you why you keep ignoring the reminder.",
+      text: "A notebook doesn't remember what you wrote two weeks ago. A calendar doesn't notice that you've rescheduled the same task four times in three weeks. An app can remind you. It can't tell you why you keep ignoring the reminder.",
     },
     {
       type: "paragraph",
