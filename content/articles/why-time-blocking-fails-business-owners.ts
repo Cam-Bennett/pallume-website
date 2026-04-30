@@ -51,11 +51,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "People in productivity communities describe this as being dragged behind a vehicle you're supposed to be driving. You're moving. You're working hard. But you're not the one steering.",
-    },
-    {
-      type: "paragraph",
-      text: "Three specific mechanisms cause this:",
+      text: "It's like being dragged behind a vehicle you're supposed to be driving. You're moving. You're working hard. But you're not the one steering.",
     },
     {
       type: "bold-paragraph",
