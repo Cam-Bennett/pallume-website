@@ -59,7 +59,7 @@ export default function Mechanism() {
       </div>
 
       {/* Screenshot — breaks out of max-w-2xl for visual impact */}
-      <div style={{ maxWidth: "860px", margin: "64px auto 0" }}>
+      <div style={{ maxWidth: "1100px", margin: "64px auto 0" }}>
         <div
           style={{
             borderRadius: "12px",
@@ -75,7 +75,7 @@ export default function Mechanism() {
             height={2086}
             className="w-full h-auto"
             priority={false}
-            sizes="(max-width: 768px) 100vw, 860px"
+            sizes="(max-width: 768px) 100vw, 1100px"
           />
         </div>
         <p

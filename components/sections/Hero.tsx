@@ -5,116 +5,126 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section
+      className="px-6"
       style={{
         background: "#0F1B2D",
         paddingTop: "120px",
         paddingBottom: "64px",
       }}
     >
-      {/* Main content: 55/45 split */}
-      <div>
-        <div
-          className="max-w-site mx-auto w-full"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "55fr 45fr",
-            gap: "64px",
-            alignItems: "flex-end",
-            padding: "0 24px",
-          }}
-        >
-          {/* Left: text */}
-          <div>
-            <p
-              className="font-sans font-semibold uppercase tracking-widest mb-6"
-              style={{
-                fontSize: "11px",
-                letterSpacing: "0.14em",
-                color: "#C89B3C",
-              }}
-            >
-              {hero.eyebrow}
-            </p>
+      {/* Main content: single col mobile, 55/45 desktop */}
+      <div className="max-w-site mx-auto w-full grid lg:grid-cols-hero gap-10 lg:gap-16 items-end">
 
-            <h1
-              className="font-serif font-semibold"
-              style={{
-                fontSize: "clamp(24px, 3vw, 38px)",
-                lineHeight: 1.1,
-                color: "#F8F6F0",
-                marginBottom: "24px",
-              }}
-            >
-              {hero.headline}
-            </h1>
-
-            <p
-              className="font-sans"
-              style={{
-                fontSize: "clamp(16px, 1.6vw, 18px)",
-                lineHeight: 1.75,
-                color: "#B0B8C4",
-                marginBottom: "40px",
-                maxWidth: "520px",
-              }}
-            >
-              {hero.subtitle}
-            </p>
-
-            <Btn as="a" href="#qualifier" size="lg">
-              {hero.ctaPrimary}
-            </Btn>
-          </div>
-
-          {/* Right: photo card */}
-          <div
-            className="hidden lg:flex flex-col rounded-xl overflow-hidden"
+        {/* Left: text */}
+        <div>
+          <p
+            className="font-sans font-semibold uppercase tracking-widest mb-6"
             style={{
-              height: "480px",
-              background: "#1B2838",
-              border: "1px solid rgba(200,155,60,0.15)",
-              position: "relative",
+              fontSize: "11px",
+              letterSpacing: "0.14em",
+              color: "#C89B3C",
             }}
           >
-            <Image
-              src="/images/camden-headshot.jpg"
-              alt="Camden Bennett, founder of Pallume"
-              fill
-              className="object-cover object-top"
-              priority
-              sizes="(max-width: 1024px) 0px, 45vw"
-            />
-            {/* Name caption overlay */}
-            <div
-              style={{
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                right: 0,
-                padding: "32px 24px 20px",
-                background: "linear-gradient(to top, rgba(15,27,45,0.85) 0%, transparent 100%)",
-              }}
+            {hero.eyebrow}
+          </p>
+
+          <h1
+            className="font-serif font-semibold"
+            style={{
+              fontSize: "clamp(24px, 3vw, 38px)",
+              lineHeight: 1.1,
+              color: "#F8F6F0",
+              marginBottom: "24px",
+            }}
+          >
+            {hero.headline}
+          </h1>
+
+          <p
+            className="font-sans"
+            style={{
+              fontSize: "clamp(16px, 1.6vw, 18px)",
+              lineHeight: 1.75,
+              color: "#B0B8C4",
+              marginBottom: "40px",
+              maxWidth: "520px",
+            }}
+          >
+            {hero.subtitle}
+          </p>
+
+          <Btn as="a" href="/apply" size="lg">
+            {hero.ctaPrimary}
+          </Btn>
+          <a
+            href="/pallume-light"
+            className="font-sans"
+            style={{
+              display: "block",
+              marginTop: "16px",
+              fontSize: "14px",
+              color: "#B0B8C4",
+              textDecoration: "none",
+              borderBottom: "1px solid rgba(255,255,255,0.15)",
+              paddingBottom: "2px",
+              width: "fit-content",
+              transition: "color 150ms ease",
+            }}
+          >
+            Not ready yet? Try 14 days free →
+          </a>
+        </div>
+
+        {/* Right: photo card */}
+        <div
+          className="flex flex-col rounded-xl overflow-hidden"
+          style={{
+            height: "clamp(260px, 45vw, 480px)",
+            background: "#1B2838",
+            border: "1px solid rgba(200,155,60,0.15)",
+            position: "relative",
+          }}
+        >
+          <Image
+            src="/images/camden-headshot.jpg"
+            alt="Camden Bennett, founder of Pallume"
+            fill
+            className="object-cover object-top"
+            priority
+            quality={85}
+            sizes="(max-width: 1024px) 100vw, 45vw"
+          />
+          {/* Name caption overlay */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              padding: "32px 24px 20px",
+              background: "linear-gradient(to top, rgba(15,27,45,0.85) 0%, transparent 100%)",
+            }}
+          >
+            <p
+              className="font-sans font-semibold"
+              style={{ fontSize: "14px", color: "#F8F6F0", letterSpacing: "0.04em" }}
             >
-              <p
-                className="font-sans font-semibold"
-                style={{ fontSize: "14px", color: "#F8F6F0", letterSpacing: "0.04em" }}
-              >
-                Camden Bennett
-              </p>
-            </div>
+              Camden Bennett
+            </p>
           </div>
         </div>
       </div>
 
       {/* Feature strip */}
       <div
+        className="max-w-site mx-auto"
         style={{
           borderTop: "1px solid rgba(200,155,60,0.15)",
-          padding: "20px 24px",
+          padding: "20px 0",
           marginTop: "64px",
         }}
       >
-        <div className="max-w-site mx-auto flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2">
           {hero.featureStrip.map((feature, i) => (
             <span
               key={feature}

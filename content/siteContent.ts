@@ -47,7 +47,7 @@ export const practiceRequirement = {
   eyebrow: "ONE THING TO UNDERSTAND BEFORE YOU APPLY.",
   paragraphs: [
     "The system works because you work it.",
-    "The morning check-in is the raw material. What you put into it — your actual thinking, your real priorities, your honest assessment of where you are — is what the AI pattern-recognizes from. A half-effort check-in produces half-effort pattern recognition. The coaching response Camden sends on Friday is only as precise as the data you gave the system that week.",
+    "The morning check-in is the raw material. What you put into it — your actual thinking, your real priorities, your honest assessment of where you are — is what the AI pattern-recognizes from. A half-effort check-in produces half-effort pattern recognition. The coaching response Camden sends each week is only as precise as the data you gave the system that week.",
     "This isn't a passive system. It doesn't run in the background while you do other things. It runs in ten minutes every morning because you sit down and run it.",
     "Clients who treat the check-in as a checkbox don't get results. Clients who treat it as the most important ten minutes of their day do.",
   ],
@@ -176,11 +176,11 @@ export const mechanism = {
   ],
   reveal: "YOUR OWN AI EXECUTION SYSTEM. BUILT BY A COACH. RUNNING EVERY MORNING.",
   bodyPart2: [
-    "Pallume Journal is a custom Claude project configured around how you specifically work — your goals, your values, your decision framework, your resistance patterns, and the specific ways you consistently get stuck.",
+    "Pallume is a custom Claude project configured around how you specifically work — your goals, your values, your decision framework, your resistance patterns, and the specific ways you consistently get stuck.",
     "Not a template. A configuration built from a 60–75 minute deep-dive interview about you.",
     "This works across industries because it's built around how you operate — your patterns, your decisions, your avoidance loops — not your field. The AI doesn't need to know construction or finance. It needs to know you.",
     "It runs inside your own account. It retains everything. It knows what you said you'd do last Tuesday. It knows the project you've been pushing to next week for a month. It catches the contradictions between what you say you want and what you're actually spending your time on — and it surfaces them without ego, without agenda, and without letting you off the hook.",
-    "Camden reviews your weekly summary every Friday. He reads what the AI surfaced, identifies what it missed, and adjusts the system accordingly. That human interpretation layer — applied to weeks of your actual behavioral data — is what no tool or coach replicates on their own.",
+    "Camden reviews your weekly summary once per week. He reads what the AI surfaced, identifies what it missed, and adjusts the system accordingly. That human interpretation layer — applied to weeks of your actual behavioral data — is what no tool or coach replicates on their own.",
     "The system gets sharper the longer you use it. Month one, it knows your goals. Month two, it knows your patterns. Month three, it's running your task triage, your decision framework, your morning ritual, and whatever your work actually demands.",
     "It starts with 10 minutes every morning. That's the entry point. The ceiling is the size of your work.",
   ],
@@ -209,14 +209,14 @@ export const howItWorks = {
       number: "03",
       title: "Refine",
       description:
-        "Every Friday, your system generates a weekly summary. Camden runs it through his system and sends coaching feedback — what you're doing well, what the data shows you're avoiding, and the next layer of your system. The pattern recognition gets sharper the longer you use it.",
+        "Once per week, your system generates a weekly summary. Camden runs it through his system and sends coaching feedback — what you're doing well, what the data shows you're avoiding, and the next layer of your system. The pattern recognition gets sharper the longer you use it.",
     },
   ],
 };
 
 export const features = {
   label: "What You Get",
-  headline: "Pallume Journal. Your personal execution system.",
+  headline: "Pallume. Your personal execution system.",
   subhead:
     "Six capabilities. All running from a single morning check-in.",
   cards: [
@@ -266,14 +266,13 @@ export const features = {
   progressiveDeployment: {
     headline: "The system starts small. That's the point.",
     body: [
-      "Week 1 is one habit: a 10-minute morning check-in. Nothing else is added until that's established. No new dashboards. No tech stack to configure. If you can type a text message, you can do this.",
+      "Stage 1 is one habit: a 10-minute morning check-in. Nothing else is added until that's established. No new dashboards. No tech stack to configure. If you can type a text message, you can do this.",
       "Every system you've abandoned failed for the same reason — it gave you everything at once. This one doesn't. Complexity is added as you level up, when the foundation is proven, not before.",
     ],
     weeks: [
-      "Week 1: Daily check-in and pattern recognition.",
-      "Week 2: Priority filtering and decision support added.",
-      "Week 4: Strategic modules and deeper pattern analysis.",
-      "Month 3: The system is running your task triage, your decision framework, your pattern recognition, and whatever your work actually demands. That's the ceiling — and it's different for every client.",
+      "Stage 1: Daily check-in and pattern recognition.",
+      "Stage 2: Priority filtering and decision support added.",
+      "Stage 3: Strategic modules and deeper pattern analysis. The system is running your task triage, your decision framework, your pattern recognition, and whatever your work actually demands. That's the ceiling — and it's different for every client.",
     ],
     closing:
       "The check-in doesn't replace protected time. It produces it. Ten minutes of structured focus that ends with a clear priority for the next two hours. That's the whole mechanism.",
@@ -482,7 +481,9 @@ export const footer = {
     { label: "The Work", href: "/the-work" },
     { label: "FAQ", href: "/faq" },
     { label: "Apply", href: "/apply" },
+    { label: "Journal Lite", href: "/pallume-light" },
     { label: "Privacy", href: "/privacy-policy" },
+    { label: "camden@pallume.com", href: "mailto:camden@pallume.com" },
     { label: "Terms", href: "/terms-of-service" },
   ],
   location: "Pinedale, Wyoming",
@@ -646,7 +647,7 @@ export const faq = {
     {
       question: "What does the weekly review look like?",
       answer: [
-        "Every Friday, you direct your system to generate a weekly summary. You send it to Camden by email.",
+        "Once per week, you direct your system to generate a weekly summary. You send it to Camden by email.",
         "He reads it against accumulated pattern data from months of client engagements — what works, what stalls, and where the common avoidance loops hide. Then he sends back a direct coaching response: what you're doing well, what the data shows you're consistently avoiding, and — when you're ready — the next addition to your system.",
         "This happens via email. It's a written analysis of your actual behavioral data, delivered to your inbox. The coaching gets more precise over time because it's built on your history, not a 50-minute coaching call snapshot. The email check-in can be accompanied by a coaching call if desired.",
       ],
@@ -655,7 +656,7 @@ export const faq = {
       question: "What if I fall off the system or get busy?",
       answer: [
         "That's expected. The system is designed for it.",
-        "Drift is not a failure condition — it's a data point. When your check-in frequency drops, the weekly summary reflects it. When your stated priorities stop matching your actual activity, the pattern surfaces. Camden sees it in the Friday data before you've consciously registered it yourself.",
+        "Drift is not a failure condition — it's a data point. When your check-in frequency drops, the weekly summary reflects it. When your stated priorities stop matching your actual activity, the pattern surfaces. Camden sees it in the weekly data before you've consciously registered it yourself.",
         "The only real point of failure is extended disengagement. Missing a few days is normal. Abandoning the check-in entirely for weeks breaks the feedback loop. If that happens, Camden will address it directly — that's what the weekly review is for.",
         "The system doesn't require perfect consistency to produce value. It requires enough engagement to generate data. That threshold is lower than most people expect.",
       ],
@@ -837,7 +838,7 @@ export const pricing = {
     eyebrow: "THE INVESTMENT IN CONTEXT.",
     paragraphs: [
       "A qualified business coach might run $500 to $1,500 per session. One session, once or twice a month, with significant context-switching between their other clients. Valuable — but the execution window is narrow. Between sessions you're on your own.",
-      "Pallume operates at your actual working cadence. Daily, not weekly. Not monthly. Full context retained across your entire engagement. Camden reviews your behavioral data every Friday — not a 50-minute snapshot, but weeks of accumulated pattern recognition.",
+      "Pallume operates at your actual working cadence. Daily, not weekly. Not monthly. Full context retained across your entire engagement. Camden reviews your behavioral data weekly — not a 50-minute snapshot, but weeks of accumulated pattern recognition.",
       "At $1,000 a month for three months, that's around $8 a day for the year. Less than many businesses spend on software they're not fully using — for a system that actively manages your execution every morning, gets sharper every week, and stays with you after the active coaching is complete.",
     ],
   },
