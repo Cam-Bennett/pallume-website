@@ -873,7 +873,7 @@ export const pricing = {
     eyebrowColor: "#7C3AED",
     headline: "Multiple people. Organizational scope. Executable Monday morning.",
     body: [
-      "PATH B is for teams and organizations where the problem isn't one person's productivity — it's how the organization operates, markets, communicates, or executes. The bottlenecks live between people, in workflows, in systems that don't exist yet.",
+      "PATH B is for teams of up to three people where the problem isn't one person's productivity — it's how the organization operates, markets, communicates, or executes. The bottlenecks live between people, in workflows, in systems that don't exist yet.",
       "The trigger is simple: does solving this require building systems for more than one person? If yes — PATH B.",
       "Every engagement starts with a diagnostic. Camden maps the people, their workflows, and where time disappears before designing anything. Deliverables include a bottleneck map, a people map, named Claude Projects configured for each person executing the work, and a phased implementation plan with clear ownership and time estimates.",
     ],
