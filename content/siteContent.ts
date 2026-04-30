@@ -677,7 +677,7 @@ export const faq = {
     {
       question: "Is this a subscription? Can I cancel?",
       answer: [
-        "Pricing is monthly with a recommended three-month baseline — that's the minimum time for the system to accumulate real pattern data and for the coaching to produce results you can measure.",
+        "Pricing is monthly with a two-month minimum commitment and a recommended three-month baseline — that's the minimum time for the system to accumulate real pattern data and for the coaching to produce results you can measure.",
         "What you own at the end of that engagement: your Claude account, your Project Instructions, your entire conversation history, and a system that keeps running whether you continue coaching or not. There's no platform to be locked into. The system lives in your account. It's yours.",
         "You can cancel at any time. If you do, you'll still receive full service for the amount of time you paid for.",
       ],
