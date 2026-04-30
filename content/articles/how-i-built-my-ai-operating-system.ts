@@ -123,7 +123,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "The answer is what it is. There's no relationship to manage, no feelings to protect. The system tells you what it sees. That's exactly what accountability is supposed to do.",
+      text: "The answer is simple. There's no relationship to manage, no feelings to protect. The system tells you what it sees. That's exactly what accountability is supposed to do.",
     },
     {
       type: "paragraph",
