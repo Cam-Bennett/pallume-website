@@ -74,7 +74,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "I went through this exact sequence — headphones policies, early starts, multiple calendars running simultaneously, notebooks, productivity books. None of it held because none of it was a system. Each tool worked in isolation. Nothing connected underneath.",
+      text: "I went through this exact sequence — the \"don't bother me when my headphones are on\" policy, early starts at the office, multiple calendars running simultaneously, notebooks, planners, loose paper notes. None of it held because none of it was a system. Each tool worked in isolation. Nothing connected underneath.",
     },
     {
       type: "paragraph",
