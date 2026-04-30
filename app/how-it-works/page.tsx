@@ -126,7 +126,7 @@ export default function HowItWorksPage() {
               "While you do that, I'll send you short emails — one every few days — covering the basics: what a project is, what Project Instructions are, what Knowledge Documents are, and what I'm actually looking for before I say you're ready to move forward.",
               "When I see it happening — when the entries are real, the thinking is showing up, and the foundation is holding — I'll tell you. That's when we move.",
               "Until then: trust the pace. It's deliberate.",
-              "On communication: I review and respond to client messages once daily during a dedicated block. There are no emergencies in this work that require an immediate response. You'll hear back within 24 hours. This boundary is part of the model — I'm showing you what sustainable operating looks like, not just coaching you toward it.",
+              "On communication: I review and respond to client messages once daily during a dedicated block. There are no emergencies in this work that require an immediate response. You'll hear back within one business day. This boundary is part of the model — I'm showing you what sustainable operating looks like, not just coaching you toward it.",
             ].map((para, i) => (
               <p key={i} className="font-body" style={darkBody}>
                 {para}
@@ -328,17 +328,17 @@ export default function HowItWorksPage() {
           <div className="flex flex-col" style={{ gap: "0" }}>
             {[
               {
-                phase: "Phase 1",
+                phase: "Stage 1",
                 label: "Diagnosis",
                 body: "We map what's actually broken. Full intake with decision-makers. Up to three measurable outcomes defined. Stakeholders confirm the targets before we build anything.",
               },
               {
-                phase: "Phase 2",
+                phase: "Stage 2",
                 label: "Build",
                 body: "Systems designed around the diagnosed bottleneck. Pilot users trained. Weekly refinement based on real-world friction.",
               },
               {
-                phase: "Phase 3",
+                phase: "Stage 3",
                 label: "Scale & Handoff",
                 body: "Systems extend to the broader team. Internal champions trained to maintain and update configurations. Documentation built for independent operation.",
               },
@@ -507,9 +507,9 @@ export default function HowItWorksPage() {
           </h2>
           <ul className="flex flex-col" style={{ gap: "14px", listStyle: "none", padding: 0 }}>
             {[
-              "A Claude Pro account ($20/month — yours, not ours)",
+              "A Claude account — yours, not ours. Start with the free tier while you're building the journal habit. Most clients upgrade to Pro ($20/month) when their usage grows. Either way, the account is yours.",
               "A real problem you're motivated to solve",
-              "30–60 minutes a week for sessions and journal review",
+              "Starting with 10 minutes a day — the morning check-in. Within the first couple of weeks, most clients find it stops being something they fit into their day and becomes the focal point of it. The system grows with your use of it.",
               "The willingness to actually use the systems we build",
             ].map((item, i) => (
               <li key={i} style={listItem}>
