@@ -866,7 +866,7 @@ export const pricing = {
       "Progressive system upgrades as you level up",
       "Your system lives in your own account — keeps running even if you stop working with Camden",
     ],
-    cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
+    cta: { label: "Apply for a Discovery Call", href: "/apply" },
   },
   pathB: {
     eyebrow: "PATH B — ORGANIZATIONAL",
@@ -888,7 +888,7 @@ export const pricing = {
     ],
     includesNote:
       "Standard PATH B configures and deploys existing systems — websites, custom dashboards, and purpose-built applications are separate engagements.",
-    cta: { label: "Start the conversation", href: "/#qualifier?path=b" },
+    cta: { label: "Start the conversation", href: "/apply" },
   },
   pathC: {
     eyebrow: "PATH C — SPECIAL PROJECTS",
@@ -902,7 +902,7 @@ export const pricing = {
     price: "Custom quote based on scope.",
     scopeParagraph:
       "PATH C scope is determined during the discovery conversation. Every engagement is custom — deliverables, structure, and timeline are scoped together before anything is built.",
-    cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
+    cta: { label: "Apply for a Discovery Call", href: "/apply" },
   },
   riskReversal: {
     eyebrow: "HOW THIS WORKS — BEFORE YOU COMMIT.",
