@@ -584,7 +584,7 @@ export const faq = {
     {
       question: "What is Pallume Journal?",
       answer: [
-        "A custom AI system — built from a deep-dive interview about how you specifically work — that runs inside your own Claude account. You use it every morning in a 10-minute check-in. It tracks your priorities, catches your patterns, and holds you accountable to what you said matters. Camden reviews your data weekly and adjusts the system as it learns you.",
+        "A custom AI system — built from a deep-dive interview about how you specifically work — that runs inside your own Claude account. You use it every morning in a 10-minute check-in. It tracks your priorities, catches your patterns, and holds you accountable to what you said matters. Camden reviews your data weekly and adjusts the system as it learns you. Over time, it naturally becomes the centerpiece of your daily work and planning.",
         "You own the account. You own the data. The system keeps running whether you continue coaching or not.",
       ],
     },
