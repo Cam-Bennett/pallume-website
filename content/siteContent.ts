@@ -252,7 +252,7 @@ export const features = {
       description:
         "Describe any opportunity or situation. The AI runs it through your stated goals and personal values. Returns a recommendation filtered through what matters to you — not generic advice from someone who doesn't know your business.",
       whichMeans:
-        "You stop second-guessing decisions that should be clear. The system filters every choice through what you've already decided matters — so the answer isn't generic advice, it's yours.",
+        "Which means: You stop second-guessing decisions that should be clear. The system filters every choice through what you've already decided matters.",
     },
     {
       title: "Proof You're Moving",
