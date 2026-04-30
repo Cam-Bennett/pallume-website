@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import Btn from "@/components/ui/Btn";
-import FreeTrialForm from "./FreeTrialForm";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Pallume Journal Lite — Free 14-Day Experience | Pallume",
@@ -560,7 +560,7 @@ export default function PallumeJournalLitePage() {
       </section>
 
       {/* ── Form ────────────────────────────────────────────────── */}
-      <section id="get-started" style={{ padding: "96px 24px", background: "#0F1B2D" }}>
+      <section id="get-started" style={{ padding: "96px 24px", background: "#F8F6F0" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p
             className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
@@ -569,20 +569,31 @@ export default function PallumeJournalLitePage() {
             Get Started
           </p>
           <h2
-            className="font-heading font-bold text-text-main mb-4"
+            className="font-heading font-bold mb-4"
             style={{
               fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)",
               lineHeight: 1.1,
               letterSpacing: "-0.02em",
+              color: "#1A1A1A",
             }}
           >
             14 days.{" "}
             <span style={{ color: "#DC2626" }}>No cost.</span> No credit card. No obligation.
           </h2>
-          <p className="font-body text-text-soft mb-10" style={{ fontSize: "17px", lineHeight: 1.8 }}>
+          <p className="font-body mb-10" style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280" }}>
             You&apos;ll receive your first prompt today. One per day for 14 days. The journal lives in your own Claude account — you own it.
           </p>
-          <FreeTrialForm />
+          <iframe
+            src="https://tally.so/embed/5BlNoZ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="1200"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            title="Pallume Journal Lite — Start Your 14 Days"
+          />
+          <Script src="https://tally.so/widgets/embed.js" strategy="lazyOnload" />
         </div>
       </section>
 

@@ -28,7 +28,6 @@ export const hero = {
   featureStrip: [
     "60-75 min intake interviews",
     "Weekly coaching reviews",
-    "Systems running in 6+ industries",
   ],
 };
 
@@ -272,7 +271,8 @@ export const features = {
     weeks: [
       "Stage 1: Daily check-in and pattern recognition.",
       "Stage 2: Priority filtering and decision support added.",
-      "Stage 3: Strategic modules and deeper pattern analysis. The system is running your task triage, your decision framework, your pattern recognition, and whatever your work actually demands. That's the ceiling — and it's different for every client.",
+      "Stage 3: Strategic modules and deeper pattern analysis.",
+      "By Stage 3, the system is running your task triage, your decision framework, your pattern recognition, and whatever your work actually demands. Most clients are fully operational by month three. We recommend a minimum of three months — the minimum commitment is two.",
     ],
     closing:
       "The check-in doesn't replace protected time. It produces it. Ten minutes of structured focus that ends with a clear priority for the next two hours. That's the whole mechanism.",
@@ -306,7 +306,7 @@ export const whatItsNot = {
     {
       left: "Not theoretical.",
       right:
-        "Every framework was built and tested inside a real estate brokerage before it was ever offered to a client. The same system Camden runs daily.",
+        "Every framework was built and tested inside an actual business before it was ever offered to a client. The same system Camden runs daily.",
     },
   ],
 };
@@ -409,7 +409,7 @@ export const founder = {
 export const qualifierForm = {
   label: "See If You Qualify",
   headline: "Apply for a Discovery Call.",
-  subhead: "Six questions. Takes three minutes. Camden reviews every application personally.",
+  subhead: "Nine questions. Takes five minutes. Camden reviews every application personally.",
   steps: [
     {
       id: "businessContext",
@@ -461,13 +461,13 @@ export const qualifierForm = {
   nextLabel: "Next",
   submitLabel: "Submit Application",
   confirmationMessage:
-    "Camden reviews all applications personally and responds within 24 hours. If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether Pallume is the right tool for your situation.",
+    "Camden reviews all applications personally and responds within one business day. If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether Pallume is the right tool for your situation.",
 };
 
 export const cta = {
   headline: "Ready to stop carrying everything in your head?",
   description:
-    "Pallume works with a limited number of clients at a time. Nine questions. Takes three minutes. Camden reviews every application personally and responds within 24 hours.",
+    "Pallume works with a limited number of clients at a time. Nine questions. Takes five minutes. Camden reviews every application personally and responds within one business day.",
   buttonLabel: "Apply Now",
   trustLine: "You own your account. You own your data. No lock-in. No black box.",
   contact: "camden@pallume.com",
@@ -483,9 +483,9 @@ export const footer = {
     { label: "Apply", href: "/apply" },
     { label: "Journal Lite", href: "/pallume-light" },
     { label: "Privacy", href: "/privacy-policy" },
-    { label: "camden@pallume.com", href: "mailto:camden@pallume.com" },
     { label: "Terms", href: "/terms-of-service" },
   ],
+  email: "camden@pallume.com",
   location: "Pinedale, Wyoming",
 };
 
@@ -559,7 +559,7 @@ export const about = {
       "Camden Bennett — Founder, Pallume. Broker, #1 brokerage in Sublette County. 15 years U.S. Navy.",
   },
   cta: {
-    transitionLine: "If this sounds like someone you'd work with, start with six questions.",
+    transitionLine: "If this sounds like someone you'd work with, start with nine questions.",
     buttonLabel: "See If You Qualify",
     buttonHref: "/#qualifier",
   },
@@ -699,7 +699,7 @@ export const faq = {
 export const contact = {
   eyebrow: "GET IN TOUCH",
   headline: "Start with the application.",
-  body: "The fastest path to working together is the application form. Six questions. Takes about three minutes. Camden reviews every submission personally and responds within 24 hours.",
+  body: "The fastest path to working together is the application form. Nine questions. Takes about five minutes. Camden reviews every submission personally and responds within one business day.",
   body2: "If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether Pallume is the right tool for your situation.",
   buttonLabel: "Apply Now",
   buttonHref: "/apply",

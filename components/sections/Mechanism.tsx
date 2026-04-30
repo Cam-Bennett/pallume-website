@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { mechanism } from "@/content/siteContent";
 import SectionWrapper from "@/components/ui/SectionWrapper";
+import ScreenshotLightbox from "@/components/ui/ScreenshotLightbox";
 
 export default function Mechanism() {
   return (
@@ -59,37 +59,13 @@ export default function Mechanism() {
       </div>
 
       {/* Screenshot — breaks out of max-w-2xl for visual impact */}
-      <div style={{ maxWidth: "1100px", margin: "64px auto 0" }}>
-        <div
-          style={{
-            borderRadius: "12px",
-            overflow: "hidden",
-            border: "1px solid rgba(200,155,60,0.2)",
-            boxShadow: "0 24px 64px rgba(15,27,45,0.18)",
-          }}
-        >
-          <Image
-            src="/images/pallume-journal-screenshot.png"
-            alt="Pallume Journal — AI pattern recognition in action. The system surfaces a six-week avoidance pattern the client couldn't see themselves."
-            width={3290}
-            height={2086}
-            className="w-full h-auto"
-            priority={false}
-            sizes="(max-width: 768px) 100vw, 1100px"
-          />
-        </div>
-        <p
-          className="font-sans text-center"
-          style={{
-            fontSize: "13px",
-            lineHeight: 1.6,
-            color: "#9CA3AF",
-            marginTop: "12px",
-          }}
-        >
-          The system reads your patterns across weeks — not just today&apos;s entry.
-        </p>
-      </div>
+      <ScreenshotLightbox
+        src="/images/pallume-journal-screenshot.png"
+        alt="Pallume — AI pattern recognition in action. The system surfaces a six-week avoidance pattern the client couldn't see themselves."
+        width={3290}
+        height={2086}
+        caption="The system reads your patterns across weeks — not just today's entry."
+      />
     </SectionWrapper>
   );
 }

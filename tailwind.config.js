@@ -40,6 +40,9 @@ module.exports = {
       maxWidth: {
         site: "1200px",
       },
+      gridTemplateColumns: {
+        hero: "55fr 45fr",
+      },
     },
   },
   plugins: [],

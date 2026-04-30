@@ -19,6 +19,7 @@ export default function Footer() {
             {footer.logo}
           </a>
 
+          {/* Nav links + email as a single right-aligned group */}
           <div className="flex flex-wrap items-center gap-6">
             {footer.links.map((link) => (
               <a
@@ -30,6 +31,27 @@ export default function Footer() {
                 {link.label}
               </a>
             ))}
+
+            {/* Divider */}
+            <span
+              aria-hidden="true"
+              style={{ color: "rgba(200,155,60,0.25)", fontSize: "13px" }}
+            >
+              |
+            </span>
+
+            {/* Email — visually distinct from nav links */}
+            <a
+              href={`mailto:${footer.email}`}
+              className="font-sans hover:text-textLightMuted transition-colors duration-150"
+              style={{
+                fontSize: "13px",
+                textDecoration: "none",
+                color: "#C89B3C",
+              }}
+            >
+              {footer.email}
+            </a>
           </div>
 
           <span
