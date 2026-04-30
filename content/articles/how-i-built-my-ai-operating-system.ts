@@ -159,7 +159,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "For the office, the output changed measurably. One email per month that we couldn't sustain became two per week that I produce without thinking about whether I'll have time. The work didn't get easier. The system made it inevitable.",
+      text: "For the office, the output changed measurably. One email per month that we couldn't sustain became two per week that I produce without thinking about whether I'll have time. The system made it inevitable.",
     },
     {
       type: "paragraph",
