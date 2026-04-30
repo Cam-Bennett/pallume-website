@@ -622,7 +622,7 @@ export const faq = {
     {
       question: "What tools do I need?",
       answer: [
-        "Only one.",
+        "Assuming you already have a computer, only one.",
         "Claude is the AI platform the system runs in. Camden configures it — you just use it. That's all you need to start.",
         "If you want to add persistent memory for tasks, leads, finances, and goals later, Notion connects as a second layer. You access it through conversation, not a dashboard. Most clients start with Claude only and add Notion as the system grows.",
       ],
