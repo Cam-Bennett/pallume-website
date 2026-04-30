@@ -101,7 +101,7 @@ const article: Article = {
     {
       type: "bold-paragraph",
       label: "It runs every day, not just on session days.",
-      text: "The accountability isn't contingent on your next call. It's built into your morning, seven days a week. The system is present whether or not you feel like engaging with it — and that consistency is exactly what makes it effective over time.",
+      text: "The accountability isn't contingent on your next call. It's built into your morning, seven days a week. The system is available whether or not you feel like engaging with it — and that consistency is exactly what makes it effective over time. You only need to remember one thing per day - engage with the system.",
     },
     {
       type: "bold-paragraph",
