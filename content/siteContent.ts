@@ -895,8 +895,8 @@ export const pricing = {
     eyebrowColor: "#06B6D4",
     headline: "When the situation requires more than configuration.",
     body: [
-      "PATH C triggers when solving the problem requires Camden to produce external deliverables that live outside the client's personal system — a research brief, a strategic document, a legal education resource, a knowledge base built for a specific business situation.",
-      "Pallume is still the foundation. The extra work is the overlay.",
+      "PATH C triggers when the team size or problem complexity requires Camden to produce custom deliverables that live outside the Pallume Journal structure — specialized Claude projects, a knowledge resource, or system architecture built for a specific business situation.",
+      "Pallume strategy within Claude is still the foundation. The extra work is the overlay.",
       "Not sure which path applies to you? The intake determines it. Most clients find out during the discovery conversation.",
     ],
     price: "Custom quote based on scope.",
