@@ -638,7 +638,7 @@ export const faq = {
     {
       question: "How much time does this take each day?",
       answer: [
-        "The morning check-in takes 10 minutes. The weekly summary takes about 5 minutes to generate and send. That's it. The system does the rest.",
+        "The morning check-in takes 10 minutes. The weekly summary takes about 5 minutes to generate and send. The system grows as you lean into it, and this question will switch from \"How much time does it take,\" to, \"How much time will this save?\"",
       ],
     },
     {
