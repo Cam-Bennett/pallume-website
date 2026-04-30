@@ -481,7 +481,7 @@ export const footer = {
     { label: "The Work", href: "/the-work" },
     { label: "FAQ", href: "/faq" },
     { label: "Apply", href: "/apply" },
-    { label: "Journal Lite", href: "/pallume-light" },
+    { label: "Pallume Journal Lite", href: "/pallume-light" },
     { label: "Privacy", href: "/privacy-policy" },
     { label: "Terms", href: "/terms-of-service" },
   ],
