@@ -63,7 +63,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Here's a simple example of a nagging shortfall: for years, our office tried to send one email per month to our client list. One per month. We couldn't do it consistently. There was no system behind it, so it kept falling apart. After I built my system, I went to two emails per week — a comprehensive market update and a weekly blog post I write myself. Same person. Completely different output. The only variable was the system.",
+      text: "Here's a simple example of a nagging shortfall: for years, our office tried to send one email per month to our client list. One per month. We couldn't do it consistently. There was no system behind it, so it kept falling apart. After I built my system, I went to six to eight emails per month — a comprehensive market update and a weekly blog post I write myself. Same person. Completely different output. The only variable was the system.",
     },
     {
       type: "h2",
