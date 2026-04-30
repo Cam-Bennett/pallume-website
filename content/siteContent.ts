@@ -877,7 +877,7 @@ export const pricing = {
       "The trigger is simple: does solving this require building systems for more than one person? If yes — PATH B.",
       "Every engagement starts with a diagnostic. Camden maps the people, their workflows, and where time disappears before designing anything. Deliverables include a bottleneck map, a people map, named Claude Projects configured for each person executing the work, and a phased implementation plan with clear ownership and time estimates.",
     ],
-    price: "$1,500/month (1–3 person teams)",
+    price: "$1,500/month (2–3 person teams)",
     priceNote:
       "Larger organizations and project-based engagements are quoted after a discovery conversation.",
     includes: [
