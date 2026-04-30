@@ -79,7 +79,7 @@ const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Ten minutes. That's it. The check-in is not a long exercise and it's not designed to be. Its job is focus, not reflection. Here's what it walks me through:",
+      text: "Ten minutes. That's it. The check-in is not a long exercise and it's not designed to be. Its job is focus and idea capture, not reflection. Here's what it walks me through:",
     },
     {
       type: "bold-paragraph",
