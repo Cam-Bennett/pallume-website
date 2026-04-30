@@ -181,7 +181,7 @@ export const mechanism = {
     "It runs inside your own account. It retains everything. It knows what you said you'd do last Tuesday. It knows the project you've been pushing to next week for a month. It catches the contradictions between what you say you want and what you're actually spending your time on — and it surfaces them without ego, without agenda, and without letting you off the hook.",
     "Camden reviews your weekly summary once per week. He reads what the AI surfaced, identifies what it missed, and adjusts the system accordingly. That human interpretation layer — applied to weeks of your actual behavioral data — is what no tool or coach replicates on their own.",
     "The system gets sharper the longer you use it. Month one, it knows your goals. Month two, it knows your patterns. Month three, it's running your task triage, your decision framework, your morning ritual, and whatever your work actually demands.",
-    "It starts with 10 minutes every morning. That's the entry point. The ceiling is the size of your work.",
+    "It starts with 10 minutes every morning. That's the entry point. The ceiling is the size of your work. Here's a look at the simple interface where it all happens, plus a sample of the feedback you can expect.",
   ],
 };
 
