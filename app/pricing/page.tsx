@@ -24,8 +24,8 @@ export const metadata: Metadata = {
 /* ── Shared include-list item ──────────────────────────────── */
 function IncludeItem({ text }: { text: string }) {
   return (
-    <li className="flex items-start gap-3 font-body text-text-soft" style={{ fontSize: "15px", lineHeight: 1.7 }}>
-      <span style={{ color: "#DC2626", marginTop: "3px", flexShrink: 0 }}>—</span>
+    <li className="flex items-start gap-3 font-body" style={{ fontSize: "15px", lineHeight: 1.7, color: "#6B7280" }}>
+      <span style={{ color: "#C89B3C", marginTop: "3px", flexShrink: 0 }}>—</span>
       {text}
     </li>
   );
@@ -36,20 +36,20 @@ function PriceLine({ price, note }: { price: string; note?: string }) {
   return (
     <div
       style={{
-        borderTop: "1px solid rgba(255,255,255,0.06)",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
+        borderTop: "1px solid #E5E1D8",
+        borderBottom: "1px solid #E5E1D8",
         padding: "24px 0",
         margin: "32px 0",
       }}
     >
       <p
-        className="font-heading font-bold text-text-main"
-        style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", letterSpacing: "-0.02em" }}
+        className="font-heading font-bold"
+        style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", letterSpacing: "-0.02em", color: "#1A1A1A" }}
       >
         {price}
       </p>
       {note && (
-        <p className="font-body text-muted mt-2" style={{ fontSize: "14px", lineHeight: 1.6 }}>
+        <p className="font-body mt-2" style={{ fontSize: "14px", lineHeight: 1.6, color: "#6B7280" }}>
           {note}
         </p>
       )}
@@ -95,11 +95,12 @@ function PathSection({
           {eyebrow}
         </p>
         <h2
-          className="font-heading font-bold text-text-main mb-8"
+          className="font-heading font-bold mb-8"
           style={{
             fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
             lineHeight: 1.15,
             letterSpacing: "-0.02em",
+            color: "#1A1A1A",
           }}
         >
           {headline}
@@ -108,8 +109,8 @@ function PathSection({
         {body.map((para, i) => (
           <p
             key={i}
-            className="font-body text-text-soft mb-5"
-            style={{ fontSize: "17px", lineHeight: 1.8 }}
+            className="font-body mb-5"
+            style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280" }}
           >
             {para}
           </p>
@@ -120,8 +121,8 @@ function PathSection({
         {includes && includes.length > 0 && (
           <>
             <p
-              className="font-body font-semibold text-text-main mb-4"
-              style={{ fontSize: "12px", letterSpacing: "0.08em", textTransform: "uppercase" }}
+              className="font-body font-semibold mb-4"
+              style={{ fontSize: "12px", letterSpacing: "0.08em", textTransform: "uppercase", color: "#1A1A1A" }}
             >
               Includes
             </p>
@@ -139,7 +140,7 @@ function PathSection({
             style={{
               fontSize: "13px",
               lineHeight: 1.7,
-              borderLeft: "2px solid rgba(255,255,255,0.08)",
+              borderLeft: "2px solid #E5E1D8",
               paddingLeft: "16px",
             }}
           >
@@ -149,8 +150,8 @@ function PathSection({
 
         {scopeParagraph && (
           <p
-            className="font-body text-text-soft mb-8"
-            style={{ fontSize: "16px", lineHeight: 1.8 }}
+            className="font-body mb-8"
+            style={{ fontSize: "16px", lineHeight: 1.8, color: "#6B7280" }}
           >
             {scopeParagraph}
           </p>
@@ -301,8 +302,8 @@ export default function PricingPage() {
             {pricing.investmentContext.paragraphs.map((p, i) => (
               <p
                 key={i}
-                className="font-body text-text-soft"
-                style={{ fontSize: "17px", lineHeight: 1.75 }}
+                className="font-body"
+                style={{ fontSize: "17px", lineHeight: 1.75, color: "#6B7280" }}
               >
                 {p}
               </p>
@@ -363,8 +364,8 @@ export default function PricingPage() {
             {pricing.riskReversal.paragraphs.map((p, i) => (
               <p
                 key={i}
-                className="font-body text-text-soft"
-                style={{ fontSize: "17px", lineHeight: 1.75 }}
+                className="font-body"
+                style={{ fontSize: "17px", lineHeight: 1.75, color: "#6B7280" }}
               >
                 {p}
               </p>
@@ -382,17 +383,18 @@ export default function PricingPage() {
           {pricing.faq.eyebrow}
         </p>
         <h2
-          className="font-heading font-bold text-text-main mb-10"
+          className="font-heading font-bold mb-10"
           style={{
             fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
             lineHeight: 1.15,
             letterSpacing: "-0.02em",
+            color: "#1A1A1A",
           }}
         >
           {pricing.faq.headline}
         </h2>
         <div style={{ maxWidth: "720px" }}>
-          <Accordion items={pricing.faq.items} />
+          <Accordion items={pricing.faq.items} variant="light" />
         </div>
       </SectionWrapper>
 
@@ -408,21 +410,24 @@ export default function PricingPage() {
           }}
         >
           <h2
-            className="font-heading font-bold text-text-main mb-4"
+            className="font-heading font-bold mb-4"
             style={{
               fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
               lineHeight: 1.15,
               letterSpacing: "-0.02em",
+              color: "#1A1A1A",
             }}
           >
             {pricing.footerCta.headline}
           </h2>
-          <p
-            className="font-body text-text-soft mb-8"
-            style={{ fontSize: "17px", lineHeight: 1.8, maxWidth: "520px" }}
-          >
-            {pricing.footerCta.subheadline}
-          </p>
+          {pricing.footerCta.subheadline && (
+            <p
+              className="font-body mb-8"
+              style={{ fontSize: "17px", lineHeight: 1.8, maxWidth: "520px", color: "#6B7280" }}
+            >
+              {pricing.footerCta.subheadline}
+            </p>
+          )}
           <Btn as="a" href={pricing.footerCta.cta.href} size="lg">
             {pricing.footerCta.cta.label}
           </Btn>

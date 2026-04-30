@@ -208,7 +208,7 @@ export const howItWorks = {
       number: "03",
       title: "Refine",
       description:
-        "Once per week, your system generates a weekly summary. Camden runs it through his system and sends coaching feedback — what you're doing well, what the data shows you're avoiding, and the next layer of your system. The pattern recognition gets sharper the longer you use it.",
+        "Each week, your system generates a summary. Camden runs it through his system and sends coaching feedback — what you're doing well, what the data shows you're avoiding, and the next layer of your system. The pattern recognition gets sharper the longer you use it.",
     },
   ],
 };
@@ -839,7 +839,7 @@ export const pricing = {
     paragraphs: [
       "A qualified business coach might run $500 to $1,500 per session. One session, once or twice a month, with significant context-switching between their other clients. Valuable — but the execution window is narrow. Between sessions you're on your own.",
       "Pallume operates at your actual working cadence. Daily, not weekly. Not monthly. Full context retained across your entire engagement. Camden reviews your behavioral data weekly — not a 50-minute snapshot, but weeks of accumulated pattern recognition.",
-      "At $1,000 a month for three months, that's around $8 a day for the year. Less than many businesses spend on software they're not fully using — for a system that actively manages your execution every morning, gets sharper every week, and stays with you after the active coaching is complete.",
+      "At $1,000 a month for three months, that's around $8 a day averaged over the year. Less than many businesses spend on software they're not fully using — for a system that actively manages your execution every morning, gets sharper every week, and stays with you after the active coaching is complete.",
     ],
   },
   pathA: {
@@ -891,7 +891,7 @@ export const pricing = {
     headline: "When the situation requires more than configuration.",
     body: [
       "PATH C triggers when solving the problem requires Camden to produce external deliverables that live outside the client's personal system — a research brief, a strategic document, a legal education resource, a knowledge base built for a specific business situation.",
-      "Pallume Journal is still the foundation. The extra work is the overlay.",
+      "Pallume is still the foundation. The extra work is the overlay.",
       "Not sure which path applies to you? The intake determines it. Most clients find out during the discovery conversation.",
     ],
     price: "Custom quote based on scope.",
@@ -935,7 +935,7 @@ export const pricing = {
   footerCta: {
     headline: "The system starts at $1,000/month.",
     subheadline:
-      "At $1,000 a month for three months, that's around $8 a day for the year — for a system that actively manages your execution every morning, gets sharper every week, and stays with you after the active coaching is complete.",
+      "",
     cta: { label: "Apply for a Discovery Call", href: "/#qualifier" },
     microCopy:
       "No commitment until there's a fit. Camden reviews every application personally.",
