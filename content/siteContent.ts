@@ -697,7 +697,7 @@ export const faq = {
     headline: "Still have questions?",
     body: "The fastest way to get answers is to apply. Camden reviews every application personally.",
     buttonLabel: "See If You Qualify",
-    buttonHref: "/#qualifier",
+    buttonHref: "/apply",
   },
 };
 

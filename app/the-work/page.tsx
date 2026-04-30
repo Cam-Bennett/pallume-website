@@ -102,13 +102,12 @@ export default function TheWorkPage() {
                 className="group"
               >
                 <h2
-                  className="font-heading font-bold mb-3 group-hover:text-primary"
+                  className="font-heading font-bold mb-3"
                   style={{
                     fontSize: "clamp(1.2rem, 2.5vw, 1.6rem)",
                     lineHeight: 1.2,
                     letterSpacing: "-0.01em",
                     color: "#1A1A1A",
-                    transition: "color 150ms ease",
                   }}
                 >
                   {article.title}
