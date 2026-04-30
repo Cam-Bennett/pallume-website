@@ -578,7 +578,7 @@ export const faq = {
       question: "What is Pallume?",
       answer: [
         "Pallume builds custom AI execution systems for business owners and individuals. The system — called Pallume Journal — is configured around your specific goals, patterns, and the ways you consistently get stuck. It runs in your own Claude account every morning. Your coach reviews your progress weekly and adjusts the system over time. It's not an app, not a course, and not a template. Every deployment is custom.",
-        "The coaching layer is backed by over a dozen research documents built from real client data — weekly Pallume Journal updates analyzed across months of engagements. The pattern recognition isn't guesswork. It's documented.",
+        "The coaching layer is backed by over a dozen research documents and tested against real client data — weekly Pallume Journal updates analyzed across months of engagements. The pattern recognition isn't guesswork. It's documented.",
       ],
     },
     {
