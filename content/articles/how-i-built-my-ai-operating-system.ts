@@ -99,7 +99,7 @@ const article: Article = {
     {
       type: "bold-paragraph",
       label: "A rotating daily theme.",
-      text: "Every day of the week has a different focus. One day I identify someone who helped me that week and reach out to thank them. Another day I evaluate what I'm giving time to that doesn't deserve it, and decide what to replace it with. These themes keep the check-in from becoming routine in the wrong way.",
+      text: "Every day of the week has a different focus. One day I identify someone who helped me that week and reach out to thank them. Another day I evaluate what I'm giving time to that doesn't deserve it, and decide what to replace it with. These themes keep the check-in from becoming routine in the wrong way. And when it's time, I update the structure and move these themes into new areas that need attention.",
     },
     {
       type: "paragraph",
