@@ -63,7 +63,6 @@ const liteItems = [
 ];
 
 const fullItems = [
-  "I see your patterns — and you see mine seeing yours",
   "We select the three highest-leverage issues together",
   "We design experiments against your specific constraints",
   "You get answers tested against real behavior, not theory",
