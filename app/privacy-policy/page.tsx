@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
           <p className="font-body text-muted" style={{ fontSize: "13px", lineHeight: 1.8 }}>
             Effective Date: {privacyPolicy.effectiveDate} · Last Updated: {privacyPolicy.lastUpdated}
             <br />
-            {privacyPolicy.contact} · {privacyPolicy.location}
+            {privacyPolicy.contact}
           </p>
         </div>
 
@@ -156,7 +156,6 @@ export default function PrivacyPolicyPage() {
                   >
                     {section.contact.email}
                   </a>
-                  <p>{section.contact.location}</p>
                 </div>
               )}
             </div>
