@@ -7,7 +7,7 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 export const metadata: Metadata = {
   title: "Apply — Pallume",
   description:
-    "Pallume works with a limited number of clients at a time. This application helps Camden understand whether we're a fit before scheduling a call. Expect a response within 2 business days.",
+    "Apply to work with Pallume. Nine questions. Takes five minutes. Camden reviews every application personally and responds within one business day.",
   alternates: {
     canonical: "https://pallume.com/apply",
   },

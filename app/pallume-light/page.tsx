@@ -7,7 +7,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Pallume Journal Lite — Free 14-Day Experience | Pallume",
   description:
-    "14 days of structured journaling that shows you exactly what's costing you. Free. No coaching yet — just clarity.",
+    "Try Pallume Journal Lite free for 14 days. A structured daily journaling experience that shows you your own execution patterns before you commit to anything.",
   alternates: {
     canonical: "https://pallume.com/pallume-light",
   },

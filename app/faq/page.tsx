@@ -9,14 +9,14 @@ import { faq } from "@/content/siteContent";
 export const metadata: Metadata = {
   title: "FAQ — Pallume",
   description:
-    "Common questions about Pallume, Pallume Journal, and how the AI execution system works. Built by Camden Bennett.",
+    "Answers to common questions about Pallume — what it is, how it works, what it costs, and whether it's the right fit for your situation.",
   alternates: {
     canonical: "https://pallume.com/faq",
   },
   openGraph: {
     title: "FAQ — Pallume",
     description:
-      "Common questions about Pallume, Pallume Journal, and how the AI execution system works. Built by Camden Bennett.",
+      "Answers to common questions about Pallume — what it is, how it works, what it costs, and whether it's the right fit for your situation.",
     url: "https://pallume.com/faq",
     siteName: "Pallume",
     type: "website",

@@ -7,14 +7,14 @@ import Btn from "@/components/ui/Btn";
 export const metadata: Metadata = {
   title: "How It Works — Pallume",
   description:
-    "Pallume engagements have a beginning, a middle, and an end. Path A and Path B explained — stages, readiness signals, and what stays after graduation.",
+    "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you graduate.",
   alternates: {
     canonical: "https://pallume.com/how-it-works",
   },
   openGraph: {
     title: "How It Works — Pallume",
     description:
-      "Pallume engagements have a beginning, a middle, and an end. Path A and Path B explained — stages, readiness signals, and what stays after graduation.",
+      "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you graduate.",
     url: "https://pallume.com/how-it-works",
     siteName: "Pallume",
     type: "website",

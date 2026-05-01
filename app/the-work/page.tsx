@@ -10,14 +10,14 @@ import { theWork } from "@/content/siteContent";
 export const metadata: Metadata = {
   title: "The Work — Pallume",
   description:
-    "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
+    "Articles on AI execution systems, why productivity tools fail, and how custom AI accountability coaching works for business owners.",
   alternates: {
     canonical: "https://pallume.com/the-work",
   },
   openGraph: {
     title: "The Work — Pallume",
     description:
-      "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
+      "Articles on AI execution systems, why productivity tools fail, and how custom AI accountability coaching works for business owners.",
     url: "https://pallume.com/the-work",
     siteName: "Pallume",
     type: "website",

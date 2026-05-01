@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Camden Bennett — Pallume",
   description:
-    "Camden Bennett built Pallume for himself before offering it to clients. 15 years in the Navy. Real estate broker. Founder of an AI execution system that runs every morning.",
+    "Camden Bennett founded Pallume — a Navy veteran, Wyoming real estate broker, and AI systems builder who runs the same system he builds for every client.",
   alternates: {
     canonical: "https://pallume.com/about",
   },
   openGraph: {
     title: "About Camden Bennett — Pallume",
     description:
-      "Camden Bennett built Pallume for himself before offering it to clients. 15 years in the Navy. Real estate broker. Founder of an AI execution system that runs every morning.",
+      "Camden Bennett founded Pallume — a Navy veteran, Wyoming real estate broker, and AI systems builder who runs the same system he builds for every client.",
     url: "https://pallume.com/about",
     siteName: "Pallume",
     type: "website",

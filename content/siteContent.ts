@@ -833,7 +833,7 @@ export const pricing = {
   meta: {
     title: "Pricing — Pallume",
     description:
-      "What Pallume costs — and what it's worth. PATH A starts at $1,000/month. PATH B from $1,500/month. PATH C custom.",
+      "Pallume Path A starts at $1,000/month for individuals. Path B starts at $1,500/month for teams. Path C is custom-scoped. No lock-in — you own the system.",
   },
   hero: {
     eyebrow: "INVESTMENT",
