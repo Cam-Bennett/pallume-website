@@ -228,7 +228,7 @@ export default function HowItWorksPage() {
             <Link href="/pricing" style={{ color: "#C89B3C", textDecoration: "underline", textUnderlineOffset: "3px" }}>
               $1,000/month
             </Link>
-            . Three months recommended.
+            . Three months minimum recommended.
           </p>
 
           <div
@@ -329,7 +329,7 @@ export default function HowItWorksPage() {
             <Link href="/pricing" style={{ color: "#C89B3C", textDecoration: "underline", textUnderlineOffset: "3px" }}>
               $1,500/month
             </Link>
-            . Three months recommended.
+            . Three months minimum recommended.
           </p>
 
           <div className="flex flex-col" style={{ gap: "0" }}>
