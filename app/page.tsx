@@ -19,16 +19,16 @@ import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
-  title: "Pallume — Your Own AI Execution System",
+  title: "Accountability Coaching for Business Owners | Pallume",
   description:
-    "Custom AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett. 10 minutes every morning. Configured for you, not a template.",
+    "Pallume builds a custom AI accountability system for business owners. Deep-dive interview, daily check-in, weekly coaching review. Starting at $1,000/month.",
   alternates: {
     canonical: "https://pallume.com",
   },
   openGraph: {
-    title: "Pallume — Your Own AI Execution System",
+    title: "Accountability Coaching for Business Owners | Pallume",
     description:
-      "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
+      "Pallume builds a custom AI accountability system for business owners. Deep-dive interview, daily check-in, weekly coaching review. Starting at $1,000/month.",
     url: "https://pallume.com",
     siteName: "Pallume",
     locale: "en_US",
