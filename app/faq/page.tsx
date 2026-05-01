@@ -4,6 +4,7 @@ import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Btn from "@/components/ui/Btn";
 import Accordion from "@/components/ui/Accordion";
+import { FAQSchema } from "@/components/ui/FAQSchema";
 import { faq } from "@/content/siteContent";
 
 export const metadata: Metadata = {
@@ -21,20 +22,6 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     type: "website",
   },
-};
-
-/* ── FAQPage JSON-LD schema ──────────────────────────────────────── */
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faq.items.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answer.join("\n\n"),
-    },
-  })),
 };
 
 const faqBreadcrumb = {
@@ -59,9 +46,11 @@ const faqBreadcrumb = {
 export default function FAQPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      <FAQSchema
+        items={faq.items.map((item) => ({
+          question: item.question,
+          answer: item.answer.join("\n\n"),
+        }))}
       />
       <script
         type="application/ld+json"

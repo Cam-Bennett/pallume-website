@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { FAQSchema } from "@/components/ui/FAQSchema";
+import { faq, pricing } from "@/content/siteContent";
 import HomepageNav from "@/components/sections/HomepageNav";
 import Hero from "@/components/sections/Hero";
 import EmpathyHook from "@/components/sections/EmpathyHook";
@@ -36,9 +38,25 @@ export const metadata: Metadata = {
   },
 };
 
+const HOMEPAGE_FAQ_QUESTIONS = [
+  "Isn't this just ChatGPT? I could do this myself.",
+  "How much time does this take each day?",
+  "$1,000/month is a lot.",
+  "What if I fall off the system or get busy?",
+  "Is there a minimum commitment?",
+];
+
+const allFaqItems = [...faq.items, ...pricing.faq.items];
+
+const homepageFaqItems = HOMEPAGE_FAQ_QUESTIONS.map((q) => {
+  const item = allFaqItems.find((i) => i.question === q)!;
+  return { question: item.question, answer: item.answer.join("\n\n") };
+});
+
 export default function Home() {
   return (
     <main>
+      <FAQSchema items={homepageFaqItems} />
       <HomepageNav />
       <Hero />
       <EmpathyHook />
