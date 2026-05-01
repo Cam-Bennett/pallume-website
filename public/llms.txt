@@ -1,85 +1,46 @@
 # Pallume
 
-> Pallume builds custom AI execution systems for business owners and
-individuals who want to perform at their potential but can't close the gap
-between intention and result. Founded by Camden Bennett in Pinedale, Wyoming.
-
-## What Pallume Does
-Pallume configures a personalized AI system (called Pallume Journal) around each
-client's goals, values, patterns, and the specific ways they get stuck.
-The system runs in the client's own Claude account. Daily 10-minute morning
-check-in. Weekly AI-generated progress summaries sent to Camden for coaching
-review. System is progressively refined over time. The client owns the
-account and all data.
-
-## Target Audience
-Business owners and solo operators with $100,000–$2,000,000 in annual revenue
-who have sound strategy but consistent execution failures. Typically 30–55 years
-old. Service-based businesses across industries including real estate, consulting,
-property management, professional services, and executive leadership. Not suitable
-for early-stage startups or those seeking outsourced work execution. Best fit:
-someone who already knows what needs to happen in their business but can't
-consistently act on it.
-
-## Key Concepts
-- Execution gap: The difference between a business owner's planned strategic
-  output and actual results — estimated at $60,000–$100,000 annually for a
-  $500K–$1M operator. Caused by reactive mode consuming the hours intended for
-  high-leverage work.
-- Pallume Journal: A custom Claude AI project built from a 60–75 minute
-  intake interview with Camden Bennett. Not a template. Configured per client
-  around their specific goals, decision framework, avoidance loops, and
-  behavioral patterns.
-- AI execution system: A structured daily practice using AI to capture
-  priorities, surface behavioral patterns, and hold the operator accountable
-  to their own stated goals — with weekly human coaching review by the founder.
-- Progressive deployment: The system starts with one habit (a 10-minute morning
-  check-in) and adds complexity only as the client demonstrates readiness.
-  Week 1 is check-in only. Full deployment by month three.
-
-## Pallume Lite
-Pallume Lite is a free 14-day structured journaling experience — a self-guided
-diagnostic that surfaces the patterns, constraints, and mechanisms behind your
-execution problems. Five phases over 14 days. No coaching yet. Just clarity.
-Available at https://pallume.com/pallume-light — no credit card required.
-
-## The Three Paths
-- PATH A (The Person): Individual execution system for solo operators,
-  executives, and business owners. Custom Claude project, weekly coaching
-  review, progressive deployment. $1,000/month.
-- PATH B (The Business): Business diagnostic and AI systems plan for
-  organizations where the dysfunction is structural. Bottleneck mapping,
-  individual Pallume Journal deployments for key team members, phased implementation.
-  $1,500/month for 1–3 person teams.
-- PATH C (Both): Hybrid engagement for business owners whose personal and
-  business challenges are inseparable. Custom quote based on scope.
+> Pallume builds custom AI accountability systems for business owners.
+Each system is configured from a 60–75 minute deep-dive interview, runs
+inside the client's own Claude account every morning, and is reviewed
+weekly by the coach. Not a template. Not an app. An operational system
+built around how you specifically work.
 
 ## Key Pages
-- Homepage / Qualifier: https://pallume.com/
-- About Camden: https://pallume.com/about
-- Pricing: https://pallume.com/pricing
-- FAQ: https://pallume.com/faq
-- Contact: https://pallume.com/contact
-- Pallume Lite (free trial): https://pallume.com/pallume-light
-- The Work (articles): https://pallume.com/the-work
-- What Is an AI Execution System: https://pallume.com/the-work/what-is-an-ai-execution-system
-- Why Time Blocking Fails Business Owners: https://pallume.com/the-work/why-time-blocking-fails-business-owners
-- How I Built My AI Execution System: https://pallume.com/the-work/how-i-built-my-ai-operating-system
+
+- [Homepage](https://pallume.com/): What Pallume is and who it's for
+- [How It Works](https://pallume.com/how-it-works): The three-stage
+  engagement process (Build → Deploy → Refine)
+- [Pricing](https://pallume.com/pricing): Path A ($1,000/month
+  individual), Path B ($1,500/month teams), Path C (custom)
+- [About Camden Bennett](https://pallume.com/about): Founder background
+  — Navy veteran, Wyoming real estate broker, AI systems builder
+- [FAQ](https://pallume.com/faq): Common questions about the system,
+  commitment, and pricing
+- [Apply](https://pallume.com/apply): Nine-question application reviewed
+  personally by Camden
+- [Pallume Journal Lite](https://pallume.com/pallume-light): Free 14-day
+  structured journaling experience
+
+## Content
+
+- [What Is an AI Execution System](https://pallume.com/the-work/what-is-an-ai-execution-system)
+- [Why Time-Blocking Fails Business Owners](https://pallume.com/the-work/why-time-blocking-fails-business-owners)
+- [How I Built My Own AI Operating System](https://pallume.com/the-work/how-i-built-my-ai-operating-system)
 
 ## About the Founder
-Camden Bennett is a former U.S. Navy Diver and Intelligence Officer with
-15 years of service. Managing broker at Pinedale Properties, the
-top-producing real estate brokerage in Sublette County, Wyoming. Built the
-Pallume system to solve his own productivity problem before offering it
-to clients. Runs the same system he builds for every client.
 
-## Differentiators
-- Client owns their AI system — not a subscription to Camden's platform
-- Built from a 60-75 minute deep-dive interview, not a template
-- Human-in-the-loop weekly coaching review is what no app replicates
-- Pattern recognition accumulates across months of real client data
-- Progressive deployment — system expands as the client levels up
+Camden Bennett founded Pallume after 15 years in the U.S. Navy (Diver,
+then Intelligence Officer) and a return to Wyoming as managing broker of
+the top-producing real estate brokerage in Sublette County. He runs the
+same system he builds for every client.
+Contact: [camden@pallume.com](mailto:camden@pallume.com). Location: Pinedale, Wyoming.
 
-## Contact
-Phone: 801-910-6528
-Location: Pinedale, Wyoming
+## Engagement Details
+
+- Path A — Individual: $1,000/month. Solo operators, executives,
+  business owners.
+- Path B — Organizational: $1,500/month. Teams up to 3 people.
+- Path C — Custom: Scoped individually.
+- Minimum commitment: 2 months. Recommended baseline: 3 months.
+- Client owns their system and their Claude account. No lock-in.
