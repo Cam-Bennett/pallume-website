@@ -63,9 +63,10 @@ const liteItems = [
 ];
 
 const fullItems = [
-  "We select the three highest-leverage issues together",
-  "We design strategies against your specific constraints",
+  "We identify which pattern is costing you the most",
+  "We build strategies targeting that specific problem",
   "You get answers tested against real behavior, not theory",
+  "I tell you which questions actually matter for your situation",
   "90-day transformation with weekly review and external accountability",
 ];
 
