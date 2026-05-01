@@ -580,8 +580,11 @@ export default function PallumeJournalLitePage() {
             14 days.{" "}
             <span style={{ color: "#DC2626" }}>No cost.</span> No credit card. No obligation.
           </h2>
-          <p className="font-body mb-10" style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280" }}>
+          <p className="font-body mb-6" style={{ fontSize: "17px", lineHeight: 1.8, color: "#6B7280" }}>
             You&apos;ll receive your first prompt today. One per day for 14 days. The journal lives in your own Claude account — you own it.
+          </p>
+          <p className="font-body mb-10" style={{ fontSize: "14px", lineHeight: 1.7, color: "#6B7280" }}>
+            Your answers will be read by me personally. This is not a quiz or a scoring tool — it&apos;s how I understand your situation before you start, and it&apos;s what customizes your experience. Only share what you&apos;d be comfortable saying to a coach.
           </p>
           <iframe
             src="https://tally.so/embed/5BlNoZ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
