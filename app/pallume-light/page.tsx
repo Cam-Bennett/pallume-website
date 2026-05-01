@@ -49,7 +49,7 @@ const phases = [
   {
     num: "05",
     name: "Readiness",
-    days: "Days 14–15",
+    days: "Day 14",
     desc: "The cost of the ceiling. What you do with what you've found.",
   },
 ];
@@ -64,7 +64,7 @@ const liteItems = [
 
 const fullItems = [
   "We select the three highest-leverage issues together",
-  "We design experiments against your specific constraints",
+  "We design strategies against your specific constraints",
   "You get answers tested against real behavior, not theory",
   "90-day transformation with weekly review and external accountability",
 ];
