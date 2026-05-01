@@ -249,7 +249,7 @@ export default function PallumeJournalLitePage() {
         style={{
           borderTop: "1px solid rgba(255,255,255,0.06)",
           padding: "96px 24px",
-          background: "#0F1B2D",
+          background: "#0F0F1A",
         }}
       >
         <div
@@ -324,7 +324,7 @@ export default function PallumeJournalLitePage() {
           borderTop: "1px solid rgba(255,255,255,0.06)",
           borderBottom: "1px solid rgba(255,255,255,0.06)",
           padding: "96px 24px",
-          background: "#0F0F1A",
+          background: "#0F1B2D",
         }}
       >
         <div className="max-w-site mx-auto">
@@ -401,7 +401,7 @@ export default function PallumeJournalLitePage() {
       <section
         style={{
           padding: "96px 24px",
-          background: "#0F1B2D",
+          background: "#0F0F1A",
           borderBottom: "1px solid rgba(255,255,255,0.06)",
         }}
       >
@@ -477,7 +477,7 @@ export default function PallumeJournalLitePage() {
                   transform: "translate(-50%, -50%)",
                   fontSize: "13px",
                   color: "rgba(255,255,255,0.15)",
-                  background: "#0F1B2D",
+                  background: "#0F0F1A",
                   padding: "8px 4px",
                   letterSpacing: "0.1em",
                 }}
@@ -524,7 +524,7 @@ export default function PallumeJournalLitePage() {
       {/* ── Promise ─────────────────────────────────────────────── */}
       <section
         style={{
-          background: "#0F0F1A",
+          background: "#0F1B2D",
           borderBottom: "1px solid rgba(255,255,255,0.06)",
           padding: "96px 24px",
         }}
