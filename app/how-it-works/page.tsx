@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
@@ -224,7 +225,10 @@ export default function HowItWorksPage() {
             className="font-body mb-12"
             style={{ fontSize: "16px", color: "#374151", lineHeight: 1.6 }}
           >
-            Starting at $1,000/month. 2–7 months based on readiness, not the calendar.
+            <Link href="/pricing" style={{ color: "#C89B3C", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              $1,000/month
+            </Link>
+            . Three months recommended.
           </p>
 
           <div
@@ -322,7 +326,10 @@ export default function HowItWorksPage() {
             className="font-body mb-12"
             style={{ fontSize: "16px", color: "#374151", lineHeight: 1.6 }}
           >
-            Starting at $1,500/month. Scoped to the organizational challenge. Typically 3–9 months.
+            <Link href="/pricing" style={{ color: "#C89B3C", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              $1,500/month
+            </Link>
+            . Three months recommended.
           </p>
 
           <div className="flex flex-col" style={{ gap: "0" }}>
