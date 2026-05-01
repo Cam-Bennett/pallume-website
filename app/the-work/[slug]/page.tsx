@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
@@ -89,6 +90,37 @@ function renderSection(section: ArticleSection, i: number) {
           {section.text}
         </p>
       );
+    case "rich-paragraph":
+      return (
+        <p
+          key={i}
+          className="font-body"
+          style={{
+            fontSize: "17px",
+            lineHeight: 1.8,
+            color: "#6B7280",
+            marginBottom: "24px",
+          }}
+        >
+          {section.segments.map((seg, j) =>
+            seg.href ? (
+              <Link
+                key={j}
+                href={seg.href}
+                style={{
+                  color: "#C89B3C",
+                  textDecoration: "underline",
+                  textUnderlineOffset: "3px",
+                }}
+              >
+                {seg.text}
+              </Link>
+            ) : (
+              <span key={j}>{seg.text}</span>
+            )
+          )}
+        </p>
+      );
     case "bold-paragraph":
       return (
         <p
@@ -105,6 +137,21 @@ function renderSection(section: ArticleSection, i: number) {
             {section.label}{" "}
           </strong>
           {section.text}
+          {section.trailingLink && (
+            <>
+              {" "}
+              <Link
+                href={section.trailingLink.href}
+                style={{
+                  color: "#C89B3C",
+                  textDecoration: "underline",
+                  textUnderlineOffset: "3px",
+                }}
+              >
+                {section.trailingLink.text}
+              </Link>
+            </>
+          )}
         </p>
       );
     case "paragraph":

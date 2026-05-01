@@ -27,8 +27,12 @@ const article: Article = {
       text: "What Accountability Actually Requires",
     },
     {
-      type: "paragraph",
-      text: "The most honest research on why productivity systems fail points to the same problem: there's no meaningful consequence when people don't follow through. You can set a reminder for 9am. You can build a streak. You can color-code your calendar. None of it produces a consequence when you ignore it. And without consequence, accountability is aspirational, not functional.",
+      type: "rich-paragraph",
+      segments: [
+        { text: "The most honest research on why productivity systems fail — " },
+        { text: "why time-blocking fails business owners", href: "/the-work/why-time-blocking-fails-business-owners" },
+        { text: ", why reminder apps get abandoned, why any tool eventually stops working — points to the same problem: there's no meaningful consequence when people don't follow through. You can set a reminder for 9am. You can build a streak. You can color-code your calendar. None of it produces a consequence when you ignore it. And without consequence, accountability is aspirational, not functional." },
+      ],
     },
     {
       type: "paragraph",
@@ -91,8 +95,12 @@ const article: Article = {
       text: "Every Friday, it generates a weekly summary. You send that summary to your coach. The coach reads it, identifies the patterns the AI surfaced, and sends coaching feedback — what's working, what the data shows you're avoiding, and what the system needs to handle better. When it's appropriate, the system is adjusted.",
     },
     {
-      type: "paragraph",
-      text: "That's the loop. Week over week, the pattern recognition compounds. The system gets sharper. The gap between what you say you want to do and what you actually do gets smaller.",
+      type: "rich-paragraph",
+      segments: [
+        { text: "That's the loop — the same one described in detail in " },
+        { text: "how I built my own AI execution system", href: "/the-work/how-i-built-my-ai-operating-system" },
+        { text: ". Week over week, the pattern recognition compounds. The system gets sharper. The gap between what you say you want to do and what you actually do gets smaller." },
+      ],
     },
     {
       type: "h2",

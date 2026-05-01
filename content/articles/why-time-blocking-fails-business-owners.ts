@@ -114,7 +114,8 @@ const article: Article = {
     {
       type: "bold-paragraph",
       label: "A human in the loop.",
-      text: "This is the piece no scheduling tool can replicate. Someone reviewing your weekly output, identifying the pattern, and adjusting the system accordingly. Not a reminder. An interpretation.",
+      text: "This is the piece no scheduling tool can replicate. Someone reviewing your weekly output, identifying the pattern, and adjusting the system accordingly. Not a reminder. An interpretation. That's",
+      trailingLink: { text: "how Pallume works", href: "/how-it-works" },
     },
     {
       type: "h2",
@@ -137,8 +138,12 @@ const article: Article = {
       text: "Time-blocking can be part of that system. It just can't be the whole thing.",
     },
     {
-      type: "paragraph",
-      text: "If you've tried it and watched it collapse by Tuesday — that's not a discipline failure. That's a signal that the structure underneath needs to be different. The fix isn't more willpower applied to the same approach. It's a system built around how you actually work.",
+      type: "rich-paragraph",
+      segments: [
+        { text: "If you've tried it and watched it collapse by Tuesday — that's not a discipline failure. That's a signal that the structure underneath needs to be different. The fix isn't more willpower applied to the same approach. It's an " },
+        { text: "AI execution system", href: "/the-work/what-is-an-ai-execution-system" },
+        { text: " built around how you actually work." },
+      ],
     },
   ],
 };

@@ -106,8 +106,12 @@ const article: Article = {
       text: "The journal ends with the specific things I need to protect uninterrupted time for in order to move the needle. By the time I close the check-in, I know exactly what I'm doing next and why.",
     },
     {
-      type: "paragraph",
-      text: "Over time, this system begins to surface patterns that I could never recognize on my own. The value is in the AI's grasp of the data you generate over time.",
+      type: "rich-paragraph",
+      segments: [
+        { text: "Over time, this system begins to surface patterns that I could never recognize on my own — which gets at " },
+        { text: "what an AI execution system actually is", href: "/the-work/what-is-an-ai-execution-system" },
+        { text: ". The value is in the AI's grasp of the data you generate over time." },
+      ],
     },
     {
       type: "h2",
@@ -166,8 +170,12 @@ const article: Article = {
       text: "That's what a real system does. Not motivate. Not remind. Make the right action the default.",
     },
     {
-      type: "paragraph",
-      text: "If you've been trying to build this without a structure, the problem isn't you. It's the absence of architecture. That's a different kind of fix — and it's the one that actually holds.",
+      type: "rich-paragraph",
+      segments: [
+        { text: "If you've been trying to build this without a structure, the problem isn't you. It's the absence of architecture. That's a different kind of fix — and it's the one that actually holds. If you want it built for you, " },
+        { text: "apply to work with Pallume", href: "/apply" },
+        { text: "." },
+      ],
     },
   ],
 };
