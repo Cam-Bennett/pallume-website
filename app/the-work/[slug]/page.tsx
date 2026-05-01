@@ -4,6 +4,7 @@ import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Btn from "@/components/ui/Btn";
+import AuthorByline from "@/components/ui/AuthorByline";
 import { articles, getArticleBySlug } from "@/content/articles";
 import type { ArticleSection } from "@/content/articles/types";
 
@@ -228,12 +229,14 @@ export default function ArticlePage({ params }: Props) {
           >
             {article.title}
           </h1>
-          <p
+          <time
+            dateTime={article.date}
             className="font-body text-muted"
-            style={{ fontSize: "13px", letterSpacing: "0.04em" }}
+            style={{ fontSize: "13px", letterSpacing: "0.04em", display: "block" }}
           >
             {formattedDate}
-          </p>
+          </time>
+          <AuthorByline />
         </div>
       </SectionWrapper>
 
