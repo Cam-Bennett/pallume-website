@@ -88,12 +88,6 @@ export default function ApplyPage() {
       {/* ── Form ───────────────────────────────────────────────────── */}
       <SectionWrapper variant="light">
         <div style={{ maxWidth: "720px" }}>
-          <p
-            className="font-body"
-            style={{ fontSize: "14px", color: "#6B7280", marginBottom: "32px" }}
-          >
-            Expect a response within 2 business days. If Camden is traveling, within three.
-          </p>
           <iframe
             src="https://tally.so/embed/Gxop2o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
