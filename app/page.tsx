@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FAQSchema } from "@/components/ui/FAQSchema";
+import { OrganizationSchema } from "@/components/ui/OrganizationSchema";
 import { faq, pricing } from "@/content/siteContent";
 import HomepageNav from "@/components/sections/HomepageNav";
 import Hero from "@/components/sections/Hero";
@@ -56,6 +57,7 @@ const homepageFaqItems = HOMEPAGE_FAQ_QUESTIONS.map((q) => {
 export default function Home() {
   return (
     <main>
+      <OrganizationSchema />
       <FAQSchema items={homepageFaqItems} />
       <HomepageNav />
       <Hero />
