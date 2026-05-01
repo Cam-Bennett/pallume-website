@@ -96,6 +96,13 @@ export default function HowItWorksPage() {
           >
             Where You Start. Where You Finish.
           </h1>
+          <time
+            dateTime="2026-05"
+            className="font-body"
+            style={{ fontSize: "13px", color: "#B0B8C4", display: "block", marginBottom: "16px" }}
+          >
+            Last updated: May 2026
+          </time>
           <p className="font-body" style={{ ...mutedBody, maxWidth: "600px" }}>
             Pallume engagements have a beginning, a middle, and an end. The end is the point.
             You&apos;re not signing up for an indefinite coaching relationship — you&apos;re

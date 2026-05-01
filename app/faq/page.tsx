@@ -92,6 +92,13 @@ export default function FAQPage() {
             >
               {faq.headline}
             </h1>
+            <time
+              dateTime="2026-05"
+              className="font-body"
+              style={{ fontSize: "13px", color: "#B0B8C4", display: "block", marginTop: "12px" }}
+            >
+              Last updated: May 2026
+            </time>
           </div>
         </section>
 

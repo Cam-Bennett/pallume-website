@@ -189,6 +189,12 @@ export default function ArticlePage({ params }: Props) {
     day: "numeric",
   });
 
+  const formattedModifiedDate = new Date(article.dateModified ?? article.date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -260,6 +266,13 @@ export default function ArticlePage({ params }: Props) {
             style={{ fontSize: "13px", letterSpacing: "0.04em", display: "block" }}
           >
             {formattedDate}
+          </time>
+          <time
+            dateTime={article.dateModified ?? article.date}
+            className="font-body text-muted"
+            style={{ fontSize: "13px", letterSpacing: "0.04em", display: "block", marginTop: "2px" }}
+          >
+            Updated {formattedModifiedDate}
           </time>
           <AuthorByline />
         </div>
