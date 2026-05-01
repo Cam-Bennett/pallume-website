@@ -150,11 +150,12 @@ export default function TermsPage() {
             Legal
           </p>
           <h1
-            className="font-heading font-bold text-text-main mb-4"
+            className="font-heading font-bold mb-4"
             style={{
               fontSize: "clamp(2rem, 4vw, 3rem)",
               lineHeight: 1.1,
               letterSpacing: "-0.02em",
+              color: "#1A1A1A",
             }}
           >
             Terms of Service
@@ -173,7 +174,7 @@ export default function TermsPage() {
         <div
           style={{
             maxWidth: "720px",
-            borderTop: "1px solid rgba(255,255,255,0.06)",
+            borderTop: "1px solid #E5E1D8",
             paddingTop: "56px",
           }}
         >
@@ -181,10 +182,11 @@ export default function TermsPage() {
             {sections.map((section) => (
               <div key={section.heading}>
                 <h2
-                  className="font-heading font-bold text-text-main mb-4"
+                  className="font-heading font-bold mb-4"
                   style={{
                     fontSize: "clamp(1rem, 2vw, 1.2rem)",
                     letterSpacing: "-0.01em",
+                    color: "#1A1A1A",
                   }}
                 >
                   {section.heading}
@@ -193,8 +195,8 @@ export default function TermsPage() {
                   {section.paragraphs.map((para, i) => (
                     <p
                       key={i}
-                      className="font-body text-text-soft"
-                      style={{ fontSize: "16px", lineHeight: 1.8 }}
+                      className="font-body"
+                      style={{ fontSize: "16px", lineHeight: 1.8, color: "#6B7280" }}
                     >
                       {para}
                     </p>
@@ -207,10 +209,10 @@ export default function TermsPage() {
                       {section.list.map((item, i) => (
                         <li
                           key={i}
-                          className="font-body text-text-soft flex items-start gap-3"
-                          style={{ fontSize: "16px", lineHeight: 1.7 }}
+                          className="font-body flex items-start gap-3"
+                          style={{ fontSize: "16px", lineHeight: 1.7, color: "#6B7280" }}
                         >
-                          <span style={{ color: "#DC2626", flexShrink: 0, marginTop: "2px" }}>—</span>
+                          <span style={{ color: "#C89B3C", flexShrink: 0, marginTop: "2px" }}>—</span>
                           {item}
                         </li>
                       ))}
