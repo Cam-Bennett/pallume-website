@@ -24,33 +24,33 @@ export const metadata: Metadata = {
 const phases = [
   {
     num: "01",
-    name: "Baseline",
+    name: "Foundation",
     days: "Days 1–3",
-    desc: "No structure. No optimization. Just describe your day as it actually is.",
+    desc: "No optimization yet. Just describe your day as it actually is.",
   },
   {
     num: "02",
-    name: "Pattern Recognition",
+    name: "Daily Operations",
     days: "Days 4–7",
-    desc: "Targeted prompts that reveal where your focus actually goes and what ends it.",
+    desc: "Map where your time, attention, and decisions actually go.",
   },
   {
     num: "03",
-    name: "Environment Mapping",
+    name: "Pattern Recognition",
     days: "Days 8–10",
-    desc: "Identify what's fixed in your situation vs. what's within your control to change.",
+    desc: "One week of data. What keeps surfacing? What are you avoiding?",
   },
   {
     num: "04",
-    name: "Mechanism Naming",
-    days: "Days 11–12",
-    desc: "Learn the vocabulary for what you've been experiencing. Attention residue. Open loop tax. Urgency bias.",
+    name: "The Reveal",
+    days: "Days 11–13",
+    desc: "A picture is forming. The outside view you can't get from inside.",
   },
   {
     num: "05",
-    name: "Problem Naming",
-    days: "Days 13–14",
-    desc: "Name the three things costing you the most — and see the gap between your best workday and what's actually happening.",
+    name: "Readiness",
+    days: "Days 14–15",
+    desc: "The cost of the ceiling. What you do with what you've found.",
   },
 ];
 
