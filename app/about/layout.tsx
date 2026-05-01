@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Camden Bennett — Pallume",
+    description:
+      "Camden Bennett founded Pallume — a Navy veteran, Wyoming real estate broker, and AI systems builder who runs the same system he builds for every client.",
+  },
 };
 
 const aboutBreadcrumb = {

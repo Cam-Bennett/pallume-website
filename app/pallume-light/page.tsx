@@ -19,6 +19,12 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pallume Journal Lite — Free 14-Day Experience | Pallume",
+    description:
+      "14 days of structured journaling that shows you exactly what's costing you. Free. No coaching yet — just clarity.",
+  },
 };
 
 const phases = [

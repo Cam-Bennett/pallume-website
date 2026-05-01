@@ -20,6 +20,12 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "How It Works — Pallume",
+    description:
+      "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you graduate.",
+  },
 };
 
 const breadcrumbSchema = {

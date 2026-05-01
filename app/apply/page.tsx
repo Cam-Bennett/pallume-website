@@ -19,6 +19,12 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Apply — Pallume",
+    description:
+      "Pallume works with a limited number of clients at a time. This application helps Camden understand whether we're a fit before scheduling a call.",
+  },
 };
 
 const applyBreadcrumb = {

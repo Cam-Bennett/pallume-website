@@ -22,6 +22,12 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ — Pallume",
+    description:
+      "Answers to common questions about Pallume — what it is, how it works, what it costs, and whether it's the right fit for your situation.",
+  },
 };
 
 const faqBreadcrumb = {

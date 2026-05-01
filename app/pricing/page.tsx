@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing — Pallume",
+    description: pricing.meta.description,
+  },
 };
 
 /* ── Shared include-list item ──────────────────────────────── */

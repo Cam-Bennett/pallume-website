@@ -22,6 +22,12 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Work — Pallume",
+    description:
+      "Articles on AI execution systems, why productivity tools fail, and how custom AI accountability coaching works for business owners.",
+  },
 };
 
 const theWorkBreadcrumb = {

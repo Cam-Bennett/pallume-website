@@ -37,6 +37,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Accountability Coaching for Business Owners | Pallume",
+    description:
+      "Pallume builds a custom AI accountability system for business owners. Deep-dive interview, daily check-in, weekly coaching review. Starting at $1,000/month.",
+  },
 };
 
 const HOMEPAGE_FAQ_QUESTIONS = [
