@@ -8,6 +8,8 @@ const article: Article = {
   category: "FOUNDER",
   excerpt:
     "I used AI for months without a system. The result was exactly what you'd expect: a very capable tool that reflected my disorganization back at me in complete sentences.",
+  schemaDescription:
+    "I used AI for months without a system. The result was exactly what you'd expect. Here's what I built instead, and why it works.",
   sections: [
     {
       type: "paragraph",

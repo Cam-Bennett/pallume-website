@@ -5,6 +5,7 @@ export interface Article {
   dateModified?: string;
   category: string;
   excerpt: string;
+  schemaDescription?: string;
   sections: ArticleSection[];
 }
 

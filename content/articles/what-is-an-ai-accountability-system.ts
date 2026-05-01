@@ -9,6 +9,8 @@ const article: Article = {
   category: "SYSTEMS",
   excerpt:
     "Most people know they need a better system. The question they can't answer is what form it should actually take — and why everything they've tried hasn't closed the gap.",
+  schemaDescription:
+    "A new category sits between traditional coaching and productivity tools. Here's what an AI accountability system actually is, and why it closes the gap both leave open.",
   sections: [
     {
       type: "paragraph",

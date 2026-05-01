@@ -8,6 +8,8 @@ const article: Article = {
   category: "PRODUCTIVITY",
   excerpt:
     "Time-blocking is the most recommended productivity technique on the internet. It's also the technique business owners abandon fastest.",
+  schemaDescription:
+    "Time-blocking is the most recommended productivity technique on the internet. It's also the one business owners abandon fastest. Here's why.",
   sections: [
     {
       type: "paragraph",

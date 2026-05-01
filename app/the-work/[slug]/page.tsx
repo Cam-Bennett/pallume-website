@@ -6,6 +6,7 @@ import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Btn from "@/components/ui/Btn";
 import AuthorByline from "@/components/ui/AuthorByline";
+import { BlogPostSchema } from "@/components/ui/BlogPostSchema";
 import { articles, getArticleBySlug } from "@/content/articles";
 import type { ArticleSection } from "@/content/articles/types";
 
@@ -208,37 +209,6 @@ export default function ArticlePage({ params }: Props) {
     ],
   };
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: article.title,
-    description: article.excerpt,
-    url: `https://pallume.com/the-work/${article.slug}`,
-    datePublished: article.date,
-    dateModified: article.dateModified ?? article.date,
-    image: {
-      "@type": "ImageObject",
-      url: "https://pallume.com/images/camden-headshot.jpg",
-      width: 1200,
-      height: 630,
-    },
-    author: {
-      "@type": "Person",
-      "@id": "https://pallume.com/#person",
-      name: "Camden Bennett",
-      url: "https://pallume.com/about",
-    },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://pallume.com/#organization",
-      name: "Pallume",
-      url: "https://pallume.com",
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://pallume.com/the-work/${article.slug}`,
-    },
-  };
 
   return (
     <main style={{ paddingTop: "64px" }}>
@@ -246,9 +216,12 @@ export default function ArticlePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      <BlogPostSchema
+        headline={article.title}
+        description={article.schemaDescription ?? article.excerpt}
+        datePublished={article.date}
+        dateModified={article.dateModified ?? article.date}
+        slug={article.slug}
       />
       <Nav />
 
