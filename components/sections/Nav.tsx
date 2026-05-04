@@ -17,7 +17,7 @@ export default function Nav() {
       <div className="max-w-site mx-auto flex items-center justify-between h-16">
         <a
           href="/"
-          className="font-serif font-bold text-xl text-textLight tracking-tight"
+          className="font-serif font-bold text-xl text-textLight"
           style={{ textDecoration: "none" }}
         >
           {nav.logo}
