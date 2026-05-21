@@ -545,6 +545,36 @@ export default function HowItWorksPage() {
           <p className="font-body mb-6" style={mutedBody}>
             You don&apos;t need us anymore — and that&apos;s the point.
           </p>
+
+          {/* Maturity Milestone */}
+          <p
+            className="font-body font-semibold mb-3"
+            style={{ fontSize: "11px", letterSpacing: "0.14em", color: "#C89B3C", textTransform: "uppercase" }}
+          >
+            The Maturity Milestone
+          </p>
+          <p className="font-body mb-6" style={mutedBody}>
+            Launch isn&apos;t on a fixed timeline — it happens when you hit the Maturity Milestone.
+            Three things have to be true: your daily journal is calibrated to how you actually work,
+            your first system has been built with Camden around the highest-leverage friction in your
+            week, and you have the operational skill to build the next one yourself. When those three
+            conditions are met, Camden&apos;s role shifts from builder to second pair of eyes.
+          </p>
+
+          {/* Diagnostic Loop */}
+          <p
+            className="font-body font-semibold mb-3"
+            style={{ fontSize: "11px", letterSpacing: "0.14em", color: "#C89B3C", textTransform: "uppercase" }}
+          >
+            The Diagnostic Loop
+          </p>
+          <p className="font-body mb-10" style={mutedBody}>
+            After launch, the daily journal and weekly review don&apos;t stop — they become the
+            Diagnostic Loop. The same rhythm, now running under your own direction. You surface
+            patterns, name friction, and build new systems when new problems show up. Camden stays
+            available, but the loop runs because you run it.
+          </p>
+
           <p className="font-body mb-6" style={mutedBody}>
             What changes: weekly sessions end.
           </p>

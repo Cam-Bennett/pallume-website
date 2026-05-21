@@ -728,6 +728,21 @@ export const faq = {
       ],
     },
     {
+      question: "What if Pallume isn't the right fit?",
+      answer: [
+        "Request a refund within 14 days of receiving your custom Pallume system. We retain a $250 setup fee covering the intake interview and initial build. After 14 days, the engagement is non-refundable.",
+        "To request, email camden@livewyoming.net within the 14-day window.",
+      ],
+    },
+    {
+      question: "How do I know when I'm ready to launch?",
+      answer: [
+        "Launch happens when you hit the Maturity Milestone — not on a fixed timeline. Three conditions have to be true: your daily journal is calibrated to how you actually work, your first system has been built with Camden around the highest-leverage friction in your week, and you have the operational skill to build the next one yourself.",
+        "When those three are met, Camden's role shifts from builder to second pair of eyes. The daily journal and weekly review don't stop — they become the Diagnostic Loop, the same rhythm now running under your own direction.",
+        "Most clients hit the Maturity Milestone somewhere in months two to four. Some take longer. There's no pressure and no fixed date — the goal is genuine independence, not a deadline.",
+      ],
+    },
+    {
       question: "What kinds of businesses is this built for?",
       answer: [
         "PATH A is for individuals — solo operators, executives, and business owners who are the bottleneck in their own execution. One person, one system.",
@@ -979,6 +994,21 @@ export const pricing = {
         question: "What does it cost to run the system day-to-day?",
         answer: [
           "A Claude account runs approximately $20/month. That's yours — separate from the coaching investment. You own it whether we're working together or not.",
+        ],
+      },
+      {
+        question: "What if Pallume isn't the right fit?",
+        answer: [
+          "Request a refund within 14 days of receiving your custom Pallume system. We retain a $250 setup fee covering the intake interview and initial build. After 14 days, the engagement is non-refundable.",
+          "To request, email camden@livewyoming.net within the 14-day window.",
+        ],
+      },
+      {
+        question: "How do I know when I'm ready to launch?",
+        answer: [
+          "Launch happens when you hit the Maturity Milestone — not on a fixed timeline. Three conditions have to be true: your daily journal is calibrated to how you actually work, your first system has been built with Camden around the highest-leverage friction in your week, and you have the operational skill to build the next one yourself.",
+          "When those three are met, Camden's role shifts from builder to second pair of eyes. The daily journal and weekly review continue as the Diagnostic Loop — the same rhythm, now running under your own direction.",
+          "Most clients hit the Maturity Milestone somewhere in months two to four. Some take longer. There's no fixed date — the goal is genuine independence.",
         ],
       },
     ],
