@@ -5,6 +5,7 @@ export const nav = {
   links: [
     { label: "About", href: "/about" },
     { label: "How It Works", href: "/how-it-works" },
+    { label: "Reviews", href: "/reviews" },
     { label: "The Work", href: "/the-work" },
     { label: "FAQ", href: "/faq" },
   ],
@@ -20,7 +21,7 @@ export const heroArchived = {
 };
 
 export const hero = {
-  eyebrow: "AI-POWERED EXECUTION COACHING",
+  eyebrow: "THE PALLUME METHOD — FOUNDATION · DIAGNOSIS · SYSTEM · TRANSFER",
   headline: "You start every week knowing exactly what matters. By Thursday it looks nothing like the plan.",
   subtitle:
     "That's not a discipline problem. That's a design problem. Pallume builds the execution architecture your ambition has been missing.",
@@ -386,10 +387,21 @@ export const testimonials = {
       title: "Director, Sublette County BOCES",
     },
     {
-      // Christy Devlin — placeholder, drop in paragraphs/name/title when confirmed
-      paragraphs: [],
-      name: "",
-      title: "",
+      paragraphs: [
+        "I started working with Camden because I was juggling multiple demanding roles while preparing to take over a retail business. I needed something that could not just keep up with all of it, but actually help me operate more efficiently, give me practical advice, and provide tools that moved the needle.",
+        "When I first met with Camden, he took the time to figure out exactly how I needed help. He went deeper than just getting me organization and got to real answers and systems that could actually take work off my plate and make my life more manageable. That set the tone for everything that followed.",
+        "The journaling framework that is part of the program completely shifted how I start my days. Instead of waking up and reacting to whatever felt most urgent, I had a place to intentionally organize my thoughts and priorities. Having somewhere to brain dump everything stopped me from carrying it all in my head all the time. That alone significantly reduced my mental load.",
+        "Time management has also been a huge shift. I used to operate almost entirely on urgency and whatever was loudest in the moment. Now I have a structure that helps me identify what truly matters today versus what can wait. I am also getting better at boundaries, which honestly does not come naturally to me. Having someone reflect patterns back to me without judgment helped me recognize where I was taking on work that was not mine or saying yes when I should have said no.",
+        "One of the most surprising parts of the process was realizing how much I was actually accomplishing. I constantly felt behind and overwhelmed, but once I started tracking my progress, I could clearly see I was moving things forward every single week. Seeing it documented changed the way I viewed my own output.",
+        "The accountability piece is real. Having a place to openly name what I was avoiding, and then being called out on it directly, helped me finally close loops that otherwise would have drifted for weeks.",
+        "I will also be honest. I was intimidated by the idea of building my own AI program in Claude. I did not think I was smart enough to do it. But as I worked with Camden and went deeper into the process, my mindset started to shift. Eventually, I built my own AI tool completely from scratch. That felt like a huge milestone, and I genuinely do not think I would have gotten there without the confidence this process helped build in me.",
+        "What I appreciate most is that Camden stays with you throughout the process. He continuously tweaks and adjusts the program as your needs evolve and offers practical tips and guidance along the way. It never felt like a one size fits all system. It was built around my life, my responsibilities, and the way my brain works.",
+        "His program works for so many different areas of life, whether it is business, work, personal growth, or managing your private life. What makes it different is that it adapts to your goals, your responsibilities, and the way your brain works, which makes it effective no matter what season of life or business you are in. Camden created something that truly meets people where they are, and that makes all the difference.",
+      ],
+      homepageQuote:
+        "The accountability piece is real. Having a place to openly name what I was avoiding, and then being called out on it directly, helped me finally close loops that otherwise would have drifted for weeks. His program works for so many different areas of life, whether it is business, work, personal growth, or managing your private life. What makes it different is that it adapts to your goals, your responsibilities, and the way your brain works, which makes it effective no matter what season of life or business you are in. Camden created something that truly meets people where they are, and that makes all the difference.",
+      name: "Christy Devlin",
+      title: "Owner, White Bear Boutique and Decor",
     },
   ],
 };
@@ -731,9 +743,8 @@ export const services = {
 export const privacyPolicy = {
   title: "Privacy Policy",
   effectiveDate: "March 26, 2026",
-  lastUpdated: "March 26, 2026",
+  lastUpdated: "May 8, 2026",
   contact: "camden@pallume.com",
-  location: "Pinedale, Wyoming",
   sections: [
     {
       heading: "What This Policy Covers",
@@ -773,6 +784,18 @@ export const privacyPolicy = {
       body: "Intake responses and client information are stored in tools used to deliver the coaching service (which may include Notion, Google Workspace, and Claude). These platforms maintain their own security and privacy standards. We do not store payment card information — payments are processed by third-party payment processors who are responsible for securing that data.\n\nWe take reasonable precautions to protect your information, but no method of transmission over the internet is completely secure. If you have concerns about a specific piece of sensitive information, contact us before submitting it through a web form.",
     },
     {
+      heading: "AI Coaching System Data",
+      body: "If you become a Pallume coaching client, your daily interactions with the Pallume Journal system are processed through a third-party artificial intelligence platform (currently Claude, operated by Anthropic, PBC). This means the content you enter during coaching sessions — including business information, goals, reflections, and any other text you provide — flows through that platform's infrastructure and is subject to that platform's privacy policy and data practices.\n\nKey facts you should know:",
+      list: [
+        "By default, the AI platform may use your conversation data to train its models. During onboarding, we provide instructions to disable this feature in your account settings. We strongly recommend completing this step before beginning daily journaling.",
+        "If model training is disabled, the platform currently retains conversation data for up to 30 days. If training remains enabled, data may be retained for up to 5 years.",
+        "Your AI coaching account is yours — Pallume does not access, log into, or control your account on the AI platform. You are responsible for your account security and privacy settings.",
+        "Pallume does not control the AI platform provider's data handling practices and cannot guarantee how that provider stores, processes, or secures your data.",
+        "For the most current information, we recommend reviewing the AI platform provider's privacy policy directly.",
+      ],
+      footer: "The specific terms governing data handling between you and Pallume are detailed in the Master Service Agreement signed before coaching begins.",
+    },
+    {
       heading: "Information Sharing",
       body: "We do not sell, rent, or share your personal information with third parties for marketing purposes.\n\nWe may share information only in these limited circumstances:",
       subsections: [
@@ -797,11 +820,11 @@ export const privacyPolicy = {
     {
       heading: "Your Rights",
       body: "You have the right to:",
-      subsections: [
-        { label: "Access", text: "the personal information we hold about you" },
-        { label: "Correct", text: "any inaccurate information" },
-        { label: "Request deletion", text: "of your information (subject to any legal obligations we have to retain records)" },
-        { label: "Withdraw consent", text: "for any communication at any time" },
+      list: [
+        "Access the personal information we hold about you",
+        "Correct any inaccurate information",
+        "Request deletion of your information (subject to any legal obligations we have to retain records)",
+        "Withdraw consent for any communication at any time",
       ],
       footer: "To exercise any of these rights, email camden@pallume.com. We will respond within 30 days.",
     },
@@ -816,16 +839,6 @@ export const privacyPolicy = {
     {
       heading: "Changes to This Policy",
       body: "If we make material changes to this policy, we will update the \"Last Updated\" date at the top and, where appropriate, notify active clients by email. Continued use of the site after changes are posted constitutes acceptance of the updated policy.",
-    },
-    {
-      heading: "Contact",
-      body: "Questions about this policy or your data:",
-      contact: {
-        name: "Camden Bennett",
-        company: "Pallume",
-        email: "camden@pallume.com",
-        location: "Pinedale, Wyoming",
-      },
     },
   ],
 };
