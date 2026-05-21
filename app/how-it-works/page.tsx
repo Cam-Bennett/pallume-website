@@ -8,14 +8,14 @@ import Btn from "@/components/ui/Btn";
 export const metadata: Metadata = {
   title: "How It Works — Pallume",
   description:
-    "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you graduate.",
+    "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you're ready to launch.",
   alternates: {
     canonical: "https://pallume.com/how-it-works",
   },
   openGraph: {
     title: "How It Works — Pallume",
     description:
-      "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you graduate.",
+      "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you're ready to launch.",
     url: "https://pallume.com/how-it-works",
     siteName: "Pallume",
     type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How It Works — Pallume",
     description:
-      "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you graduate.",
+      "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you're ready to launch.",
     images: ["/images/og-image.png"],
   },
 };
@@ -172,7 +172,7 @@ export default function HowItWorksPage() {
                 number: "04",
                 name: "Transfer",
                 description:
-                  "You build your next system yourself — same methodology, Camden advising rather than constructing. Graduation is when you can operate independently. That's the design.",
+                  "You build your next system yourself — same methodology, Camden advising rather than constructing. Launch is when you can operate independently. That's the design.",
               },
             ].map((stage) => (
               <div
@@ -363,7 +363,7 @@ export default function HowItWorksPage() {
                 stage: "Stage 3",
                 label: "Building Your Own",
                 body: "You build your second system — using the same methodology, with me advising rather than constructing. Research, prompting, and project setup become skills you own.",
-                signal: "You're ready to graduate when you've built and deployed at least one system on your own and you know which tool to reach for when new problems surface.",
+                signal: "You're ready to launch when you've built and deployed at least one system on your own and you know which tool to reach for when new problems surface.",
               },
             ].map((card) => (
               <div
@@ -523,14 +523,14 @@ export default function HowItWorksPage() {
         </div>
       </SectionWrapper>
 
-      {/* ── Section 6: What Stays After Graduation ───────────────────── */}
+      {/* ── Section 6: What Stays After Launch ───────────────────────── */}
       <SectionWrapper>
         <div style={{ maxWidth: "680px" }}>
           <p
             className="font-body font-semibold uppercase tracking-widest mb-6"
             style={eyebrowStyle}
           >
-            GRADUATION
+            LAUNCH
           </p>
           <h2
             className="font-heading font-bold text-text-main mb-8"
@@ -540,7 +540,7 @@ export default function HowItWorksPage() {
               letterSpacing: "-0.02em",
             }}
           >
-            What Stays After Graduation
+            What Stays After Launch
           </h2>
           <p className="font-body mb-6" style={mutedBody}>
             You don&apos;t need us anymore — and that&apos;s the point.
@@ -555,7 +555,7 @@ export default function HowItWorksPage() {
             {[
               "The systems you built (they live in your Claude Pro account, not ours)",
               "The methodology (documented so you can build new systems when new problems show up)",
-              "Community membership (you stay on the Pallume email list — insights, frameworks, and updates that apply to graduates)",
+              "Community membership (you stay on the Pallume email list — insights, frameworks, and updates that apply after launch)",
               "The door (always open for a new engagement when life or work brings something the original work didn't cover)",
             ].map((item, i) => (
               <li key={i} style={{ ...listItem, color: "#B0B8C4" }}>

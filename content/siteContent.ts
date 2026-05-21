@@ -195,7 +195,7 @@ export const pallumeMethod = {
       number: "04",
       name: "Transfer",
       description:
-        "You build your second system yourself — same methodology, Camden advising rather than constructing. You graduate when you can operate independently. That's the point.",
+        "You build your second system yourself — same methodology, Camden advising rather than constructing. You launch when you can operate independently. That's the point.",
     },
   ],
 };
