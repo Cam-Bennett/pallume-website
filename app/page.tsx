@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { FAQSchema } from "@/components/ui/FAQSchema";
-import { OrganizationSchema } from "@/components/ui/OrganizationSchema";
 import { faq, pricing } from "@/content/siteContent";
 import HomepageNav from "@/components/sections/HomepageNav";
 import Hero from "@/components/sections/Hero";
@@ -10,6 +9,7 @@ import CostOfInaction from "@/components/sections/CostOfInaction";
 import ProofInsight from "@/components/sections/ProofInsight";
 import PathSelector from "@/components/sections/PathSelector";
 import Mechanism from "@/components/sections/Mechanism";
+import MethodStrip from "@/components/sections/MethodStrip";
 import IdentityFrame from "@/components/sections/IdentityFrame";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Features from "@/components/sections/Features";
@@ -36,12 +36,21 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pallume — AI Execution Coaching",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Accountability Coaching for Business Owners | Pallume",
     description:
       "Pallume builds a custom AI accountability system for business owners. Deep-dive interview, daily check-in, weekly coaching review. Starting at $1,000/month.",
+    images: ["/images/og-image.png"],
   },
 };
 
@@ -63,7 +72,6 @@ const homepageFaqItems = HOMEPAGE_FAQ_QUESTIONS.map((q) => {
 export default function Home() {
   return (
     <main>
-      <OrganizationSchema />
       <FAQSchema items={homepageFaqItems} />
       <HomepageNav />
       <Hero />
@@ -73,6 +81,7 @@ export default function Home() {
       <ProofInsight />
       {/* Journal product section — name TBD */}
       <Mechanism />
+      <MethodStrip />
       <PathSelector />
       <HowItWorks />
       <Features />

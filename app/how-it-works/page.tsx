@@ -19,12 +19,21 @@ export const metadata: Metadata = {
     url: "https://pallume.com/how-it-works",
     siteName: "Pallume",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pallume — AI Execution Coaching",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "How It Works — Pallume",
     description:
       "Three stages. Every path. Pallume builds your AI execution system, deploys it in your Claude account, and refines it weekly until you graduate.",
+    images: ["/images/og-image.png"],
   },
 };
 
@@ -111,7 +120,96 @@ export default function HowItWorksPage() {
         </div>
       </SectionWrapper>
 
-      {/* ── Section 2: What to Expect ─────────────────────────────────── */}
+      {/* ── Section 2: The Pallume Method Overview ──────────────────────── */}
+      <SectionWrapper variant="white">
+        <div style={{ maxWidth: "800px" }}>
+          <p
+            className="font-body font-semibold uppercase tracking-widest mb-6"
+            style={eyebrowStyle}
+          >
+            THE PALLUME METHOD
+          </p>
+          <h2
+            className="font-heading font-bold mb-4"
+            style={{
+              fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
+              lineHeight: 1.15,
+              letterSpacing: "-0.02em",
+              color: "#1A1A1A",
+            }}
+          >
+            Foundation. Diagnosis. System. Transfer.
+          </h2>
+          <p className="font-body mb-12" style={{ ...darkBody, color: "#374151", maxWidth: "560px" }}>
+            Every Pallume engagement follows this arc — from building your infrastructure to
+            operating independently. The paths differ. The sequence doesn&apos;t.
+          </p>
+
+          <div
+            className="grid gap-6"
+            style={{ gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}
+          >
+            {[
+              {
+                number: "01",
+                name: "Foundation",
+                description:
+                  "Infrastructure before everything else. Journal configured, first system delivered, daily habit established. Nothing new is added until the foundation is holding.",
+              },
+              {
+                number: "02",
+                name: "Diagnosis",
+                description:
+                  "The problem you describe and the problem the data reveals are rarely the same. Intake, interview, and target-setting happen here. Every system built after this traces back to what we find.",
+              },
+              {
+                number: "03",
+                name: "System",
+                description:
+                  "Your AI runs in your real work. Refined weekly against actual data. Patterns get named, avoidance loops get surfaced, and targets get movement.",
+              },
+              {
+                number: "04",
+                name: "Transfer",
+                description:
+                  "You build your next system yourself — same methodology, Camden advising rather than constructing. Graduation is when you can operate independently. That's the design.",
+              },
+            ].map((stage) => (
+              <div
+                key={stage.number}
+                style={{
+                  borderTop: "3px solid #C89B3C",
+                  paddingTop: "24px",
+                }}
+              >
+                <span
+                  className="font-body font-semibold"
+                  style={{
+                    fontSize: "11px",
+                    letterSpacing: "0.14em",
+                    color: "rgba(200,155,60,0.6)",
+                    display: "block",
+                    marginBottom: "8px",
+                  }}
+                >
+                  {stage.number}
+                </span>
+                <h3
+                  className="font-heading font-bold mb-3"
+                  style={{ fontSize: "18px", color: "#1A1A1A", lineHeight: 1.2 }}
+                >
+                  {stage.name}
+                </h3>
+                <p className="font-body" style={{ fontSize: "15px", lineHeight: 1.75, color: "#374151" }}>
+                  {stage.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
+      {/* ── Section 3: What to Expect ─────────────────────────────────── */}
       <SectionWrapper variant="white">
         <div style={{ maxWidth: "680px" }}>
           <p

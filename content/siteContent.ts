@@ -168,6 +168,38 @@ export const identityFrame = {
   closing: "If you fit the first list and not the second — this is the right fit for you.",
 };
 
+export const pallumeMethod = {
+  eyebrow: "THE PALLUME METHOD",
+  headline: "Foundation. Diagnosis. System. Transfer.",
+  subhead: "Four stages. Every engagement follows this arc — from infrastructure to independence.",
+  stages: [
+    {
+      number: "01",
+      name: "Foundation",
+      description:
+        "Your system is configured before anything else moves. Custom journal delivered, daily habit established, first system live. The foundation has to hold before the next layer goes on.",
+    },
+    {
+      number: "02",
+      name: "Diagnosis",
+      description:
+        "The problem you describe and the problem the data reveals are rarely the same. Intake, deep-dive interview, and targets set. Everything built after this traces back to what we find here.",
+    },
+    {
+      number: "03",
+      name: "System",
+      description:
+        "Your AI runs in your real work. Refined weekly against actual data. Patterns get named, targets get movement, and the system sharpens every week you use it.",
+    },
+    {
+      number: "04",
+      name: "Transfer",
+      description:
+        "You build your second system yourself — same methodology, Camden advising rather than constructing. You graduate when you can operate independently. That's the point.",
+    },
+  ],
+};
+
 export const mechanism = {
   eyebrow: "WHY NOTHING CLOSED THE GAP.",
   bodyPart1: [
