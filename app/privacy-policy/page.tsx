@@ -145,19 +145,6 @@ export default function PrivacyPolicyPage() {
                 </p>
               )}
 
-              {"contact" in section && section.contact && (
-                <div className="font-body text-text-soft mt-2" style={{ fontSize: "15px", lineHeight: 2 }}>
-                  <p className="text-text-main font-semibold">{section.contact.name}</p>
-                  <p>{section.contact.company}</p>
-                  <a
-                    href={`mailto:${section.contact.email}`}
-                    className="text-primary hover:opacity-80 transition-opacity"
-                    style={{ textDecoration: "none" }}
-                  >
-                    {section.contact.email}
-                  </a>
-                </div>
-              )}
             </div>
           ))}
         </div>
