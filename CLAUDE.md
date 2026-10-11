@@ -1,135 +1,50 @@
 # CLAUDE.md — Pallume Website
 **Path:** ~/claude-code-projects/pallume-website/
-**Branch:** pallume (local only — not pushed)
-**Domain:** pallume.com (pending connection)
-**Last updated:** 04/15/2026
+**Branch:** `pallume` (pushed to GitHub; pushes build Vercel previews only)
+**Domain:** pallume.com (live)
+**Last updated:** 10/11/2026
 
 ---
+
+## WHAT THIS SESSION OWNS — and what it does not
+
+One master per thing, one writer per file. Full table: `DESIGN.md` §11.
+
+- **Owns:** website code, build, commits, and deploys — every file in this repo **except** `content/siteContent.ts`.
+- **Does not write:** `content/siteContent.ts` (website words) — Pallume Productization writes it. This session builds and deploys whatever it holds.
+- **Does not write:** the design system once it moves to `~/Overwatch/02-businesses/pallume/DESIGN.md`. Until then `DESIGN.md` here is the master; after the move it is a pointer.
+- **Does not write:** the Operator Board (`~/Overwatch/bin/board-render.py`, `board_lib.py`, `overwatch/board/`) — Overwatch owns it.
 
 ## WHAT THIS SITE IS
 
-**Business:** Pallume (formerly SkemaLS)
-**Owner:** Camden Bennett — camden@livewyoming.net
-**Purpose:** AI-powered execution coaching for business owners. Custom accountability systems built by a coach, running every morning.
-**Primary action:** Qualify → book discovery call.
-**Audience:** Business owners, 30–55, $100K–$2M revenue, services businesses.
+**Business:** Pallume · **Owner:** Camden Bennett — camden@livewyoming.net
+**Offer:** being rewritten (10/2026). Copy decisions belong to Pallume Productization; voice master is `~/Overwatch/02-businesses/pallume/VOICE-SIGNATURE.md`.
 
----
+## DESIGN
 
-## CONTEXT FILES
-
-Full brand context, messaging framework, and content strategy live in ClaudeOS:
-`~/ClaudeOS/02-businesses/pallume/pallume-website-builder/`
-
-Key files there:
-- `skemels-messaging-framework-v2.md` — voice and positioning
-- `skemels-website-master-knowledge-v2.md` — full site knowledge base
-- `skemels-website-content-brief.md` — content decisions
-- `style-library.jsx` — component reference
-
-Read those before making copy or design decisions.
-
----
+Read `DESIGN.md` before any UI work and obey it over defaults. Direction (10/11/2026): first light — dark night base, AI-generated dawn imagery, Cormorant Garamond display, Hanken Grotesk body, one gold accent. Private preview of the new hero: `/preview/hero` (noindex, excluded from the sitemap).
 
 ## TECH STACK
 
-- Next.js 14 App Router + TypeScript
-- Tailwind CSS 3 JIT — configs use `__dirname` for absolute paths (CWD fix)
-- Fonts: Playfair Display (serif/headings) + Inter (sans/body) via `next/font/google`
-- Vercel (deploy pending domain connection)
+- Next.js 14 App Router + TypeScript; Tailwind CSS 3 JIT (configs use `__dirname`)
+- Live site still on Playfair Display + Inter until the redesign ships
+- Vercel. Production currently deploys from `main` (and past production deploys came from the CLI working tree); `pallume` pushes build previews
 
 **Rules:**
-1. All copy lives in `content/siteContent.ts` — never edit text inside page/component files
+1. All copy lives in `content/siteContent.ts` — never in page or component files
 2. Images in `/public/images/`
 3. No new packages without asking
-4. `npm run build` before any commit
+4. `npm run build` before any commit — and never while the dev server is running (they share `.next`)
 5. Test at 375px before marking visual work done
-6. 8px spacing grid — no arbitrary values
+6. 8px spacing grid
 7. Complete files only — no stubs
 
----
+## OPEN — before the redesign goes to production
 
-## DESIGN SYSTEM
-
-**Style:** Warm editorial — not dark/tech. Premium coaching brand.
-
-**Colors (tailwind.config.js):**
-- `navy` — `#0F1B2D` — primary dark background
-- `navySecondary` — `#1B2838` — secondary dark
-- `gold` — `#C89B3C` — primary CTA and accent
-- `goldHover` — `#D4A843` — CTA hover state
-- `bodyBg` — `#F8F6F0` — light section background
-- `cardBg` — `#FFFFFF` — card surface
-- `textDark` — `#1A1A1A` — dark section body text
-- `textLight` — `#F8F6F0` — light text on dark
-- `textMuted` — `#6B7280` — muted body
-- `textLightMuted` — `#B0B8C4` — muted on dark
-- `border` — `#E5E1D8` — subtle borders
-
-**Fonts:**
-- `font-serif` / `font-heading` → Playfair Display via `var(--font-serif)`
-- `font-sans` / `font-body` → Inter via `var(--font-sans)`
-- Explicit rules in `globals.css` as belt-and-suspenders
-
-**SectionWrapper variants:** `dark` | `navy2` | `light` | `white`
-
----
-
-## CURRENT STATE (04/15/2026)
-
-**Completed:**
-- Full rebrand from SkemaLS → Pallume design system
-- Hero section — approved. Single CTA ("See If You Qualify"), photo card with Camden caption, feature strip with proof stats, content anchored to bottom
-- Tailwind CWD fix — `tailwind.config.js` uses `__dirname`, `postcss.config.mjs` clean
-
-**In progress:**
-- Remaining homepage sections need mockups before building
-
-**Pre-launch blockers:**
-- 3 articles needed for `/the-work` route — DO NOT LAUNCH without them
-- `/myskema-lite` route rename decision pending
-- pallume.com domain connection in Vercel
-
----
+1. **Deploy path.** Production builds from `main`; work happens on `pallume`. 13 files of May work (GA4 ID `G-RJNKS81J3G`, Search Console verification, `/reviews`, TallyTracker, OG image) are live only because a CLI deploy shipped the working tree — they are not committed. Commit them, then set Vercel's production branch to `pallume`. Until then a git-based production deploy would drop them.
+2. Website copy rewrite (Productization).
+3. Design system and brand images move to Productization (`DESIGN.md` §11).
 
 ## SITE STRUCTURE
 
-```
-/              Homepage (long-scroll)
-/about         Founder story + credibility
-/services      Offer detail (PATH A / B / C)
-/faq           Objection handling
-/contact       Qualifier form + booking
-/the-work      Articles / case studies (3 needed pre-launch)
-```
-
----
-
-## SEO
-
-- Title format: `[Page Topic] — Pallume`
-- Organization name: Pallume
-- Domain: pallume.com (update all schema once live)
-- Canonical URLs, OG images 1200×630 per page
-
----
-
-## PRE-LAUNCH CHECKLIST
-
-- [ ] Remaining homepage sections built against mockups
-- [ ] /myskema-lite route rename resolved
-- [ ] 3 articles live at /the-work
-- [ ] pallume.com connected in Vercel
-- [ ] Meta description on homepage
-- [ ] robots.txt with AI crawler allowances
-- [ ] XML sitemap via next-sitemap
-- [ ] llms.txt
-- [ ] Organization + Person JSON-LD schema (update to Pallume/pallume.com)
-- [ ] OG + Twitter Card meta tags
-- [ ] GA4 installed and generate_lead conversion firing
-- [ ] Privacy policy page
-- [ ] Terms of service page
-- [ ] Footer email → Pallume contact (not Pinedale Properties)
-- [ ] Favicon
-- [ ] Mobile usability check at 375px
-- [ ] Lighthouse 95+ on homepage
+`/` home · `/about` · `/how-it-works` · `/pricing` · `/faq` · `/reviews` · `/the-work` (articles) · `/apply` (Tally `Gxop2o`) · `/pallume-light` (Tally `5BlNoZ`; standalone form `https://tally.so/r/5BlNoZ`) · `/privacy-policy` · `/terms-of-service`
