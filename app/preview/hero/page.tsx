@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { Cormorant_Garamond, Hanken_Grotesk } from "next/font/google";
 import FirstLightHero from "@/components/sections/FirstLightHero";
 import { nav, hero } from "@/content/siteContent";
 
@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["400"], display: "swap" });
+const hanken = Hanken_Grotesk({ subsets: ["latin"], weight: ["400"], display: "swap" });
 
 export default function HeroPreviewPage() {
   // Two-tone headline preview: first sentence bright, second sentence muted.
@@ -35,6 +36,18 @@ export default function HeroPreviewPage() {
             <span style={{ color: "#F8F6F0" }}>{lineOne}.</span>{" "}
             <span style={{ color: "#6E7A8E" }}>{lineTwo}</span>
           </h2>
+          <p
+            className={hanken.className}
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "#B0B8C4",
+              maxWidth: "680px",
+              margin: "32px 0 0",
+            }}
+          >
+            {hero.subtitle}
+          </p>
         </div>
       </section>
     </main>

@@ -43,7 +43,7 @@ Rules:
 | Display / H1 | Cormorant Garamond | 400 | clamp(56px, 9vw, 120px) | Line height 1.0–1.05. |
 | H2 / section opener | Cormorant Garamond | 400 | clamp(36px, 5.5vw, 72px) | Two-tone allowed (below). |
 | H3 | Cormorant Garamond | 500 | 28–32px | |
-| Body | **Open — proposed: Hanken Grotesk** | 400 | 17–18px | Line height 1.7. Max 68 characters per line. |
+| Body | Hanken Grotesk | 400 | 17–18px | Line height 1.7. Max 68 characters per line. Locked 10/11/2026. |
 | Labels, eyebrows, UI | Body face | 500 | 12–13px | Sentence case. Letter-spacing 0.02em. No gold tracked caps. |
 
 - **Two-tone headline:** first sentence `--text`, second sentence `--text-muted`. One per section at most.
@@ -94,8 +94,7 @@ Score 1–10 and list what fails: hierarchy · typography · motion restraint ·
 
 ## 11. Open items
 
-1. Body face: confirm Hanken Grotesk or choose another (Inter is out).
-2. Hero image: real shoot or 2880px upscale.
-3. Copy: the offer is being rewritten; all text lives in `content/siteContent.ts`.
-4. Wordmark files (SVG/PNG, display and small cuts, navy and white): `~/Overwatch/Overwatch Inbox/pallume-wordmark-10-10-2026/`. The Cormorant wordmark supersedes the Playfair logo; record that in the Pallume decisions log.
-5. Deploy path: Vercel production builds from `main`; work happens on `pallume`. Fix before launch.
+1. Hero image: real shoot or 2880px upscale.
+2. Copy: the offer is being rewritten; all text lives in `content/siteContent.ts`.
+3. Wordmark files (SVG/PNG, display and small cuts, navy and white): `~/Overwatch/Overwatch Inbox/pallume-wordmark-10-10-2026/`. The Cormorant wordmark supersedes the Playfair logo; record that in the Pallume decisions log.
+4. Deploy path: Vercel production builds from `main`; work happens on `pallume`. Fix before launch.
