@@ -12,5 +12,6 @@ module.exports = {
     '/opengraph-image',
     '/api/*',
     '/privacy',
+    '/preview/*',
   ],
 }
