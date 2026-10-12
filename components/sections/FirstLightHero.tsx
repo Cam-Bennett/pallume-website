@@ -5,12 +5,13 @@ import { useEffect, useRef } from "react";
 
 type Props = {
   wordmark: string;
-  wordmarkClassName: string;
+  imageAlt: string;
+  wordmarkClassName?: string;
 };
 
 // Pinned hero: the image zooms toward the horizon glow as the visitor scrolls,
 // and the wordmark fades out. Visitors with reduced motion get a still frame.
-export default function FirstLightHero({ wordmark, wordmarkClassName }: Props) {
+export default function FirstLightHero({ wordmark, imageAlt, wordmarkClassName = "font-serif" }: Props) {
   const trackRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
@@ -64,7 +65,7 @@ export default function FirstLightHero({ wordmark, wordmarkClassName }: Props) {
         >
           <Image
             src="/images/hero-first-light.jpg"
-            alt="A person seated on a granite ridge before dawn, a lantern beside them, looking over a fog-filled valley toward first light on the mountains"
+            alt={imageAlt}
             fill
             priority
             quality={90}

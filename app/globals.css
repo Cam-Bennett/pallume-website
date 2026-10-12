@@ -2,12 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Pallume design tokens. Master: ~/Overwatch/02-businesses/pallume/DESIGN.md §2–§4. */
 :root {
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Inter", -apple-system, sans-serif;
+  --night: #0a1120;
+  --night-raised: #111a2e;
+  --night-raised-2: #16213a;
+  --sky: #223966;
+  --text: #f8f6f0;
+  --text-soft: #b0b8c4;
+  --text-muted: #6e7a8e;
+  --icon: #808ca0;
+  --line: rgba(248, 246, 240, 0.12);
+  --gold: #f2be5c;
+  --gold-hover: #f7cd7a;
 }
 
-/* Force font utility classes — Tailwind JIT doesn't always generate these from CSS vars */
+/* Legacy utility classes still used by the legal pages map to the new faces. */
 .font-serif,
 .font-heading {
   font-family: var(--font-serif), Georgia, serif;
@@ -20,34 +30,153 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--night);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
-  background: #F8F6F0;
-  color: #1A1A1A;
-  font-family: var(--font-sans), sans-serif;
+  background: var(--night);
+  color: var(--text);
+  font-family: var(--font-sans), -apple-system, sans-serif;
   overflow-x: hidden;
 }
 
-button {
-  cursor: pointer;
-}
-
+button,
 a {
   cursor: pointer;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+/* ── Type (DESIGN.md §3) ─────────────────────────────────────────────── */
+.pl-display {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(56px, 9vw, 120px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
 }
-::-webkit-scrollbar-track {
-  background: #F8F6F0;
+
+.pl-h2 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(36px, 5.5vw, 72px);
+  line-height: 1.06;
+  letter-spacing: -0.01em;
 }
-::-webkit-scrollbar-thumb {
-  background: #E5E1D8;
-  border-radius: 4px;
+
+.pl-h3 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.15;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #C89B3C;
+
+.pl-body {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-soft);
+  max-width: 68ch;
+}
+
+.pl-label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+/* ── Layout (DESIGN.md §4): 8px grid, 128/80 section padding ──────────── */
+.pl-section {
+  padding: 80px 16px;
+}
+
+@media (min-width: 768px) {
+  .pl-section {
+    padding: 128px 32px;
+  }
+}
+
+.pl-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pl-reading {
+  max-width: 680px;
+}
+
+.pl-rule {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 0;
+}
+
+/* ── Actions (DESIGN.md §7) ──────────────────────────────────────────── */
+.pl-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 8px;
+  background: var(--gold);
+  color: var(--night);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  white-space: nowrap;
+}
+
+.pl-button:hover {
+  background: var(--gold-hover);
+}
+
+.pl-button-sm {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 15px;
+}
+
+.pl-link {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 150ms ease;
+}
+
+.pl-link:hover {
+  text-decoration-color: var(--text);
+}
+
+/* ── Page-load reveal (DESIGN.md §6, motion two) ─────────────────────── */
+@keyframes pl-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.pl-reveal {
+  animation: pl-reveal 600ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pl-reveal {
+    animation: none;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
 }

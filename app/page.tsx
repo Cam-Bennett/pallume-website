@@ -1,98 +1,143 @@
 import type { Metadata } from "next";
-import { FAQSchema } from "@/components/ui/FAQSchema";
-import { faq, pricing } from "@/content/siteContent";
-import HomepageNav from "@/components/sections/HomepageNav";
-import Hero from "@/components/sections/Hero";
-import EmpathyHook from "@/components/sections/EmpathyHook";
-import PriorAttempts from "@/components/sections/PriorAttempts";
-import CostOfInaction from "@/components/sections/CostOfInaction";
-import ProofInsight from "@/components/sections/ProofInsight";
-import PathSelector from "@/components/sections/PathSelector";
-import Mechanism from "@/components/sections/Mechanism";
-import MethodStrip from "@/components/sections/MethodStrip";
-import IdentityFrame from "@/components/sections/IdentityFrame";
-import HowItWorks from "@/components/sections/HowItWorks";
-import Features from "@/components/sections/Features";
-import PracticeRequirement from "@/components/sections/PracticeRequirement";
-import WhatItsNot from "@/components/sections/WhatItsNot";
-import Testimonials from "@/components/sections/Testimonials";
-import Founder from "@/components/sections/Founder";
-import HomepageFAQ from "@/components/sections/HomepageFAQ";
-import CTA from "@/components/sections/CTA";
+import { site2026 } from "@/content/siteContent";
+import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
+import FirstLightHero from "@/components/sections/FirstLightHero";
+import TwoTone from "@/components/site/TwoTone";
+import Paragraphs from "@/components/site/Paragraphs";
+import ConsultingSection from "@/components/site/ConsultingSection";
+import Testimonials from "@/components/site/Testimonials";
+import Founder from "@/components/site/Founder";
 
 export const metadata: Metadata = {
-  title: "Accountability Coaching for Business Owners | Pallume",
-  description:
-    "Pallume builds a custom AI accountability system for business owners. Deep-dive interview, daily check-in, weekly coaching review. Starting at $1,000/month.",
-  alternates: {
-    canonical: "https://pallume.com",
-  },
+  title: { absolute: site2026.meta.title },
+  description: site2026.meta.description,
+  alternates: { canonical: "https://pallume.com" },
   openGraph: {
-    title: "Accountability Coaching for Business Owners | Pallume",
-    description:
-      "Pallume builds a custom AI accountability system for business owners. Deep-dive interview, daily check-in, weekly coaching review. Starting at $1,000/month.",
+    title: site2026.meta.title,
+    description: site2026.meta.description,
     url: "https://pallume.com",
-    siteName: "Pallume",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "/images/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Pallume — AI Execution Coaching",
-      },
-    ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Accountability Coaching for Business Owners | Pallume",
-    description:
-      "Pallume builds a custom AI accountability system for business owners. Deep-dive interview, daily check-in, weekly coaching review. Starting at $1,000/month.",
-    images: ["/images/og-image.png"],
+    title: site2026.meta.title,
+    description: site2026.meta.description,
   },
 };
 
-const HOMEPAGE_FAQ_QUESTIONS = [
-  "Isn't this just ChatGPT? I could do this myself.",
-  "How much time does this take each day?",
-  "$1,000/month is a lot.",
-  "What if I fall off the system or get busy?",
-  "Is there a minimum commitment?",
-];
-
-const allFaqItems = [...faq.items, ...pricing.faq.items];
-
-const homepageFaqItems = HOMEPAGE_FAQ_QUESTIONS.map((q) => {
-  const item = allFaqItems.find((i) => i.question === q)!;
-  return { question: item.question, answer: item.answer.join("\n\n") };
-});
-
+// Holding homepage, Phase 0 (10/11/2026). Section order set by the Phase 0 prompt.
 export default function Home() {
+  const { hero, opener, diagnosis, howItWorks, requirements, privacy, closing } = site2026;
+
   return (
-    <main>
-      <FAQSchema items={homepageFaqItems} />
-      <HomepageNav />
-      <Hero />
-      <EmpathyHook />
-      <PriorAttempts />
-      <CostOfInaction />
-      <ProofInsight />
-      {/* Journal product section — name TBD */}
-      <Mechanism />
-      <MethodStrip />
-      <PathSelector />
-      <HowItWorks />
-      <Features />
-      <PracticeRequirement />
-      <IdentityFrame />
-      <WhatItsNot />
-      <Testimonials />
-      <Founder />
-      <HomepageFAQ />
-      <CTA />
+    <>
+      <Nav overHero />
+      <main>
+        <FirstLightHero wordmark={hero.wordmark} imageAlt={hero.imageAlt} />
+
+        <section className="pl-section" style={{ paddingTop: "48px" }}>
+          <div className="pl-container">
+            <div className="pl-reading">
+              <TwoTone lines={opener.headline} />
+              <Paragraphs items={opener.paragraphs} />
+            </div>
+          </div>
+        </section>
+
+        <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
+          <div className="pl-container">
+            <div className="pl-reading">
+              <TwoTone lines={diagnosis.headline} />
+              <Paragraphs items={diagnosis.paragraphs} />
+            </div>
+          </div>
+        </section>
+
+        <section className="pl-section" style={{ background: "var(--night-raised)" }}>
+          <div className="pl-container">
+            <div className="pl-reading">
+              <TwoTone lines={howItWorks.headline} />
+            </div>
+            <ol style={{ listStyle: "none", margin: "64px 0 0", padding: 0, maxWidth: "880px" }}>
+              {howItWorks.steps.map((step, i) => (
+                <li
+                  key={step.name}
+                  className="grid md:grid-cols-[64px_1fr_1.6fr]"
+                  style={{ gap: "8px 24px", padding: "32px 0", borderTop: "1px solid var(--line)" }}
+                >
+                  <span className="pl-label" aria-hidden="true" style={{ paddingTop: "8px" }}>
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="pl-h3" style={{ margin: 0, color: "var(--text)" }}>
+                    {step.name}
+                  </h3>
+                  <p className="pl-body" style={{ margin: 0, paddingTop: "4px" }}>
+                    {step.body}
+                  </p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        <section className="pl-section">
+          <div className="pl-container">
+            <div className="pl-reading">
+              <TwoTone lines={requirements.headline} />
+              <Paragraphs items={requirements.paragraphs} />
+              <ul style={{ listStyle: "none", margin: "40px 0 0", padding: 0 }}>
+                {requirements.list.map((item) => (
+                  <li
+                    key={item}
+                    className="pl-body"
+                    style={{ padding: "16px 0 16px 24px", borderTop: "1px solid var(--line)", position: "relative" }}
+                  >
+                    <span
+                      aria-hidden="true"
+                      style={{ position: "absolute", left: 0, top: "29px", width: "8px", height: "1px", background: "var(--text-muted)" }}
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
+          <div className="pl-container">
+            <div className="pl-reading">
+              <h2 className="pl-h2" style={{ margin: 0, color: "var(--text)" }}>
+                {privacy.headline}
+              </h2>
+              <Paragraphs items={[privacy.body]} />
+            </div>
+          </div>
+        </section>
+
+        <section id="consulting" className="pl-section" style={{ background: "var(--night-raised)" }}>
+          <ConsultingSection />
+        </section>
+
+        <section className="pl-section">
+          <Testimonials />
+        </section>
+
+        <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
+          <Founder />
+        </section>
+
+        <section className="pl-section" style={{ borderTop: "1px solid var(--line)", textAlign: "center" }}>
+          <div className="pl-container flex flex-col items-center">
+            <p className="pl-display" style={{ margin: 0, maxWidth: "960px", fontSize: "clamp(44px, 7vw, 96px)" }}>
+              {closing.tenet}
+            </p>
+            <a href={closing.ctaHref} className="pl-button" style={{ marginTop: "56px" }}>
+              {closing.cta}
+            </a>
+          </div>
+        </section>
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

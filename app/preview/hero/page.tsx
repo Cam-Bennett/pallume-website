@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Hanken_Grotesk } from "next/font/google";
 import FirstLightHero from "@/components/sections/FirstLightHero";
-import { nav, hero } from "@/content/siteContent";
+import { nav, hero, site2026 } from "@/content/siteContent";
 
 // Private design preview. Not linked, not indexed, not in the sitemap.
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function HeroPreviewPage() {
 
   return (
     <main style={{ background: "#0A1120", minHeight: "100vh" }}>
-      <FirstLightHero wordmark={nav.logo} wordmarkClassName={cormorant.className} />
+      <FirstLightHero wordmark={nav.logo} imageAlt={site2026.hero.imageAlt} wordmarkClassName={cormorant.className} />
 
       <section style={{ padding: "96px 24px 160px", background: "#0A1120" }}>
         <div style={{ maxWidth: "960px", margin: "0 auto" }}>

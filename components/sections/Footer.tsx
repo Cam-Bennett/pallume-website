@@ -1,57 +1,33 @@
-import { footer } from "@/content/siteContent";
+import { site2026 } from "@/content/siteContent";
 
+// Voice Signature rule 8: the tagline closes every page.
 export default function Footer() {
+  const { footer } = site2026;
+
   return (
-    <footer
-      className="px-6 py-10"
-      style={{
-        background: "#0F1B2D",
-        borderTop: "1px solid rgba(200,155,60,0.15)",
-      }}
-    >
-      <div className="max-w-site mx-auto">
-        <div className="flex flex-wrap items-center justify-between gap-6">
-          <a
-            href="/"
-            className="font-serif font-bold text-textLight"
-            style={{ fontSize: "18px", textDecoration: "none" }}
-          >
-            {footer.logo}
+    <footer style={{ background: "var(--night)", borderTop: "1px solid var(--line)", padding: "64px 16px 48px" }}>
+      <div className="pl-container">
+        <p className="font-serif" style={{ fontSize: "clamp(28px, 4vw, 40px)", lineHeight: 1.15, color: "var(--text)", margin: 0 }}>
+          {footer.tagline}
+        </p>
+
+        <div
+          className="flex flex-wrap items-center"
+          style={{ gap: "16px 32px", marginTop: "40px", fontSize: "15px" }}
+        >
+          <a href={`mailto:${footer.contact}`} className="pl-link">
+            {footer.contact}
           </a>
-
-          {/* Nav links + email as a single right-aligned group */}
-          <div className="flex flex-wrap items-center gap-6">
-            {footer.links.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="font-sans text-textMuted hover:text-textLightMuted transition-colors duration-150"
-                style={{ fontSize: "13px", textDecoration: "none" }}
-              >
-                {link.label}
-              </a>
-            ))}
-
-            {/* Email */}
+          {footer.links.map((link) => (
             <a
-              href={`mailto:${footer.email}`}
-              className="font-sans hover:text-textLightMuted transition-colors duration-150"
-              style={{
-                fontSize: "13px",
-                textDecoration: "none",
-                color: "#C89B3C",
-              }}
+              key={link.href}
+              href={link.href}
+              style={{ color: "var(--text-muted)", textDecoration: "none" }}
+              className="hover:!text-[var(--text-soft)] transition-colors duration-150"
             >
-              {footer.email}
+              {link.label}
             </a>
-          </div>
-
-          <span
-            className="font-sans text-textMuted"
-            style={{ fontSize: "12px", opacity: 0.7 }}
-          >
-            {footer.location}
-          </span>
+          ))}
         </div>
       </div>
     </footer>
