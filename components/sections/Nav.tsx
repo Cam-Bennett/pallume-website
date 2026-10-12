@@ -50,7 +50,16 @@ export default function Nav({ overHero = false }: Props) {
         <a
           href="/"
           className="font-serif"
-          style={{ fontSize: "28px", fontWeight: 600, color: "var(--text)", textDecoration: "none", lineHeight: 1 }}
+          // Over the hero the hero's own wordmark leads; the nav's appears once it's gone.
+          style={{
+            fontSize: "28px",
+            fontWeight: 600,
+            color: "var(--text)",
+            textDecoration: "none",
+            lineHeight: 1,
+            opacity: solid ? 1 : 0,
+            transition: "opacity 200ms ease",
+          }}
         >
           {site2026.hero.wordmark}
         </a>
@@ -96,7 +105,13 @@ export default function Nav({ overHero = false }: Props) {
         <div
           id="mobile-menu"
           className="md:hidden"
-          style={{ padding: "8px 16px 32px", borderTop: "1px solid var(--line)" }}
+          style={{
+            padding: "8px 16px 32px",
+            borderTop: "1px solid var(--line)",
+            background: "var(--night)",
+            height: "calc(100dvh - 72px)",
+            overflowY: "auto",
+          }}
         >
           <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
             {links.map((link) => (

@@ -32,8 +32,10 @@ export default function ApplyPage() {
 
         <section className="pl-section" style={{ paddingTop: "64px" }}>
           <div className="pl-container">
-            {/* Tally form Gxop2o lives in Camden's Tally account; the embed is unchanged. */}
-            <div style={{ maxWidth: "720px" }}>
+            {/* Tally form Gxop2o lives in Camden's Tally account; the embed is unchanged.
+                The form still uses Tally's light theme (dark text), so it sits on a light
+                panel to stay readable. Drop the panel once the form is set to a dark theme. */}
+            <div style={{ maxWidth: "720px", background: "var(--text)", borderRadius: "8px", padding: "24px 16px" }}>
               <iframe
                 src="https://tally.so/embed/Gxop2o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                 loading="lazy"
