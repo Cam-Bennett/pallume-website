@@ -4,7 +4,6 @@ import Footer from "@/components/sections/Footer";
 import FirstLightHero from "@/components/sections/FirstLightHero";
 import TwoTone from "@/components/site/TwoTone";
 import Paragraphs from "@/components/site/Paragraphs";
-import ConsultingSection from "@/components/site/ConsultingSection";
 import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
 import Modules from "@/components/site/Modules";
@@ -12,7 +11,12 @@ import { pageMeta } from "@/lib/metadata";
 
 export const metadata = pageMeta({ ...site2026.meta, path: "" });
 
-// Holding homepage, Phase 0 (10/11/2026). Section order set by the Phase 0 prompt.
+// The product leads, straight after the opener; consulting is a footnote to it
+// (Camden, 10/12/2026). Both lines come from the site description until
+// Productization gives them their own keys.
+const [productLine, ...restOfDescription] = site2026.meta.description.split(/(?<=\.)\s+/);
+const consultingFootnote = restOfDescription.join(" ");
+
 export default function Home() {
   const { hero, opener, diagnosis, howItWorks, requirements, privacy, closing } = site2026;
 
@@ -31,19 +35,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
-          <div className="pl-container">
-            <div className="pl-reading">
-              <TwoTone lines={diagnosis.headline} />
-              <Paragraphs items={diagnosis.paragraphs} />
-            </div>
-          </div>
-        </section>
-
         <section className="pl-section" style={{ background: "var(--night-raised)" }}>
           <div className="pl-container">
             <div className="pl-reading">
-              <TwoTone lines={howItWorks.headline} />
+              <h2 className="pl-h2" style={{ margin: 0, color: "var(--text)" }}>
+                {productLine}
+              </h2>
+              <div style={{ marginTop: "48px" }}>
+                <TwoTone lines={howItWorks.headline} as="h2" className="pl-h3" />
+              </div>
             </div>
             <ol style={{ listStyle: "none", margin: "64px 0 0", padding: 0, maxWidth: "880px" }}>
               {howItWorks.steps.map((step, i) => (
@@ -65,8 +65,23 @@ export default function Home() {
               ))}
             </ol>
             <Modules />
+            <p className="pl-label" style={{ margin: "64px 0 0", paddingTop: "24px", borderTop: "1px solid var(--line)", fontSize: "15px" }}>
+              <a href="/consulting" className="pl-link" style={{ color: "var(--text-soft)" }}>
+                {consultingFootnote}
+              </a>
+            </p>
           </div>
         </section>
+
+        <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
+          <div className="pl-container">
+            <div className="pl-reading">
+              <TwoTone lines={diagnosis.headline} />
+              <Paragraphs items={diagnosis.paragraphs} />
+            </div>
+          </div>
+        </section>
+
 
         <section className="pl-section">
           <div className="pl-container">
@@ -103,11 +118,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="consulting" className="pl-section" style={{ background: "var(--night-raised)" }}>
-          <ConsultingSection />
-        </section>
-
-        <section className="pl-section">
+        <section className="pl-section" style={{ background: "var(--night-raised)" }}>
           <Testimonials />
         </section>
 
