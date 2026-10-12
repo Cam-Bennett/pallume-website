@@ -1,22 +1,29 @@
 User-agent: *
 Allow: /
+Disallow: /preview/
 
 User-agent: GPTBot
 Allow: /
+Disallow: /preview/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /preview/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /preview/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /preview/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /preview/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /preview/
 
 Sitemap: https://pallume.com/sitemap.xml
