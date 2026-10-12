@@ -4,12 +4,11 @@ import Paragraphs from "@/components/site/Paragraphs";
 
 type Props = {
   headingLevel?: "h1" | "h2";
-  note?: string;
 };
 
 // Pallume Consulting: headline, the fit, and the three starting points.
 // Starting points are a sequence of cases, set as a hairline list, not cards.
-export default function ConsultingSection({ headingLevel = "h2", note }: Props) {
+export default function ConsultingSection({ headingLevel = "h2" }: Props) {
   const { consulting } = site2026;
 
   return (
@@ -43,16 +42,6 @@ export default function ConsultingSection({ headingLevel = "h2", note }: Props) 
         ))}
       </ol>
 
-      <div className="flex flex-wrap items-center" style={{ gap: "16px 24px", marginTop: "48px" }}>
-        <a href={consulting.ctaHref} className="pl-button">
-          {consulting.cta}
-        </a>
-        {note && (
-          <p className="pl-label" style={{ margin: 0 }}>
-            {note}
-          </p>
-        )}
-      </div>
     </div>
   );
 }

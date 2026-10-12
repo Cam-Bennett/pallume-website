@@ -75,9 +75,6 @@ export default function Nav({ overHero = false }: Props) {
               {link.label}
             </a>
           ))}
-          <a href={site2026.nav.ctaHref} className="pl-button pl-button-sm">
-            {site2026.nav.cta}
-          </a>
         </div>
 
         <button
@@ -127,9 +124,6 @@ export default function Nav({ overHero = false }: Props) {
               </li>
             ))}
           </ul>
-          <a href={site2026.nav.ctaHref} className="pl-button" style={{ marginTop: "24px", width: "100%" }}>
-            {site2026.nav.cta}
-          </a>
         </div>
       )}
     </nav>

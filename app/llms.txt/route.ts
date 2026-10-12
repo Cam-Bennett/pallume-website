@@ -44,7 +44,6 @@ function build() {
     `- [${navLabel("/about", "About")}](${BASE}/about): ${s.about.meta.description}`,
     `- [${navLabel("/faq", "FAQ")}](${BASE}/faq)`,
     `- [Reviews](${BASE}/reviews)`,
-    `- [Contact](${BASE}/contact)`,
     "",
     "## FAQ",
     "",

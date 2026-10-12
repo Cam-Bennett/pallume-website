@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { site2026 } from "@/content/siteContent";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import PageHeader from "@/components/site/PageHeader";
@@ -19,9 +18,6 @@ export default function NotFound() {
           <div className="flex flex-wrap items-center" style={{ gap: "24px", marginTop: "40px", fontSize: "16px" }}>
             <Link href="/" className="pl-link">
               Go home
-            </Link>
-            <Link href={site2026.nav.ctaHref} className="pl-link">
-              {site2026.nav.cta}
             </Link>
           </div>
         </PageHeader>

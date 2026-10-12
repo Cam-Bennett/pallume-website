@@ -118,9 +118,6 @@ export default function Home() {
             <p className="pl-display" style={{ margin: 0, maxWidth: "960px", fontSize: "clamp(44px, 7vw, 96px)" }}>
               {closing.tenet}
             </p>
-            <a href={closing.ctaHref} className="pl-button" style={{ marginTop: "56px" }}>
-              {closing.cta}
-            </a>
           </div>
         </section>
       </main>

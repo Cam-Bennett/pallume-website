@@ -16,7 +16,7 @@ export const metadata = pageMeta({
 });
 
 export default function FAQPage() {
-  const { faq, nav } = site2026;
+  const { faq } = site2026;
 
   return (
     <>
@@ -48,9 +48,6 @@ export default function FAQPage() {
               ))}
               <hr className="pl-rule" />
             </div>
-            <a href={nav.ctaHref} className="pl-button" style={{ marginTop: "64px" }}>
-              {nav.cta}
-            </a>
           </div>
         </section>
       </main>

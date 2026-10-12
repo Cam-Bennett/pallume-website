@@ -2,7 +2,6 @@ import { site2026 } from "@/content/siteContent";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import PageHeader from "@/components/site/PageHeader";
-import TwoTone from "@/components/site/TwoTone";
 import Testimonials from "@/components/site/Testimonials";
 import { pageMeta, breadcrumb, JsonLd } from "@/lib/metadata";
 
@@ -14,8 +13,6 @@ export const metadata = pageMeta({
 });
 
 export default function ReviewsPage() {
-  const { consulting } = site2026;
-
   return (
     <>
       <JsonLd data={breadcrumb("Reviews", "/reviews")} />
@@ -34,16 +31,6 @@ export default function ReviewsPage() {
           <Testimonials full />
         </section>
 
-        <section className="pl-section" style={{ background: "var(--night-raised)" }}>
-          <div className="pl-container">
-            <div className="pl-reading">
-              <TwoTone lines={consulting.headline} />
-            </div>
-            <a href={consulting.ctaHref} className="pl-button" style={{ marginTop: "48px" }}>
-              {consulting.cta}
-            </a>
-          </div>
-        </section>
       </main>
       <Footer />
     </>

@@ -7,7 +7,7 @@ import Paragraphs from "@/components/site/Paragraphs";
 import Founder from "@/components/site/Founder";
 
 export default function AboutPage() {
-  const { about, nav } = site2026;
+  const { about } = site2026;
 
   return (
     <>
@@ -23,11 +23,6 @@ export default function AboutPage() {
             <hr className="pl-rule" />
           </div>
           <Founder />
-          <div className="pl-container" style={{ marginTop: "80px" }}>
-            <a href={nav.ctaHref} className="pl-button">
-              {nav.cta}
-            </a>
-          </div>
         </section>
       </main>
       <Footer />
