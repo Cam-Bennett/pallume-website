@@ -1,63 +1,12 @@
-import type { Metadata } from "next";
+import { site2026 } from "@/content/siteContent";
+import { pageMeta, breadcrumb, JsonLd } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "About Camden Bennett — Pallume",
-  description:
-    "Camden Bennett founded Pallume — a Navy veteran, Wyoming real estate broker, and AI systems builder who runs the same system he builds for every client.",
-  alternates: {
-    canonical: "https://pallume.com/about",
-  },
-  openGraph: {
-    title: "About Camden Bennett — Pallume",
-    description:
-      "Camden Bennett founded Pallume — a Navy veteran, Wyoming real estate broker, and AI systems builder who runs the same system he builds for every client.",
-    url: "https://pallume.com/about",
-    siteName: "Pallume",
-    type: "website",
-    images: [
-      {
-        url: "/images/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Pallume — AI Execution Coaching",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About Camden Bennett — Pallume",
-    description:
-      "Camden Bennett founded Pallume — a Navy veteran, Wyoming real estate broker, and AI systems builder who runs the same system he builds for every client.",
-    images: ["/images/og-image.png"],
-  },
-};
-
-const aboutBreadcrumb = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: "https://pallume.com/",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "About",
-      item: "https://pallume.com/about",
-    },
-  ],
-};
+export const metadata = pageMeta({ ...site2026.about.meta, path: "/about" });
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutBreadcrumb) }}
-      />
+      <JsonLd data={breadcrumb("About", "/about")} />
       {children}
     </>
   );

@@ -1,165 +1,60 @@
-import type { Metadata } from "next";
+import { site2026 } from "@/content/siteContent";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
-import SectionWrapper from "@/components/ui/SectionWrapper";
-import Btn from "@/components/ui/Btn";
-import Accordion from "@/components/ui/Accordion";
+import PageHeader from "@/components/site/PageHeader";
 import { FAQSchema } from "@/components/ui/FAQSchema";
-import { faq } from "@/content/siteContent";
+import { pageMeta, breadcrumb, JsonLd } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "FAQ — Pallume",
-  description:
-    "Answers to common questions about Pallume — what it is, how it works, what it costs, and whether it's the right fit for your situation.",
-  alternates: {
-    canonical: "https://pallume.com/faq",
-  },
-  openGraph: {
-    title: "FAQ — Pallume",
-    description:
-      "Answers to common questions about Pallume — what it is, how it works, what it costs, and whether it's the right fit for your situation.",
-    url: "https://pallume.com/faq",
-    siteName: "Pallume",
-    type: "website",
-    images: [
-      {
-        url: "/images/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Pallume — AI Execution Coaching",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "FAQ — Pallume",
-    description:
-      "Answers to common questions about Pallume — what it is, how it works, what it costs, and whether it's the right fit for your situation.",
-    images: ["/images/og-image.png"],
-  },
-};
+// site2026 has no FAQ title or description; the nav label and the site
+// description stand in until Productization writes them.
+const faqLabel = site2026.nav.links.find((l) => l.href === "/faq")?.label ?? "FAQ";
 
-const faqBreadcrumb = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: "https://pallume.com/",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "FAQ",
-      item: "https://pallume.com/faq",
-    },
-  ],
-};
+export const metadata = pageMeta({
+  title: `${faqLabel} — Pallume`,
+  description: site2026.meta.description,
+  path: "/faq",
+});
 
 export default function FAQPage() {
+  const { faq, nav } = site2026;
+
   return (
     <>
-      <FAQSchema
-        items={faq.items.map((item) => ({
-          question: item.question,
-          answer: item.answer.join("\n\n"),
-        }))}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqBreadcrumb) }}
-      />
+      <FAQSchema items={faq.map((item) => ({ question: item.q, answer: item.a }))} />
+      <JsonLd data={breadcrumb(faqLabel, "/faq")} />
+      <Nav />
+      <main>
+        <PageHeader>
+          <h1 className="pl-h2" style={{ margin: 0 }}>
+            {faqLabel}
+          </h1>
+        </PageHeader>
 
-      <main style={{ paddingTop: "64px" }}>
-        <Nav />
-
-        {/* ── Header section ──────────────────────────────────────── */}
-        <section
-          style={{
-            background: "#0F1B2D",
-            padding: "80px 24px 64px",
-          }}
-        >
-          <div className="max-w-site mx-auto w-full">
-            <p
-              className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
-              style={{ fontSize: "11px", letterSpacing: "0.14em" }}
-            >
-              {faq.eyebrow}
-            </p>
-            <h1
-              className="font-heading font-bold text-text-main"
-              style={{
-                fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
-                lineHeight: 1.1,
-                letterSpacing: "-0.02em",
-                maxWidth: "720px",
-                textShadow: "0 2px 20px rgba(0,0,0,0.5)",
-              }}
-            >
-              {faq.headline}
-            </h1>
-            <time
-              dateTime="2026-05"
-              className="font-body"
-              style={{ fontSize: "13px", color: "#B0B8C4", display: "block", marginTop: "12px" }}
-            >
-              Last updated: May 2026
-            </time>
+        <section className="pl-section" style={{ paddingTop: "64px" }}>
+          <div className="pl-container">
+            <div style={{ maxWidth: "800px" }}>
+              {faq.map((item) => (
+                <details key={item.q} className="pl-faq" style={{ borderTop: "1px solid var(--line)" }}>
+                  <summary
+                    className="font-serif"
+                    style={{ padding: "24px 40px 24px 0", fontSize: "26px", lineHeight: 1.25, color: "var(--text)", position: "relative" }}
+                  >
+                    {item.q}
+                  </summary>
+                  <p className="pl-body" style={{ margin: "0 0 32px" }}>
+                    {item.a}
+                  </p>
+                </details>
+              ))}
+              <hr className="pl-rule" />
+            </div>
+            <a href={nav.ctaHref} className="pl-button" style={{ marginTop: "64px" }}>
+              {nav.cta}
+            </a>
           </div>
         </section>
-
-        {/* ── Accordion section ───────────────────────────────────── */}
-        <SectionWrapper variant="light" style={{ paddingTop: "16px" }}>
-          <div style={{ maxWidth: "800px" }}>
-            <Accordion items={faq.items} variant="light" />
-          </div>
-        </SectionWrapper>
-
-        {/* ── Bottom CTA ──────────────────────────────────────────── */}
-        <SectionWrapper
-          style={{
-            background:
-              "radial-gradient(ellipse at 30% 80%, rgba(200,155,60,0.05) 0%, transparent 55%), #0F1B2D",
-          }}
-        >
-          <div style={{ maxWidth: "600px" }}>
-            <h2
-              className="font-heading font-bold text-text-main mb-4"
-              style={{
-                fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
-                lineHeight: 1.15,
-                letterSpacing: "-0.02em",
-              }}
-            >
-              {faq.cta.headline}
-            </h2>
-            <p
-              className="font-body text-text-soft mb-8"
-              style={{ fontSize: "16px", lineHeight: 1.8 }}
-            >
-              {faq.cta.body}
-            </p>
-            <Btn as="a" href={faq.cta.buttonHref} size="lg">
-              {faq.cta.buttonLabel}
-            </Btn>
-            <p className="font-body text-muted mt-6" style={{ fontSize: "13px" }}>
-              Not ready to apply?{" "}
-              <a
-                href="/the-work"
-                className="hover:text-text-soft transition-colors duration-150"
-                style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px" }}
-              >
-                That&apos;s fine. Read how the system works →
-              </a>
-            </p>
-          </div>
-        </SectionWrapper>
-
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

@@ -180,3 +180,27 @@ a {
   outline: 2px solid var(--text);
   outline-offset: 3px;
 }
+
+/* ── FAQ disclosure ──────────────────────────────────────────────────── */
+.pl-faq summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.pl-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.pl-faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 24px;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 24px;
+  color: var(--icon);
+}
+
+.pl-faq[open] summary::after {
+  content: "–";
+}

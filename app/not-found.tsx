@@ -1,75 +1,33 @@
 import Link from "next/link";
+import { site2026 } from "@/content/siteContent";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
-import SectionWrapper from "@/components/ui/SectionWrapper";
+import PageHeader from "@/components/site/PageHeader";
 
 export default function NotFound() {
   return (
-    <main style={{ paddingTop: "64px" }}>
+    <>
       <Nav />
-      <SectionWrapper
-        style={{
-          background:
-            "radial-gradient(ellipse at 60% 0%, rgba(200,155,60,0.06) 0%, transparent 55%), #0F1B2D",
-          minHeight: "60vh",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <div style={{ maxWidth: "560px" }}>
-          <p
-            className="font-body font-semibold text-primary uppercase tracking-widest mb-4"
-            style={{ fontSize: "11px", letterSpacing: "0.14em" }}
-          >
-            404
-          </p>
-          <h1
-            className="font-heading font-bold text-text-main mb-4"
-            style={{
-              fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
-              lineHeight: 1.1,
-              letterSpacing: "-0.02em",
-            }}
-          >
+      <main style={{ minHeight: "60vh" }}>
+        <PageHeader>
+          <h1 className="pl-h2" style={{ margin: 0 }}>
             Page not found.
           </h1>
-          <p
-            className="font-body text-text-soft mb-10"
-            style={{ fontSize: "17px", lineHeight: 1.75 }}
-          >
+          <p className="pl-body" style={{ margin: "24px 0 0" }}>
             This page doesn&apos;t exist or has moved.
           </p>
-          <div style={{ display: "flex", gap: "24px", flexWrap: "wrap", alignItems: "center" }}>
-            <Link
-              href="/"
-              className="font-body font-semibold"
-              style={{
-                fontSize: "15px",
-                color: "#C89B3C",
-                textDecoration: "none",
-                borderBottom: "1px solid rgba(200,155,60,0.3)",
-                paddingBottom: "2px",
-              }}
-            >
+          <div className="flex flex-wrap items-center" style={{ gap: "24px", marginTop: "40px", fontSize: "16px" }}>
+            <Link href="/" className="pl-link">
               Go home
             </Link>
-            <Link
-              href="/apply"
-              className="font-body font-semibold"
-              style={{
-                fontSize: "15px",
-                color: "#C89B3C",
-                textDecoration: "none",
-                borderBottom: "1px solid rgba(200,155,60,0.3)",
-                paddingBottom: "2px",
-              }}
-            >
-              Apply to work with Pallume
+            <Link href={site2026.nav.ctaHref} className="pl-link">
+              {site2026.nav.cta}
             </Link>
           </div>
-        </div>
-      </SectionWrapper>
+        </PageHeader>
+        <div style={{ height: "128px" }} />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
