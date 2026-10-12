@@ -1,21 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   redirects: async () => [
-    {
-      source: "/privacy",
-      destination: "/privacy-policy",
-      permanent: true,
-    },
-    {
-      source: "/services",
-      destination: "/pricing",
-      permanent: true,
-    },
-    {
-      source: "/myskema-lite",
-      destination: "/pallume-light",
-      permanent: true,
-    },
+    { source: "/privacy", destination: "/privacy-policy", statusCode: 301 },
+    { source: "/services", destination: "/", statusCode: 301 },
+    // Retired 10/11/2026 (coaching model). statusCode 301, not permanent (308).
+    { source: "/pallume-light", destination: "/", statusCode: 301 },
+    { source: "/pricing", destination: "/", statusCode: 301 },
+    { source: "/how-it-works", destination: "/", statusCode: 301 },
+    { source: "/the-work", destination: "/", statusCode: 301 },
+    { source: "/the-work/:slug*", destination: "/", statusCode: 301 },
   ],
   headers: async () => [
     {
