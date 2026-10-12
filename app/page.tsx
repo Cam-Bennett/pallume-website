@@ -7,6 +7,7 @@ import Paragraphs from "@/components/site/Paragraphs";
 import ConsultingSection from "@/components/site/ConsultingSection";
 import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
+import Modules from "@/components/site/Modules";
 import { pageMeta } from "@/lib/metadata";
 
 export const metadata = pageMeta({ ...site2026.meta, path: "" });
@@ -63,6 +64,7 @@ export default function Home() {
                 </li>
               ))}
             </ol>
+            <Modules />
           </div>
         </section>
 
