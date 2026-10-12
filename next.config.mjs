@@ -3,6 +3,9 @@ const nextConfig = {
   redirects: async () => [
     { source: "/privacy", destination: "/privacy-policy", statusCode: 301 },
     { source: "/services", destination: "/", statusCode: 301 },
+    // No application form (Camden, 10/12/2026). Every "Apply for consulting" button
+    // links to /apply from site2026; it lands on the contact page's email link.
+    { source: "/apply", destination: "/contact", statusCode: 301 },
     // Retired 10/11/2026 (coaching model). statusCode 301, not permanent (308).
     { source: "/pallume-light", destination: "/", statusCode: 301 },
     { source: "/pricing", destination: "/", statusCode: 301 },
@@ -29,12 +32,11 @@ const nextConfig = {
           key: "Content-Security-Policy",
           value: [
             "default-src 'self'",
-            "frame-src https://tally.so",
-            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://tally.so https://www.googletagmanager.com",
+            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
             "font-src 'self' https://fonts.gstatic.com",
             "img-src 'self' data: blob: https://www.google-analytics.com",
-            "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com https://tally.so",
+            "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com",
           ].join("; "),
         },
       ],

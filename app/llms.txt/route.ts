@@ -41,7 +41,6 @@ function build() {
     "",
     `- [Home](${BASE}/): ${s.meta.description}`,
     `- [${navLabel("/consulting", "Consulting")}](${BASE}/consulting): ${s.consultingPage.meta.description}`,
-    `- [${s.nav.cta}](${BASE}/apply): ${s.consultingPage.applyNote}`,
     `- [${navLabel("/about", "About")}](${BASE}/about): ${s.about.meta.description}`,
     `- [${navLabel("/faq", "FAQ")}](${BASE}/faq)`,
     `- [Reviews](${BASE}/reviews)`,

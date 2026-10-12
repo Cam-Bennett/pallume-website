@@ -3,7 +3,6 @@
 const LIVE_ROUTES = new Set([
   "/",
   "/about",
-  "/apply",
   "/consulting",
   "/contact",
   "/faq",

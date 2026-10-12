@@ -15,7 +15,7 @@ export default function ConsultingPage() {
       <Nav />
       <main>
         <section className="pl-section" style={{ paddingTop: "176px" }}>
-          <ConsultingSection headingLevel="h1" note={site2026.consultingPage.applyNote} />
+          <ConsultingSection headingLevel="h1" />
         </section>
       </main>
       <Footer />
