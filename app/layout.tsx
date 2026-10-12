@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Hanken_Grotesk } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { site2026 } from "@/content/siteContent";
+import { OG_IMAGE } from "@/lib/metadata";
 import "./globals.css";
 
 // DESIGN.md §3: Cormorant Garamond for display, Hanken Grotesk for everything else.
@@ -18,41 +20,34 @@ const hanken = Hanken_Grotesk({
   display: "swap",
 });
 
+const { meta, founder, footer, about } = site2026;
+
 export const metadata: Metadata = {
-  title: "Pallume — Your Own AI Execution System",
-  description:
-    "Custom AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett. 10 minutes every morning.",
+  title: meta.title,
+  description: meta.description,
   metadataBase: new URL("https://pallume.com"),
   verification: {
     google: "JC48daCMebxYC3gDO6QfUN1SURp84EC8XGEUXTKJoZ0",
   },
   openGraph: {
-    title: "Pallume — Your Own AI Execution System",
-    description:
-      "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
+    title: meta.title,
+    description: meta.description,
     url: "https://pallume.com",
     siteName: "Pallume",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/images/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Pallume — AI Execution Coaching",
-      },
-    ],
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     site: "@camdenbennett",
-    title: "Pallume — Your Own AI Execution System",
-    description:
-      "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
-    images: ["/images/og-image.png"],
+    title: meta.title,
+    description: meta.description,
+    images: [OG_IMAGE.url],
   },
 };
 
+// Site-wide schema, from site2026. No product or price schema until a price exists.
 const orgSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -61,15 +56,10 @@ const orgSchema = {
       "@id": "https://pallume.com/#organization",
       name: "Pallume",
       url: "https://pallume.com",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://pallume.com/images/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-      description:
-        "Custom AI execution systems for business owners. Built by Camden Bennett.",
-      email: "camden@pallume.com",
+      logo: "https://pallume.com/icon.png",
+      slogan: footer.tagline,
+      description: meta.description,
+      email: footer.contact,
       founder: { "@id": "https://pallume.com/#person" },
       address: {
         "@type": "PostalAddress",
@@ -77,40 +67,26 @@ const orgSchema = {
         addressRegion: "WY",
         addressCountry: "US",
       },
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "customer service",
-        email: "camden@pallume.com",
-      },
     },
     {
       "@type": "WebSite",
       "@id": "https://pallume.com/#website",
       url: "https://pallume.com",
       name: "Pallume",
-      description:
-        "Custom AI execution systems for business owners who can't close the gap between intention and result.",
+      description: meta.description,
       publisher: { "@id": "https://pallume.com/#organization" },
     },
     {
       "@type": "Person",
       "@id": "https://pallume.com/#person",
-      name: "Camden Bennett",
+      name: founder.name,
       jobTitle: "Founder, Pallume",
-      description:
-        "Former U.S. Navy Diver and Intelligence Officer. Real estate broker. Founder of Pallume AI execution coaching.",
+      description: about.meta.description,
       url: "https://pallume.com/about",
-      image: "https://pallume.com/images/camden-headshot.jpg",
-      email: "camden@pallume.com",
+      image: `https://pallume.com${founder.imageSrc}`,
+      email: footer.contact,
       worksFor: { "@id": "https://pallume.com/#organization" },
-      knowsAbout: [
-        "AI execution systems",
-        "Business accountability coaching",
-        "Productivity systems for business owners",
-      ],
-      sameAs: [
-        "https://www.youtube.com/@camdenbennett",
-      ],
+      sameAs: ["https://www.youtube.com/@camdenbennett"],
     },
   ],
 };

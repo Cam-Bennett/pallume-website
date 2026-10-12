@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { site2026 } from "@/content/siteContent";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
@@ -8,21 +7,9 @@ import Paragraphs from "@/components/site/Paragraphs";
 import ConsultingSection from "@/components/site/ConsultingSection";
 import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
+import { pageMeta } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: { absolute: site2026.meta.title },
-  description: site2026.meta.description,
-  alternates: { canonical: "https://pallume.com" },
-  openGraph: {
-    title: site2026.meta.title,
-    description: site2026.meta.description,
-    url: "https://pallume.com",
-  },
-  twitter: {
-    title: site2026.meta.title,
-    description: site2026.meta.description,
-  },
-};
+export const metadata = pageMeta({ ...site2026.meta, path: "" });
 
 // Holding homepage, Phase 0 (10/11/2026). Section order set by the Phase 0 prompt.
 export default function Home() {
