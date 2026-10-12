@@ -2,7 +2,7 @@
 **Path:** ~/claude-code-projects/pallume-website/
 **Branch:** `pallume` (pushed to GitHub; pushes build Vercel previews only)
 **Domain:** pallume.com (live)
-**Last updated:** 10/11/2026
+**Last updated:** 10/12/2026
 
 ---
 
@@ -41,7 +41,7 @@ Read `DESIGN.md` before any UI work and obey it over defaults. Direction (10/11/
 
 ## OPEN — before the redesign goes to production
 
-1. **Deploy path.** Production builds from `main`; work happens on `pallume`. 13 files of May work (GA4 ID `G-RJNKS81J3G`, Search Console verification, `/reviews`, TallyTracker, OG image) are live only because a CLI deploy shipped the working tree — they are not committed. Commit them, then set Vercel's production branch to `pallume`. Until then a git-based production deploy would drop them.
+1. **Deploy path.** Settled 10/12/2026: the May files are committed, and `main` was fast-forwarded to `pallume` (Phase 0 release, `6140a11`). Work and preview pushes go to `pallume`; releasing means merging `pallume` into `main`, which Vercel builds as production.
 2. Website copy rewrite (Productization).
 3. Design system and brand images move to Productization (`DESIGN.md` §11).
 
