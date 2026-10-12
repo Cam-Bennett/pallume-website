@@ -6,7 +6,6 @@ import TwoTone from "@/components/site/TwoTone";
 import Paragraphs from "@/components/site/Paragraphs";
 import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
-import Modules from "@/components/site/Modules";
 import { pageMeta } from "@/lib/metadata";
 
 export const metadata = pageMeta({ ...site2026.meta, path: "" });
@@ -64,7 +63,6 @@ export default function Home() {
                 </li>
               ))}
             </ol>
-            <Modules />
             <p className="pl-label" style={{ margin: "64px 0 0", paddingTop: "24px", borderTop: "1px solid var(--line)", fontSize: "15px" }}>
               <a href="/consulting" className="pl-link" style={{ color: "var(--text-soft)" }}>
                 {consultingFootnote}
