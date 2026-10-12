@@ -1,4 +1,5 @@
 import { site2026 } from "@/content/siteContent";
+import ConsentSettingsLink from "@/components/site/ConsentSettingsLink";
 
 // Voice Signature rule 8: the tagline closes every page.
 export default function Footer() {
@@ -28,6 +29,7 @@ export default function Footer() {
               {link.label}
             </a>
           ))}
+          <ConsentSettingsLink />
         </div>
       </div>
     </footer>

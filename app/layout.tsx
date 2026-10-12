@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Hanken_Grotesk } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { site2026 } from "@/content/siteContent";
 import { OG_IMAGE } from "@/lib/metadata";
+import Consent from "@/components/site/Consent";
 import "./globals.css";
 
 // DESIGN.md §3: Cormorant Garamond for display, Hanken Grotesk for everything else.
@@ -104,8 +104,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
       </head>
-      <body className="antialiased">{children}</body>
-      <GoogleAnalytics gaId="G-RJNKS81J3G" />
+      <body className="antialiased">
+        {children}
+        <Consent />
+      </body>
     </html>
   );
 }
