@@ -47,4 +47,4 @@ Read `DESIGN.md` before any UI work and obey it over defaults. Direction (10/11/
 
 ## SITE STRUCTURE
 
-`/` home · `/about` · `/how-it-works` · `/pricing` · `/faq` · `/reviews` · `/the-work` (articles) · `/apply` (Tally `Gxop2o`) · `/pallume-light` (Tally `5BlNoZ`; standalone form `https://tally.so/r/5BlNoZ`) · `/privacy-policy` · `/terms-of-service`
+`/` home · `/about` · `/consulting` (the site's one contact form, posting to `/api/contact` via Resend) · `/faq` · `/reviews` · `/privacy-policy` · `/terms-of-service`. No apply form and no call-to-action buttons (Camden, 10/12/2026); `/apply` and `/contact` 301 to `/consulting`. Retired with 301s to `/`: `/pallume-light`, `/pricing`, `/how-it-works`, `/the-work`.
