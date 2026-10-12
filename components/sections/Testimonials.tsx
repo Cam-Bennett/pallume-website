@@ -15,48 +15,59 @@ export default function Testimonials() {
       </p>
 
       <div className="flex flex-col" style={{ gap: "56px" }}>
-        {visible.map((item, i) => (
-          <div
-            key={i}
-            style={{
-              borderLeft: "3px solid #C89B3C",
-              paddingLeft: "32px",
-              maxWidth: "720px",
-            }}
-          >
-            <div className="flex flex-col" style={{ gap: "20px", marginBottom: "28px" }}>
-              {item.paragraphs.map((para, j) => (
-                <p
-                  key={j}
-                  className="font-sans"
-                  style={{
-                    fontSize: "17px",
-                    lineHeight: 1.8,
-                    color: "#1A1A1A",
-                    fontStyle: "italic",
-                  }}
-                >
-                  {j === 0 ? `“${para}` : j === item.paragraphs.length - 1 ? `${para}”` : para}
-                </p>
-              ))}
-            </div>
+        {visible.map((item, i) => {
+          const homepageQuote = (item as { homepageQuote?: string }).homepageQuote;
+          const paragraphs = homepageQuote ? [homepageQuote] : item.paragraphs;
 
-            <div>
-              <p
-                className="font-sans font-semibold"
-                style={{ fontSize: "14px", color: "#1A1A1A", letterSpacing: "0.03em" }}
-              >
-                {item.name}
-              </p>
-              <p
-                className="font-sans"
-                style={{ fontSize: "13px", color: "#6B7280", marginTop: "2px" }}
-              >
-                {item.title}
-              </p>
+          return (
+            <div
+              key={i}
+              style={{
+                borderLeft: "3px solid #C89B3C",
+                paddingLeft: "32px",
+                maxWidth: "720px",
+              }}
+            >
+              <div className="flex flex-col" style={{ gap: "20px", marginBottom: "28px" }}>
+                {paragraphs.map((para, j) => (
+                  <p
+                    key={j}
+                    className="font-sans"
+                    style={{
+                      fontSize: "17px",
+                      lineHeight: 1.8,
+                      color: "#1A1A1A",
+                      fontStyle: "italic",
+                    }}
+                  >
+                    {j === 0 && j === paragraphs.length - 1
+                      ? `“${para}”`
+                      : j === 0
+                      ? `“${para}`
+                      : j === paragraphs.length - 1
+                      ? `${para}”`
+                      : para}
+                  </p>
+                ))}
+              </div>
+
+              <div>
+                <p
+                  className="font-sans font-semibold"
+                  style={{ fontSize: "14px", color: "#1A1A1A", letterSpacing: "0.03em" }}
+                >
+                  {item.name}
+                </p>
+                <p
+                  className="font-sans"
+                  style={{ fontSize: "13px", color: "#6B7280", marginTop: "2px" }}
+                >
+                  {item.title}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </SectionWrapper>
   );

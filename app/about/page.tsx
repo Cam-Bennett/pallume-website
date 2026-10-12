@@ -7,7 +7,6 @@ import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import Btn from "@/components/ui/Btn";
 import { about } from "@/content/siteContent";
-import { PersonSchema } from "@/components/ui/PersonSchema";
 
 /* ------------------------------------------------------------------ */
 /* Scroll-reveal hook                                                   */
@@ -111,7 +110,6 @@ export default function AboutPage() {
       `}</style>
 
       <main style={{ paddingTop: "64px" }}>
-        <PersonSchema />
         <Nav />
 
         {/* ── HEADSHOT + EYEBROW + H1 ────────────────────────────── */}

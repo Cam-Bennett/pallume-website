@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   description:
     "Custom AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett. 10 minutes every morning.",
   metadataBase: new URL("https://pallume.com"),
+  verification: {
+    google: "JC48daCMebxYC3gDO6QfUN1SURp84EC8XGEUXTKJoZ0",
+  },
   openGraph: {
     title: "Pallume — Your Own AI Execution System",
     description:
@@ -29,6 +32,14 @@ export const metadata: Metadata = {
     siteName: "Pallume",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pallume — AI Execution Coaching",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -36,6 +47,7 @@ export const metadata: Metadata = {
     title: "Pallume — Your Own AI Execution System",
     description:
       "Custom-configured AI execution systems for business owners who can't close the gap between intention and result. Built by Camden Bennett.",
+    images: ["/images/og-image.png"],
   },
 };
 
@@ -47,6 +59,12 @@ const orgSchema = {
       "@id": "https://pallume.com/#organization",
       name: "Pallume",
       url: "https://pallume.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://pallume.com/images/og-image.png",
+        width: 1200,
+        height: 630,
+      },
       description:
         "Custom AI execution systems for business owners. Built by Camden Bennett.",
       email: "camden@pallume.com",
@@ -109,7 +127,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">{children}</body>
-      <GoogleAnalytics gaId="G-N49NZX240X" />
+      <GoogleAnalytics gaId="G-RJNKS81J3G" />
     </html>
   );
 }

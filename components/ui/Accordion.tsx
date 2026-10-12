@@ -93,8 +93,8 @@ export default function Accordion({ items, variant = "dark" }: AccordionProps) {
                 {item.answer.map((para, j) => (
                   <p
                     key={j}
-                    className="font-body text-text-soft"
-                    style={{ fontSize: "16px", lineHeight: 1.8 }}
+                    className="font-body"
+                    style={{ fontSize: "16px", lineHeight: 1.8, color: isLight ? "#6B7280" : "#B0B8C4" }}
                   >
                     {para}
                   </p>

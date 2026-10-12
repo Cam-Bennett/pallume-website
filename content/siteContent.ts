@@ -1033,3 +1033,218 @@ export const theWork = {
     buttonHref: "/#qualifier",
   },
 };
+
+// ════════════════════════════════════════════════════════════════════════════
+// SITE 2026 — the new offer. Written by Pallume Productization, 10/11/2026.
+// Writer of this file's words: Productization (DESIGN.md §11). The Website
+// session builds pages from `site2026`, then deletes the retired exports above
+// (they describe the 1:1 coaching model, Paths A/B/C, and $1,000/month, all
+// retired). Design rules: ~/Overwatch/02-businesses/pallume/DESIGN.md.
+// Voice rules: ~/Overwatch/02-businesses/pallume/VOICE-SIGNATURE.md (D-50).
+// Module words are NOT here: they live in
+// ~/Overwatch/02-businesses/pallume/module-descriptions.json — sync that file
+// into content/ at build time and read `site_line` and `site` from it.
+// Decisions behind these words: D-80 (paid at purchase, no free tier, free is
+// video; no tester applications on the site, Camden 10/11), D-84 (Claude Code, the
+// desktop app), D-86 (Pallume never sees what you write), D-87–D-89 (brand).
+// ════════════════════════════════════════════════════════════════════════════
+
+export const site2026 = {
+  meta: {
+    title: "Pallume — Clarity for your business",
+    description:
+      "A journal that reads what gets in your way, and a system that fixes it, running in Claude on your own computer. Plus fixed-scope consulting for problems worth solving properly.",
+  },
+
+  nav: {
+    links: [
+      { label: "How it works", href: "/how-it-works" },
+      { label: "Consulting", href: "/consulting" },
+      { label: "The Work", href: "/the-work" },
+      { label: "About", href: "/about" },
+      { label: "FAQ", href: "/faq" },
+    ],
+    cta: "Apply for consulting",
+    ctaHref: "/apply",
+  },
+
+  // FirstLightHero: the image and the wordmark only. The tagline stays off the
+  // hero for now (D-50 note, 10/11/2026).
+  hero: {
+    wordmark: "Pallume",
+    imageAlt: "A person seated on a granite outcrop before dawn, a lantern lit beside them, fog over a mountain lake below.",
+  },
+
+  // First section below the image. Two-tone headline (DESIGN.md §3): first
+  // sentence in --text, second in --text-muted. Rhythm 7, the anchor.
+  opener: {
+    headline: ["Your day holds no surprises.", "So why are you still overwhelmed?"],
+    paragraphs: [
+      "It's nine at night and the laptop is still open on the kitchen table. You answered everything today. You can't name one thing that moved.",
+      "You know what matters. You knew it this morning. The day went to everyone else's version of urgent, the way it did yesterday and the way it will tomorrow.",
+    ],
+  },
+
+  // Rhythm 2. Reframes the problem from willpower to system.
+  diagnosis: {
+    headline: ["You don't have a discipline problem.", "You have a defaults problem."],
+    paragraphs: [
+      "Every unexamined yes, every inbox opened before the real work, every Tuesday that runs itself. None of it is a character flaw. It's a system nobody designed, running exactly as built.",
+      "Pallume gives you a different one, built from how your days actually go.",
+    ],
+  },
+
+  // A real sequence, so numbering is information (DESIGN.md: structure is information).
+  howItWorks: {
+    headline: ["It starts with what you write.", "Then it gets to work."],
+    steps: [
+      {
+        name: "The Journal",
+        body: "One entry a day, in two parts: what got in your way, and what's on your mind. The journal reads them back, names what keeps showing up, and builds a list of things worth fixing, in your words.",
+      },
+      {
+        name: "The baseline",
+        body: "Over the first few weeks it learns how your work and life actually run: your tools, your time, your people, where things rub. When the picture is complete, it tells you, and writes your strategy from what you wrote.",
+      },
+      {
+        name: "Overwatch",
+        body: "Then the work starts. Overwatch builds what the journal found: the checklists, drafts, routines, and the board that shows your whole operation at a glance. The journal keeps going beside it.",
+      },
+    ],
+    modulesIntro: "Overwatch runs the modules you need as the need shows up, not before.",
+    // Module list: read from module-descriptions.json (synced), in this order.
+    moduleOrder: ["journal", "overwatch", "triage", "focus", "inbox", "people", "research", "prompt", "examen"],
+  },
+
+  // The honest part. The first line is locked (D-80, 10/06/2026).
+  requirements: {
+    headline: ["This fails one hundred percent of the time if you don't use it.", "Not most of the time. Every time."],
+    paragraphs: [
+      "It has nothing to work with except what you write. A few minutes a day, three mornings a week at the least, and it starts to see what you can't.",
+    ],
+    list: [
+      "A Claude account in your own name, on a paid plan. Pro is enough.",
+      "The Claude desktop app on your Mac or PC. Everything runs there, in a folder on your own computer.",
+      "Your own account, not your employer's. What you write is yours.",
+    ],
+  },
+
+  privacy: {
+    headline: "Pallume knows what you bought. Never what you write.",
+    body: "Your journal and everything built from it live in a folder on your computer and in your own Claude account. Nothing you write is sent to Pallume. Not a summary, not a sample, not a number.",
+  },
+
+
+  consulting: {
+    headline: ["Some problems are worth solving properly.", "Those are the ones I take."],
+    paragraphs: [
+      "This isn't coaching. It's problem-first work: I listen, figure out what's actually wrong, and solve it. Fixed scope, fixed fee, and a defined end. No retainer, because a retainer pays me for time, not for the result.",
+      "It fits problems worth at least $50,000 to the business. The fee is set in the conversation, once the problem is clear.",
+    ],
+    // Was "paths"; path language is retired. Three starting points, not three offers.
+    startingPoints: [
+      { name: "You know the problem", body: "I scope it and solve it." },
+      { name: "You can feel it, but can't name it", body: "I find the cause first, then fix that." },
+      { name: "You can't tell yet", body: "A full diagnostic of the business comes first. This is the only starting point that begins there." },
+    ],
+    cta: "Apply for consulting",
+    ctaHref: "/apply",
+  },
+
+  founder: {
+    name: "Camden Bennett",
+    imageSrc: "/images/camden-headshot.jpg",
+    imageAlt: "Camden Bennett, founder of Pallume",
+    paragraphs: [
+      "Fifteen years in the Navy, first as a diver, then as an intelligence officer. Both jobs run on accurate information, read clearly and acted on. Then I came home to Wyoming and ran the top-producing brokerage in Sublette County, with my time finally my own, and found out what reactive mode really costs.",
+      "I built the system for myself first. I run it every morning on my own business, and every part of Pallume ran on my real work before anyone else saw it.",
+    ],
+    pullQuote: "I don't sell anything I haven't run on my own work first.",
+  },
+
+  // The founding tenet belongs on the About page and the sales page (Voice Signature).
+  closing: {
+    tenet: "Stop doing things that sound nice and don't matter.",
+    cta: "Apply for consulting",
+    ctaHref: "/apply",
+  },
+
+  // Rule 8 of the Voice Signature: the tagline closes everything.
+  footer: {
+    tagline: "Pallume. Clarity for your business.",
+    contact: "camden@pallume.com",
+    links: [
+      { label: "Privacy", href: "/privacy-policy" },
+      { label: "Terms", href: "/terms-of-service" },
+    ],
+  },
+
+  about: {
+    meta: {
+      title: "About Camden Bennett — Pallume",
+      description:
+        "Navy diver and intelligence officer, Wyoming real estate broker, and the first user of every part of Pallume.",
+    },
+    headline: ["Stop doing things that sound nice", "and don't matter."],
+    paragraphs: [
+      "That's the line I wish someone had said to me years earlier. I was the managing broker of the top-producing brokerage in Sublette County, and I knew exactly which work would grow it. I just never got to it. The phone, the questions, the fires, the emails got the best hours of every day.",
+      "I tried earlier mornings, headphones, notebooks, three calendars, a shelf of productivity books, and every app with a checkbox. Some of it helped for a week.",
+      "What finally worked was a system built around my real days instead of my good intentions, run every morning until the evidence showed up. That system is what Pallume sells, and I still run it on my own business.",
+    ],
+  },
+
+  consultingPage: {
+    meta: {
+      title: "Consulting — Pallume",
+      description: "Fixed-scope, fixed-fee work on business problems worth at least $50,000, with a defined end."
+    },
+    applyNote: "Applications are read by me, not a funnel.",
+  },
+
+  faq: [
+    {
+      q: "Isn't this just ChatGPT with extra steps?",
+      a: "No. It runs in Claude, on your own computer, in a folder that holds everything you've written and everything built from it. A chat forgets. This doesn't, because the folder is the memory.",
+    },
+    {
+      q: "What do I need?",
+      a: "A paid Claude plan in your own name (Pro is enough), the Claude desktop app on a Mac or PC, and the willingness to write a little most days.",
+    },
+    {
+      q: "How much time does it take?",
+      a: "A few minutes, most days. Three mornings a week is the floor. A short entry counts.",
+    },
+    {
+      q: "Can Pallume read my journal?",
+      a: "No. It lives on your computer and in your Claude account. Pallume knows what you bought, never what you write.",
+    },
+    {
+      q: "Is it a subscription?",
+      a: "No. You buy it once. The only ongoing cost is your own Claude plan, which you pay Anthropic directly.",
+    },
+    {
+      q: "Is there a free trial?",
+      a: "No. What's free is the videos and the webinar, where I teach the basic methods, enough to build your own version. The finished system is paid at purchase, because something you didn't commit to is something you won't use.",
+    },
+    {
+      q: "Can I get a refund?",
+      a: "Yes, within 21 days, once you've written at least ten journal entries. Your journal will tell you how many you've written; send that with your request.",
+    },
+    {
+      q: "Can I use my work account?",
+      a: "Use your own. What you write belongs to you, and an employer's account belongs to the employer.",
+    },
+    {
+      q: "When can I buy it?",
+      a: "It opens this winter. Webinar dates will be posted here first."
+    },
+    {
+      q: "Is the consulting coaching?",
+      a: "No. It's fixed-scope work on one problem worth solving, with a fixed fee and a defined end. No monthly retainer.",
+    },
+    {
+      q: "Is there a free call?",
+      a: "The webinar is the free call. You'll see the whole system and get your questions answered live.",
+    },
+  ],
+};

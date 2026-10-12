@@ -32,15 +32,7 @@ export default function Footer() {
               </a>
             ))}
 
-            {/* Divider */}
-            <span
-              aria-hidden="true"
-              style={{ color: "rgba(200,155,60,0.25)", fontSize: "13px" }}
-            >
-              |
-            </span>
-
-            {/* Email — visually distinct from nav links */}
+            {/* Email */}
             <a
               href={`mailto:${footer.email}`}
               className="font-sans hover:text-textLightMuted transition-colors duration-150"

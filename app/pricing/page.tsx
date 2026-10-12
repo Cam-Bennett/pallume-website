@@ -18,11 +18,20 @@ export const metadata: Metadata = {
     url: "https://pallume.com/pricing",
     siteName: "Pallume",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pallume — AI Execution Coaching",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pricing — Pallume",
     description: pricing.meta.description,
+    images: ["/images/og-image.png"],
   },
 };
 

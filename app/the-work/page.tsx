@@ -21,12 +21,21 @@ export const metadata: Metadata = {
     url: "https://pallume.com/the-work",
     siteName: "Pallume",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pallume — AI Execution Coaching",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Work — Pallume",
     description:
       "Articles on AI execution systems, why productivity tools fail, and how custom AI accountability coaching works for business owners.",
+    images: ["/images/og-image.png"],
   },
 };
 

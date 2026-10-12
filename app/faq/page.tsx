@@ -21,12 +21,21 @@ export const metadata: Metadata = {
     url: "https://pallume.com/faq",
     siteName: "Pallume",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pallume — AI Execution Coaching",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "FAQ — Pallume",
     description:
       "Answers to common questions about Pallume — what it is, how it works, what it costs, and whether it's the right fit for your situation.",
+    images: ["/images/og-image.png"],
   },
 };
 

@@ -33,11 +33,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://pallume.com/the-work/${article.slug}`,
       siteName: "Pallume",
       type: "article",
+      images: [
+        {
+          url: "/images/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Pallume — AI Execution Coaching",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${article.title} — Pallume`,
       description: article.excerpt,
+      images: ["/images/og-image.png"],
     },
   };
 }

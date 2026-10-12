@@ -3,6 +3,7 @@ import Script from "next/script";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionWrapper from "@/components/ui/SectionWrapper";
+import { TallyTracker } from "@/components/ui/TallyTracker";
 
 export const metadata: Metadata = {
   title: "Apply — Pallume",
@@ -18,12 +19,21 @@ export const metadata: Metadata = {
     url: "https://pallume.com/apply",
     siteName: "Pallume",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pallume — AI Execution Coaching",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Apply — Pallume",
     description:
       "Pallume works with a limited number of clients at a time. This application helps Camden understand whether we're a fit before scheduling a call.",
+    images: ["/images/og-image.png"],
   },
 };
 
@@ -53,6 +63,7 @@ export default function ApplyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(applyBreadcrumb) }}
       />
+      <TallyTracker />
       <Script async src="https://tally.so/widgets/embed.js" />
       <Nav />
 
