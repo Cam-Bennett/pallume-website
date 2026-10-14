@@ -5,15 +5,9 @@ import PageHeader from "@/components/site/PageHeader";
 import { FAQSchema } from "@/components/ui/FAQSchema";
 import { pageMeta, breadcrumb, JsonLd } from "@/lib/metadata";
 
-// site2026 has no FAQ title or description; the nav label and the site
-// description stand in until Productization writes them.
 const faqLabel = site2026.nav.links.find((l) => l.href === "/faq")?.label ?? "FAQ";
 
-export const metadata = pageMeta({
-  title: `${faqLabel} — Pallume`,
-  description: site2026.meta.description,
-  path: "/faq",
-});
+export const metadata = pageMeta({ ...site2026.faqPage.meta, path: "/faq" });
 
 export default function FAQPage() {
   const { faq } = site2026;
@@ -26,7 +20,7 @@ export default function FAQPage() {
       <main>
         <PageHeader>
           <h1 className="pl-h2" style={{ margin: 0 }}>
-            {faqLabel}
+            {site2026.faqPage.headline}
           </h1>
         </PageHeader>
 

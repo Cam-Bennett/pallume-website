@@ -5,12 +5,7 @@ import PageHeader from "@/components/site/PageHeader";
 import Testimonials from "@/components/site/Testimonials";
 import { pageMeta, breadcrumb, JsonLd } from "@/lib/metadata";
 
-// The header lines below predate site2026 and are kept as they were (May 2026).
-export const metadata = pageMeta({
-  title: "Client Reviews — Pallume",
-  description: site2026.meta.description,
-  path: "/reviews",
-});
+export const metadata = pageMeta({ ...site2026.reviewsPage.meta, path: "/reviews" });
 
 export default function ReviewsPage() {
   return (
@@ -20,10 +15,10 @@ export default function ReviewsPage() {
       <main>
         <PageHeader>
           <h1 className="pl-h2" style={{ margin: 0 }}>
-            In their own words.
+            {site2026.reviewsPage.headline}
           </h1>
           <p className="pl-body" style={{ margin: "32px 0 0" }}>
-            Unedited. These are real clients describing what changed and why.
+            {site2026.reviewsPage.lead}
           </p>
         </PageHeader>
 

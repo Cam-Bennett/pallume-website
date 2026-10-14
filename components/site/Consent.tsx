@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { site2026 } from "@/content/siteContent";
 
 // Google Analytics loads only after the visitor says yes. Nothing is set
 // before that. A Global Privacy Control signal counts as no, with no banner.
-// UI strings are not in site2026 yet; Productization should move them there.
 const GA_ID = "G-RJNKS81J3G";
 const KEY = "pallume-analytics-consent";
 export const REOPEN_EVENT = "pallume:consent-reopen";
@@ -104,17 +104,17 @@ export default function Consent() {
           }}
         >
           <p style={{ margin: 0, fontSize: "15px", lineHeight: 1.6, color: "var(--text-soft)" }}>
-            May this site use Google Analytics to count visits? It sets cookies. Nothing loads unless you say yes.{" "}
+            {site2026.analyticsConsent.body}{" "}
             <a href="/privacy-policy" className="pl-link">
               Privacy
             </a>
           </p>
           <div className="flex flex-wrap" style={{ gap: "12px", marginTop: "16px" }}>
             <button type="button" style={buttonStyle} onClick={() => decide("granted")}>
-              Allow
+              {site2026.analyticsConsent.allow}
             </button>
             <button type="button" style={buttonStyle} onClick={() => decide("denied")}>
-              No thanks
+              {site2026.analyticsConsent.decline}
             </button>
           </div>
         </div>

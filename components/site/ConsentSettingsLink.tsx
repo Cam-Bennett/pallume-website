@@ -1,6 +1,7 @@
 "use client";
 
 import { REOPEN_EVENT } from "@/components/site/Consent";
+import { site2026 } from "@/content/siteContent";
 
 // Footer control that reopens the analytics choice.
 export default function ConsentSettingsLink() {
@@ -11,7 +12,7 @@ export default function ConsentSettingsLink() {
       className="hover:!text-[var(--text-soft)] transition-colors duration-150"
       style={{ background: "none", border: 0, padding: 0, color: "var(--text-muted)", fontSize: "15px", fontFamily: "inherit" }}
     >
-      Analytics settings
+      {site2026.analyticsConsent.settings}
     </button>
   );
 }

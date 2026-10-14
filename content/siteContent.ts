@@ -1,411 +1,6 @@
 // All site copy lives here. Never hardcode strings in components.
 
-export const nav = {
-  logo: "Pallume",
-  links: [
-    { label: "About", href: "/about" },
-    { label: "How It Works", href: "/how-it-works" },
-    { label: "Reviews", href: "/reviews" },
-    { label: "The Work", href: "/the-work" },
-    { label: "FAQ", href: "/faq" },
-  ],
-  cta: "Apply Now",
-  ctaHref: "/apply",
-};
-
-// ARCHIVED: "Your own AI execution system." + "Built by a coach. Running every morning."
-// Moved out of hero — available for reuse in mechanism/how-it-works section
-export const heroArchived = {
-  headline: "Your own AI execution system.",
-  subheadline: "Built by a coach. Running every morning.",
-};
-
-export const hero = {
-  eyebrow: "THE PALLUME METHOD — FOUNDATION · DIAGNOSIS · SYSTEM · TRANSFER",
-  headline: "You start every week knowing exactly what matters. By Thursday it looks nothing like the plan.",
-  subtitle:
-    "That's not a discipline problem. That's a design problem. Pallume builds the execution architecture your ambition has been missing.",
-  ctaPrimary: "See If You Qualify",
-  featureStrip: [
-    "60-75 min intake interviews",
-    "Weekly coaching reviews",
-  ],
-};
-
-export const empathy = {
-  headline: "Here's what your day is actually costing you.",
-  paragraphs: [
-    "It's a moment most business owners recognize. 4pm. You've been working since 7. You're exhausted. And when you try to name what actually moved forward today — you struggle.",
-    "Accountability coaching helps. It only works on the days you meet.",
-    "Emails answered. Fires put out. Questions fielded. The reactive layer of the business got your full attention and your best hours.",
-    "The work that would have actually mattered — the proposal, the strategy, the thing you've been trying to carve out two hours for — is still where it was this morning.",
-    "That's what happens when capable people have no architecture protecting their most important work from everything else competing for it.",
-  ],
-  emphasizedIndex: 1,
-};
-
-export const practiceRequirement = {
-  eyebrow: "ONE THING TO UNDERSTAND BEFORE YOU APPLY.",
-  paragraphs: [
-    "The system works because you work it.",
-    "The morning check-in is the raw material. What you put into it — your actual thinking, your real priorities, your honest assessment of where you are — is what the AI pattern-recognizes from. A half-effort check-in produces half-effort pattern recognition. The coaching response Camden sends each week is only as precise as the data you gave the system that week.",
-    "This isn't a passive system. It doesn't run in the background while you do other things. It runs in ten minutes every morning because you sit down and run it.",
-    "Clients who treat the check-in as a checkbox don't get results. Clients who treat it as the most important ten minutes of their day do.",
-  ],
-  closingLines: [
-    "If that's a problem — this isn't the right fit.",
-    "If that's obvious — keep reading.",
-  ],
-};
-
-export const priorAttempts = {
-  eyebrow: "YOU'VE ALREADY TRIED TO FIX THIS.",
-  paragraphs: [
-    "You downloaded the apps. Set up the system. Used it for two weeks.",
-    "The time-blocking. Color-coded calendar. Protected blocks that evaporated the first time someone needed something.",
-    "The accountability partner. Good intentions. Both of you got busy.",
-    "You hired a coach. Valuable sessions. The momentum didn't last.",
-    "The journal. The notebook. The sticky notes on the monitor. The running task list that became its own source of anxiety.",
-    "None of it held — not because you didn't commit to it, but because none of it was built around how you actually work. Every system you've tried was designed for a generic person. At the first point it didn't match your specific patterns, your specific business, your specific week — it broke.",
-    "That's not a failure of discipline. That's a design problem. You were using the wrong tool for the job.",
-  ],
-};
-
-export const costOfInaction = {
-  eyebrow: "WHAT THE GAP COSTS",
-  label: "WHAT THE GAP COSTS",
-  headline: "The math on wasted execution",
-  stats: [
-    {
-      number: "$300K",
-      label: "What a $1M operator's strategic time is worth annually",
-      description:
-        "For a solo operator doing $1M, the operator's time could realistically be worth $300K. That's the strategic capacity — the work only you can do.",
-    },
-    {
-      number: "70%",
-      label: "Time in reactive mode",
-      description:
-        "Most operators spend the majority of their week in reactive mode. If even half your week goes to reactive work, the strategic capacity you're actually deploying is a fraction of what's available.",
-    },
-    {
-      number: "$90K+",
-      label: "Annual value in the gap",
-      description:
-        "A conservative estimate of annual value sitting in the gap between what you planned to do and what actually happened. Not lost revenue — lost leverage.",
-    },
-  ],
-  paragraphs: [
-    "Most business owners underestimate the execution gap because they measure effort, not output.",
-    "Here's a different way to look at it. If your strategic capacity is worth $300,000 a year and you're deploying 70% of it — the gap is $90,000. Not because the strategy is wrong. Because the execution layer underneath it is leaking.",
-    "That number lives somewhere specific. In the follow-up that didn't happen. The proposal that went out a week late. The initiative that never got two consecutive hours of focused work. The hire you haven't had time to think through properly.",
-    "Every week the infrastructure problem stays unsolved, the gap compounds. Not dramatically — just steadily. The same way a slow leak drains a tank.",
-    "At $1,000 a month for three months (recommended baseline), Pallume costs $3,000. If it closes 20% of a $90,000 execution gap, the return is $18,000. If it closes half — the math becomes obvious.",
-    "The question isn't whether you can afford it. It's what it costs to leave the gap open for another year.",
-  ],
-};
-
-export const proofInsight = {
-  quote:
-    "Most of my clients come in describing the wrong problem. Design tools, marketing help, bookkeeping fixes — none of those are the actual issue. The intake process exists because people describe symptoms, not root causes. Finding the actual problem is the first move.",
-};
-
-// Journal product section content — TBD (name decision pending)
-
-export const pathSelector = {
-  label: "The Diagnostic",
-  headline: "Is the problem you, your business, or both?",
-  subhead: "This question opens the door. Your answer shapes everything we build.",
-  paths: [
-    {
-      id: "A",
-      color: "#DC2626",
-      title: "The Person",
-      description:
-        "One person. One system. Built around your goals, your patterns, and whatever your life contains — business, personal, or both. The system captures what's in your head and finds the patterns across all of it.",
-      cta: "This sounds like me →",
-    },
-    {
-      id: "B",
-      color: "#2563EB",
-      title: "The Business",
-      description:
-        "For teams of up to three people in the same business. The problem requires building systems for more than one person. Your people are capable — the workflows, communication, and execution layer underneath them isn't. You need a diagnostic and systems your team can actually run.",
-      cta: "This sounds like me →",
-    },
-    {
-      id: "C",
-      color: "#7C3AED",
-      title: "Custom",
-      description:
-        "If your situation doesn't fit PATH A or PATH B, PATH C is a fully custom engagement scoped during intake. The scope, structure, and deliverables are built around your specific situation — not a template. Custom research briefs, strategic documents, knowledge bases, and systems are designed from scratch when your situation calls for it.",
-      cta: "Tell me about your situation →",
-    },
-  ],
-};
-
-export const identityFrame = {
-  eyebrow: "WHO THIS IS FOR — AND WHO IT ISN'T.",
-  intro: [
-    "Pallume is for those who know how to work hard. The people who get the most from this system are already capable, already motivated, and already aware of the gap between what they're producing and what they're capable of.",
-    "What they don't have is the architecture underneath their effort.",
-  ],
-  forYouLabel: "This is for you if:",
-  forYou: [
-    "You run a service business and your strategy is solid — execution is where it breaks down",
-    "You're highly self-aware but perpetually behind your own potential",
-    "You've read the frameworks, understand the principles, and can't consistently apply them alone",
-    "You want a system, not a cheerleader",
-    "You've already tried the standard solutions and found them too shallow for the actual complexity of running a business",
-  ],
-  notForYouLabel: "This is not for you if:",
-  notForYou: [
-    "You want someone to do the work for you",
-    "You're looking for motivation or inspiration — you don't have a motivation problem",
-    "You're not willing to show up for a system consistently",
-    "You're in the \"I'll get to this eventually\" stage of your business",
-  ],
-  closing: "If you fit the first list and not the second — this is the right fit for you.",
-};
-
-export const pallumeMethod = {
-  eyebrow: "THE PALLUME METHOD",
-  headline: "Foundation. Diagnosis. System. Transfer.",
-  subhead: "Four stages. Every engagement follows this arc — from infrastructure to independence.",
-  stages: [
-    {
-      number: "01",
-      name: "Foundation",
-      description:
-        "Your system is configured before anything else moves. Custom journal delivered, daily habit established, first system live. The foundation has to hold before the next layer goes on.",
-    },
-    {
-      number: "02",
-      name: "Diagnosis",
-      description:
-        "The problem you describe and the problem the data reveals are rarely the same. Intake, deep-dive interview, and targets set. Everything built after this traces back to what we find here.",
-    },
-    {
-      number: "03",
-      name: "System",
-      description:
-        "Your AI runs in your real work. Refined weekly against actual data. Patterns get named, targets get movement, and the system sharpens every week you use it.",
-    },
-    {
-      number: "04",
-      name: "Transfer",
-      description:
-        "You build your second system yourself — same methodology, Camden advising rather than constructing. You launch when you can operate independently. That's the point.",
-    },
-  ],
-};
-
-export const mechanism = {
-  eyebrow: "WHY NOTHING CLOSED THE GAP.",
-  bodyPart1: [
-    "Every system you've tried operated at the wrong layer. Not the wrong idea — the wrong architecture.",
-    "You need something that runs at your actual working cadence. Daily, not monthly. Something that retains context across weeks and months — not just within a single session. Something that accumulates enough data about your specific patterns to name the loop you're living inside when you can't see it yourself.",
-    "That's what doesn't exist in any tool, app, or coaching model you've already encountered.",
-  ],
-  reveal: "YOUR OWN AI EXECUTION SYSTEM. BUILT BY A COACH. RUNNING EVERY MORNING.",
-  bodyPart2: [
-    "Pallume is a custom Claude project configured around how you specifically work — your goals, your values, your decision framework, your resistance patterns, and the specific ways you consistently get stuck.",
-    "Not a template. A configuration built from a 60–75 minute deep-dive interview about you.",
-    "This works across industries because it's built around how you operate — your patterns, your decisions, your avoidance loops — not your field. The AI doesn't need to know construction or finance. It needs to know you.",
-    "It runs inside your own account. It retains everything. It knows what you said you'd do last Tuesday. It knows the project you've been pushing to next week for a month. It catches the contradictions between what you say you want and what you're actually spending your time on — and it surfaces them without ego, without agenda, and without letting you off the hook.",
-    "Camden reviews your weekly summary once per week. He reads what the AI surfaced, identifies what it missed, and adjusts the system accordingly. That human interpretation layer — applied to weeks of your actual behavioral data — is what no tool or coach replicates on their own.",
-    "The system gets sharper the longer you use it. Month one, it knows your goals. Month two, it knows your patterns. Month three, it's running your task triage, your decision framework, your morning ritual, and whatever your work actually demands.",
-    "It starts with 10 minutes every morning. That's the entry point. The ceiling is the size of your work. Here's a look at the simple interface where it all happens, plus a sample of the feedback you can expect.",
-  ],
-};
-
-export const howItWorks = {
-  label: "How It Works",
-  headline: "Three steps. Every path.",
-  steps: [
-    {
-      number: "01",
-      title: "Build",
-      description:
-        "You complete an intake form. Camden uses your responses to generate custom interview questions. The interview is about an hour via video call, phone or in person. From that recording, he builds your system: Project Instructions, an Interview Summary with coaching feedback, and a Setup Email. The system is yours from day one.",
-    },
-    {
-      number: "02",
-      title: "Deploy",
-      description: [
-        "Your AI system lives in your own Claude account. You own it — it's not a subscription to someone else's platform.",
-        "The morning check-in takes 10 minutes. You open the system, type the time and date, and say: Let's run a journal. A gratitude entry. A brain dump of whatever's creating noise. A stream of consciousness that captures what's actually on your mind. A rotating daily theme. The session ends with the specific things you need to protect time for today.",
-        "The system knows your history. Every conversation builds on the last.",
-      ],
-    },
-    {
-      number: "03",
-      title: "Refine",
-      description:
-        "Once a week, it generates a weekly summary. You send that summary to your coach. The coach reads it, identifies the patterns the AI surfaced, and sends coaching feedback — what's working, what the data shows you're avoiding, and what the system needs to handle better. When it's appropriate, the system is adjusted.",
-    },
-  ],
-};
-
-export const features = {
-  label: "What You Get",
-  headline: "Pallume. Your personal execution system.",
-  subhead:
-    "Six capabilities. All running from a single morning check-in.",
-  cards: [
-    {
-      title: "Your Morning Log",
-      description:
-        "Capture your day before it captures you. Brain dump. Open tasks. Unfinished decisions. Ideas that'll disappear if you don't write them down. 10 minutes of structure that clears your head and sets your priority. This isn't journaling — it's a daily ops brief. And the AI reads every word.",
-      whichMeans:
-        "You stop starting the day in reactive mode. The first 10 minutes produce a clear priority — and that priority protects the next two hours.",
-    },
-    {
-      title: "See What You Can't See",
-      description:
-        "The AI catches contradictions between what you say you want and what you're actually doing. Avoidance patterns. Momentum trends. Energy cycles. The things you consistently skip, delay, or rationalize away — surfaced automatically.",
-      whichMeans:
-        "The patterns that have been costing you time and output for months get named. You can't fix what you can't see. The system sees it.",
-    },
-    {
-      title: "Execution That Doesn't Flinch",
-      description:
-        "Missed a commitment? It notices. Avoiding the hard thing? It says so. But it also catches wins you'd overlook, reinforces momentum when you're building it, and reminds you of past efforts paying off right now. Brutal honesty. Genuine encouragement. Both.",
-      whichMeans:
-        "The structure holds even when your motivation doesn't. You get called out by a system you built yourself — which lands differently than being called out by another person.",
-    },
-    {
-      title: "Capture Everything. Do What Matters.",
-      description:
-        "Ideas, tasks, and decisions — captured before they're gone. Then the AI triages by impact using your decision framework. Highest-leverage actions rise. Busy work gets flagged. What to delegate, defer, or delete becomes obvious.",
-      whichMeans:
-        "Nothing falls through the cracks. The task list stops being a source of anxiety and starts being a ranked action sequence.",
-    },
-    {
-      title: "Decide Faster. Decide Better.",
-      description:
-        "Describe any opportunity or situation. The AI runs it through your stated goals and personal values. Returns a recommendation filtered through what matters to you — not generic advice from someone who doesn't know your business.",
-      whichMeans:
-        "Which means: You stop second-guessing decisions that should be clear. The system filters every choice through what you've already decided matters.",
-    },
-    {
-      title: "Proof You're Moving",
-      description:
-        "Weekly AI-generated reports tracking entries, wins completed, patterns identified, and gaps. Hard data on what's actually happening — not how it feels. Your coach reviews these and adjusts the system. You own the data.",
-      whichMeans:
-        "You stop measuring your week by how busy it felt. You measure it by what actually moved. The data shows you where the execution gap is closing — and where it isn't.",
-    },
-  ],
-  progressiveDeployment: {
-    headline: "The system starts small. That's the point.",
-    body: [
-      "Stage 1 is one habit: a 10-minute morning check-in. Nothing else is added until that's established. No new dashboards. No tech stack to configure. If you can type a text message, you can do this.",
-      "Every system you've abandoned failed for the same reason — it gave you everything at once. This one doesn't. Complexity is added as you level up, when the foundation is proven, not before.",
-    ],
-    weeks: [
-      "Stage 1: Daily check-in and pattern recognition.",
-      "Stage 2: Priority filtering and decision support added.",
-      "Stage 3: Strategic modules and deeper pattern analysis.",
-      "By Stage 3, the system is running your task triage, your decision framework, your pattern recognition, and whatever your work actually demands. Most clients are fully operational by month three. We recommend a minimum of three months — the minimum commitment is two.",
-    ],
-    closing:
-      "The check-in doesn't replace protected time. It produces it. Ten minutes of structured focus that ends with a clear priority for the next two hours. That's the whole mechanism.",
-  },
-};
-
-export const whatItsNot = {
-  label: "Clear Expectations",
-  headline: "What this is not.",
-  rows: [
-    {
-      left: "Not a course.",
-      right:
-        "An operational system you use daily. It works because you use it — not because you finished it.",
-    },
-    {
-      left: "Not a chatbot.",
-      right:
-        "Configured with your goals, values, and operating principles. It knows your business because your coach built it that way.",
-    },
-    {
-      left: "Not a template.",
-      right:
-        "Every deployment is custom-built from a deep-dive interview. No two systems are the same.",
-    },
-    {
-      left: "Not just software.",
-      right:
-        "The AI handles daily accountability. Your coach handles strategic direction. You get both.",
-    },
-    {
-      left: "Not theoretical.",
-      right:
-        "Every framework was built and tested inside an actual business before it was ever offered to a client. The same system Camden runs daily.",
-    },
-  ],
-};
-
-export const practitionerProof = {
-  label: "Built by a Practitioner",
-  headline: "Tested on the founder first. Then on clients.",
-  paragraphs: [
-    "I built this system for myself before I offered it to anyone. I was ending many days exhausted with little to show for it — responsive to everyone, in control of nothing. The system was the solution to my own problem.",
-    "I ran it on myself and developed it for months. Protected deep work time. Controlled working environment. Weekly review. When I began having consistently directed days instead of reactive ones, I started building it for others.",
-    "That's not a credential. That's a requirement. I won't coach someone through something I haven't lived.",
-  ],
-};
-
-export const clientProof = {
-  label: "Client Proof",
-  headline: "What happens in the first 30 days.",
-  subhead:
-    "The system runs inside Claude — an AI platform your coach configures specifically for you. Here's what clients experience.",
-  cards: [
-    {
-      eyebrow: "WEEK 1",
-      eyebrowColor: "#DC2626",
-      headline: "The Pattern Named",
-      body: "The AI identified an avoidance loop across four consecutive journal entries. The client had been living inside it for months and couldn't see it from the inside. Her coach named it. She changed it.",
-    },
-    {
-      eyebrow: "5 DAYS",
-      eyebrowColor: "#7C3AED",
-      headline: "Research to Contract",
-      body: "Client researched a negotiation tactic on Monday. Applied it to a live counter-offer on Friday. Got the contract. One week from learning to earning.",
-    },
-    {
-      eyebrow: "WEEK 1",
-      eyebrowColor: "#DC2626",
-      headline: "The 2:30am Problem",
-      body: "Financial anxiety was waking her at 2:30am. The first week of journaling named the avoidance loop causing it. She'd been living inside it for months. Naming it was the beginning of breaking it.",
-    },
-    {
-      eyebrow: "WEEK 1",
-      eyebrowColor: "#DC2626",
-      headline: "She Extended It Herself",
-      body: "In her first week, she found a gap in her own system, fixed it without help, then built a new accountability feature no one asked for. She upgraded her account the same week. All unprompted.",
-    },
-    {
-      eyebrow: "WEEK 2",
-      eyebrowColor: "#06B6D4",
-      headline: "$14,000 a Year. Unbudgeted.",
-      body: "Two weeks of journaling revealed she was performing 90 minutes of duties outside her job description every morning before her actual work began. The organization had no idea. Now it's a board conversation.",
-    },
-    {
-      eyebrow: "WEEK 4",
-      eyebrowColor: "#7C3AED",
-      headline: "The Leverage Was Already There",
-      body: "Sponsor commitments tripled in a single activated call session. The opportunity existed before the system. The system got her to use it.",
-    },
-  ],
-  // Toggle to true once permission is confirmed to display the quote publicly.
-  testimonialPublished: false,
-  testimonial: {
-    quote: "Why is it so much easier to take criticism from Claude than it is another person?",
-    attribution: "Week 1 Client",
-  },
-};
-
+// Kept from the earlier site: both quotes run verbatim, with permission.
 export const testimonials = {
   label: "WHAT CLIENTS SAY",
   items: [
@@ -438,355 +33,7 @@ export const testimonials = {
   ],
 };
 
-export const founder = {
-  label: "About Camden",
-  headline: "Camden Bennett",
-  imageSrc: "/images/camden-headshot.jpg",
-  imageAlt: "Camden Bennett, founder of Pallume",
-  bio: [
-    "I know what it looks like to end every day exhausted with nothing moved forward. I lived that pattern for years — available to everyone, responsive to everything, in control of nothing.",
-    "15 years in the Navy — first as a Diver, then as an Intelligence Officer. Both jobs run on the same structured requirements: accurate information, clearly interpreted, acted on by strict guidelines and SOPs. I came back to Wyoming after 20 years away, started running the #1 real estate brokerage in Sublette County, and now had the freedom to manage my own time and direct my own efforts. Without the strict military structure I was used to, I came face to face with the ugly reality of reactive mode for the first time. Pallume is my response.",
-    "What changed wasn't a book or a framework. It was building a system from scratch — around my specific goals, my actual patterns, and the ways I consistently got stuck — then running it every morning until the evidence showed up in my days. I deployed it on myself before I offered it to anyone else.",
-  ],
-  pullQuote: "I won't coach someone through something I haven't lived.",
-};
-
-export const qualifierForm = {
-  label: "See If You Qualify",
-  headline: "Apply for a Discovery Call.",
-  subhead: "Nine questions. Takes five minutes. Camden reviews every application personally.",
-  steps: [
-    {
-      id: "businessContext",
-      question: "What type of business do you run, and approximately what's your annual revenue?",
-      type: "textarea" as const,
-      placeholder: "",
-    },
-    {
-      id: "path",
-      question: "Is the problem primarily personal, organizational, or both?",
-      type: "single-select" as const,
-      options: [
-        { label: "More personal — habits, focus, execution", value: "A" },
-        { label: "More business — operations, team, systems", value: "B" },
-        { label: "Both — it's all connected", value: "A_both" },
-        {
-          label: "I lead a larger team or organization — my situation needs a custom conversation",
-          value: "C",
-        },
-      ],
-    },
-    {
-      id: "executionGap",
-      question: "What is the single biggest execution gap in your business right now?",
-      type: "textarea" as const,
-      placeholder: "",
-    },
-    {
-      id: "priorAttempts",
-      question: "What have you already tried to close that gap?",
-      type: "textarea" as const,
-      placeholder: "",
-    },
-    {
-      id: "motivation",
-      question: "Why is now the right time to address this?",
-      type: "textarea" as const,
-      placeholder: "",
-    },
-    {
-      id: "contact",
-      question: "Name and email.",
-      type: "contact" as const,
-      namePlaceholder: "Your name",
-      emailPlaceholder: "your@email.com",
-    },
-  ],
-  backLabel: "Back",
-  nextLabel: "Next",
-  submitLabel: "Submit Application",
-  confirmationMessage:
-    "Camden reviews all applications personally and responds within one business day. If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether Pallume is the right tool for your situation.",
-};
-
-export const cta = {
-  headline: "Ready to stop carrying everything in your head?",
-  description:
-    "Pallume works with a limited number of clients at a time. Nine questions. Takes five minutes. Camden reviews every application personally and responds within one business day.",
-  buttonLabel: "Apply Now",
-  trustLine: "You own your account. You own your data. No lock-in. No black box.",
-  contact: "",
-};
-
-export const footer = {
-  logo: "Pallume",
-  links: [
-    { label: "About", href: "/about" },
-    { label: "Pricing", href: "/pricing" },
-    { label: "The Work", href: "/the-work" },
-    { label: "FAQ", href: "/faq" },
-    { label: "Apply", href: "/apply" },
-    { label: "Pallume Journal Lite", href: "/pallume-light" },
-    { label: "Privacy", href: "/privacy-policy" },
-    { label: "Terms", href: "/terms-of-service" },
-  ],
-  email: "camden@pallume.com",
-  location: "Pinedale, Wyoming",
-};
-
-export const about = {
-  meta: {
-    title: "About Camden Bennett — Pallume",
-    description:
-      "Camden Bennett built Pallume for himself before offering it to clients. 15 years in the Navy. Real estate broker. Founder of an AI execution system that runs every morning.",
-  },
-  section1: {
-    eyebrow: "ABOUT CAMDEN",
-    headline: "You already know what needs to happen. Something keeps getting in the way.",
-    paragraphs: [
-      "If you're reading this, you probably know exactly what needs to happen in your business this week. You've known for a while. The problem isn't clarity — it's that everything else keeps eating the hours you need to do it.",
-      "That was my life for years. I was the managing broker of the top-producing brokerage in Sublette County. I knew what would grow the business — email outreach, strategic planning, the high-ROI work that compounds over time. I knew exactly what those were. I just couldn't get to them.",
-      "Every day I showed up intending to move something forward. By the end of it, I'd handled interruptions, answered questions, responded to emails, and put out whatever fires had started. The reactive layer of the business consumed everything. The work that actually mattered kept getting pushed.",
-      "The cost wasn't measurable in dollars. It was measured in the accumulation of things I knew I should be doing that I never got to. The stress of knowing the gap was widening. The exhaustion of working hard while feeling perpetually behind.",
-      "I didn't recognize it as a systems problem for a long time. I thought I needed more discipline. I tried using headphones to shut out office activity, earlier start times, notebooks, multiple calendars running simultaneously, productivity books, task list apps, unstructured AI tools. Some of it helped briefly. None of it lasted.",
-      "The shift came when I understood what was actually happening: context switching was destroying my capacity to do meaningful work, and I had no architecture protecting the time that mattered from everything competing for it.",
-      "So I built one.",
-    ],
-    imageSrc: "/images/camden-headshot.jpg",
-    imageAlt: "Camden Bennett, founder of Pallume",
-  },
-  section2: {
-    eyebrow: "THE BACKGROUND",
-    headline: "Different domain. Identical mechanism.",
-    paragraphs: [
-      "I grew up in Wyoming. Joined the Navy at 19 and spent a total of 15 years there.",
-      "My first job was as a Navy Diver — underwater inspections, hull cleanings, repairs on ships and submarines, work inside ballast tanks, occasional light salvage. It's a job that demands precision and focus in unforgiving conditions.",
-      "I earned a dual bachelor's degree in English and Anthropology between tours, which led to a commission as an Intelligence Officer. I deployed on the USS JOHN C STENNIS (CVN-74) on the admiral's staff. My job was to monitor the maritime environment for threats and brief decision-makers accurately enough that they could act with confidence.",
-      "In intelligence work, the goal isn't just to gather information — it's to synthesize it into something actionable. Bad analysis, delivered with confidence, gets people hurt. You learn to distinguish signal from noise. You learn that the quality of a decision is only as good as the clarity of the information feeding it.",
-      "That's the same skill at the core of Pallume. A weekly journal surfaces raw data. Pattern recognition finds what matters inside it. The coaching response turns that into a decision the client can act on. Different domain. Identical mechanism.",
-      "I came back to Wyoming when it was time to leave the Navy. My connections were here. My real estate career opportunity was here. I became the managing broker of the top-producing brokerage in Sublette County — and that's when the execution problem I'd been managing finally outran me.",
-    ],
-  },
-  section3: {
-    eyebrow: "HOW I WORK NOW",
-    headline: "What a morning actually looks like.",
-    paragraphs: [
-      "I'm up by six. I work out three or four days a week. I fast until lunch most weekdays. Coffee, supplements for cognitive function, electrolytes, music. I read my Bible.",
-      "Then I open Pallume Journal in Claude, type the time and date, and say: Let's run a journal.",
-      "Ten minutes. Designed for focus and idea capture. The system walks me through it:",
-      "A gratitude entry. One thing.",
-      "A brain dump of whatever's creating noise — worries, anxieties, unresolved things. Getting them out of my head clears space for actual work.",
-      "A stream of consciousness: ideas, impressions, observations about ongoing business, things I want to accomplish. Unfiltered. The AI reads all of it.",
-      "A rotating daily theme. Every day of the week has a different focus. One day I identify someone who helped me and reach out to thank them. Another day I evaluate what I'm giving time to that doesn't deserve it, and decide what replaces it.",
-      "The journal ends with the specific things I need to protect uninterrupted time for. It calls me out where I'm falling short of my own standards and affirms when I'm meeting them. By the time I close the check-in, I know exactly what I'm doing next and why.",
-      "But this is just the beginning. The system expands indefinitely from here.",
-      "The journal stays open. It becomes the working surface for the rest of the day. From inside it, I triage my task list, manage my calendar, and connect to Gmail. I use it to plan my week every Sunday evening.",
-      "The same system integrates with Notion, where the architecture for every project I'm running lives — clients, transactions, open loops, complex projects, strategic planning. When something needs to be built or tracked, Claude builds it here. When a decision gets made, Claude logs it here. Nothing lives only in my head.",
-      "On days when the work demands it, Claude Code runs alongside me — building automations, pushing to databases, updating websites, handling the technical layer of the business without interrupting what I'm doing. All directed by plain English inputs. Claude Cowork handles recurring workflows in the background. Agentic processes run parallel to my work without requiring significant attention. By the end of the day, a meaningful amount of what needed to happen has happened — some of it because I did it, some of it because the system did.",
-      "There was no doubt where I needed to go to re-engage after any interruption. Everything was tracked here. A lot of it was done right here.",
-      "The Pallume Journal is one project. The project architecture inside Claude grows with your work — as your systems mature, new projects get added, each one handling a specific domain of your business or life. The journal is the entry point. The ceiling is the size of your work.",
-      "The system I run now is the same system I build for every client. I deployed it on myself before the first client went live. I won't coach someone through something I haven't lived.",
-    ],
-  },
-  section4: {
-    eyebrow: "WHAT THIS PRODUCES",
-    headline: "The activation problem is real. The system solves it.",
-    paragraphs: [
-      "Most clients don't have a knowledge problem. They know what they should be doing. They have a list. They understand strategy.",
-      "What they don't have is a system that gets them to act on what they already know — consistently, at the right time, without requiring a fresh act of willpower every morning.",
-      "The pattern I see consistently: the work that matters is usually not far away. What's missing is the architecture that makes doing it the default. The journal surfaces it. The pattern recognition names it. The coaching response turns it into action.",
-      "The clients who take it seriously close the gap. Not because of motivation. Because the system holds when the motivation doesn't.",
-    ],
-  },
-  section5: {
-    eyebrow: "WHY THIS WORKS",
-    headline: "The system gets sharper. So does the coach.",
-    paragraphs: [
-      "Every client engagement teaches me something about how execution breaks down — and how to build systems that hold. The frameworks I use today are better than the ones I used six months ago because they've been pressure-tested across industries, business sizes, and personality types.",
-      "But the core hasn't changed: I run the same system I build for clients. Every morning. That's not a sales line. It's an operational requirement. A coach who doesn't use their own system is selling theory.",
-    ],
-    byline:
-      "Camden Bennett — Founder, Pallume. Broker, #1 brokerage in Sublette County. 15 years U.S. Navy.",
-  },
-  cta: {
-    transitionLine: "If this sounds like someone you'd work with, start with nine questions.",
-    buttonLabel: "See If You Qualify",
-    buttonHref: "/#qualifier",
-  },
-};
-
-export const faq = {
-  eyebrow: "COMMON QUESTIONS",
-  headline: "Before you decide.",
-  items: [
-    {
-      question: "What is Pallume?",
-      answer: [
-        "Pallume builds custom AI execution systems for business owners and individuals. The system — called Pallume Journal — is configured around your specific goals, patterns, and the ways you consistently get stuck. It runs in your own Claude account every morning. Your coach reviews your progress weekly and adjusts the system over time. It's not an app, not a course, and not a template. Every deployment is custom.",
-        "The coaching layer is backed by over a dozen research documents and tested against real client data — weekly Pallume Journal updates analyzed across months of engagements. The pattern recognition isn't guesswork. It's documented.",
-      ],
-    },
-    {
-      question: "What is Pallume Journal?",
-      answer: [
-        "A custom AI system — built from a deep-dive interview about how you specifically work — that runs inside your own Claude account. You use it every morning in a 10-minute check-in. It tracks your priorities, catches your patterns, and holds you accountable to what you said matters. Camden reviews your data weekly and adjusts the system as it learns you. Over time, it naturally becomes the centerpiece of your daily work and planning.",
-        "You own the account. You own the data. The system keeps running whether you continue coaching or not.",
-      ],
-    },
-    {
-      question: "How is this different from hiring a coach?",
-      answer: [
-        "Traditional coaching produces insights. Valuable ones. But insights without daily structure fade within days.",
-        "Pallume produces a system that operates between sessions — a daily check-in that captures what's actually happening in your work, surfaces the patterns your coach needs to see, and keeps the priorities Camden identified with you in front of you every morning.",
-        "The system requires your engagement. That's not a caveat — it's the mechanism. What's different from a journal or a coaching call is what happens with your engagement: it gets read, analyzed, and responded to every week. The data accumulates. The coaching gets more precise over time because it's built on weeks or months of your actual behavioral data, not a 50-minute snapshot.",
-      ],
-    },
-    {
-      question: "I've tried execution systems before. They didn't stick.",
-      answer: [
-        "They didn't stick because they were designed for a generic person and deployed all at once.",
-        "Generic systems break at the first point they don't match how you actually work — your energy patterns, your interruption reality, your specific failure modes. Pallume starts with a 60–75 minute interview specifically to find those points before building anything. The system is configured around what that conversation reveals, not around a template.",
-        "It also starts small. Week 1 is one habit: a 10-minute morning check-in. Nothing else is added until that's established. The system earns its complexity — it doesn't front-load it.",
-        "If you've abandoned every other system you've tried, that's not evidence that you can't do this. It's evidence that none of them were built for you.",
-      ],
-    },
-    {
-      question: "Isn't this just ChatGPT? I could do this myself.",
-      answer: [
-        "You could. It won't remember last Tuesday.",
-        "The difference isn't AI capability — it's configuration, context, and coaching. Pallume Journal is built from an hour-long interview about how you specifically work. It retains everything across your entire engagement. It knows your goals, your avoidance loops, and what you committed to last week.",
-        "Then there's the human layer. Camden reads your weekly data, identifies what the AI surfaced and what it missed, and adjusts the system. No self-configured prompt replicates that.",
-      ],
-    },
-    {
-      question: "Do I need to know how to use AI?",
-      answer: [
-        "No. Camden builds the entire system and sends a setup walkthrough. You don't configure anything. You interact with it the same way you'd type a text message or a word processing document — you type what's on your mind, and it responds. There's no software to install, only a very basic interface to learn, and minimal settings to configure. If you can use common software, you can use this.",
-      ],
-    },
-    {
-      question: "What tools do I need?",
-      answer: [
-        "Assuming you already have a computer, only one.",
-        "Claude is the AI platform the system runs in. Camden configures it — you just use it. That's all you need to start.",
-        "If you want to add persistent memory for tasks, leads, finances, and goals later, Notion connects as a second layer. You access it through conversation, not a dashboard. Most clients start with Claude only and add Notion as the system grows.",
-      ],
-    },
-    {
-      question: "How long before the system feels natural?",
-      answer: [
-        "The first week starts the habit: a 10-minute morning check-in. Nothing more is added until that's established.",
-        "Most clients feel the difference within the first few days — not because anything dramatic has changed, but because starting the day with a clear priority changes how the rest of it goes. Reactive mode doesn't disappear. It just loses its grip on your entire schedule.",
-        "Week 2 might add a layer. Week 4 might add another. By month two, the configuration reflects weeks of your actual patterns — something a generic template can never do.",
-      ],
-    },
-    {
-      question: "How much time does this take each day?",
-      answer: [
-        "The morning check-in takes 10 minutes. The weekly summary takes about 5 minutes to generate and send. The system grows as you lean into it, and this question will switch from \"How much time does it take,\" to, \"How much time will this save?\"",
-      ],
-    },
-    {
-      question: "What happens in the first week?",
-      answer: [
-        "Before the interview, you complete an intake form. Camden uses your responses to generate a custom set of interview questions specific to your situation — not a generic questionnaire.",
-        "The interview is about an hour. Camden asks everything the form surfaced, goes deeper where the situation warrants it, and records the whole conversation.",
-        "Within 48–72 hours you receive three things: your Project Instructions — the configuration that makes the system yours — an Interview Summary with direct coaching feedback on what Camden observed, and a Setup Email walking you through getting started. Your system goes live. Your first morning check-in begins.",
-      ],
-    },
-    {
-      question: "What does the weekly review look like?",
-      answer: [
-        "Once per week, you direct your system to generate a weekly summary. You send it to Camden by email.",
-        "He reads it against accumulated pattern data from months of client engagements — what works, what stalls, and where the common avoidance loops hide. Then he sends back a direct coaching response: what you're doing well, what the data shows you're consistently avoiding, and — when you're ready — the next addition to your system.",
-        "This happens via email. It's a written analysis of your actual behavioral data, delivered to your inbox. The coaching gets more precise over time because it's built on your history, not a 50-minute coaching call snapshot. The email check-in can be accompanied by a coaching call if desired.",
-      ],
-    },
-    {
-      question: "What if I fall off the system or get busy?",
-      answer: [
-        "That's expected. The system is designed for it.",
-        "Drift is not a failure condition — it's a data point. When your check-in frequency drops, the weekly summary reflects it. When your stated priorities stop matching your actual activity, the pattern surfaces. Camden sees it in the weekly data before you've consciously registered it yourself.",
-        "The only real point of failure is extended disengagement. Missing a few days is normal. Abandoning the check-in entirely for weeks breaks the feedback loop. If that happens, Camden will address it directly — that's what the weekly review is for.",
-        "The system doesn't require perfect consistency to produce value. It requires enough engagement to generate data. That threshold is lower than most people expect.",
-      ],
-    },
-    {
-      question: "$1,000/month is a lot.",
-      answer: [
-        "It depends entirely on what the gap is costing you.",
-        "If your business is producing $300,000 a year and executing at 70% of its potential, the execution gap is $90,000. Pallume at $1,000/month for three months costs $3,000. If it closes 20% of that gap, the return is $18,000. If it closes half — the math becomes obvious.",
-        "The question isn't whether $1,000/month is a lot in isolation. It's what it costs to leave the execution gap open for another year.",
-      ],
-    },
-    {
-      question: "Is this a subscription? Can I cancel?",
-      answer: [
-        "Pricing is monthly with a two-month minimum commitment and a recommended three-month baseline — that's the minimum time for the system to accumulate real pattern data and for the coaching to produce results you can measure.",
-        "What you own at the end of that engagement: your Claude account, your Project Instructions, your entire conversation history, and a system that keeps running whether you continue coaching or not. There's no platform to be locked into. The system lives in your account. It's yours.",
-        "You can cancel at any time. If you do, you'll still receive full service for the amount of time you paid for.",
-      ],
-    },
-    {
-      question: "What if Pallume isn't the right fit?",
-      answer: [
-        "Request a refund within 14 days of receiving your custom Pallume system. We retain a $250 setup fee covering the intake interview and initial build. After 14 days, the engagement is non-refundable.",
-        "To request, email camden@livewyoming.net within the 14-day window.",
-      ],
-    },
-    {
-      question: "How do I know when I'm ready to launch?",
-      answer: [
-        "Launch happens when you hit the Maturity Milestone — not on a fixed timeline. Three conditions have to be true: your daily journal is calibrated to how you actually work, your first system has been built with Camden around the highest-leverage friction in your week, and you have the operational skill to build the next one yourself.",
-        "When those three are met, Camden's role shifts from builder to second pair of eyes. The daily journal and weekly review don't stop — they become the Diagnostic Loop, the same rhythm now running under your own direction.",
-        "Most clients hit the Maturity Milestone somewhere in months two to four. Some take longer. There's no pressure and no fixed date — the goal is genuine independence, not a deadline.",
-      ],
-    },
-    {
-      question: "What kinds of businesses is this built for?",
-      answer: [
-        "PATH A is for individuals — solo operators, executives, and business owners who are the bottleneck in their own execution. One person, one system.",
-        "PATH B is for teams of up to three people in the same organization where the dysfunction is structural. The people are capable — the systems underneath them aren't.",
-        "PATH C is for situations that don't fit either path — larger organizations, engagements that require custom deliverables, or complexity that needs investigation before anything can be scoped.",
-        "Pallume has worked for a real estate broker, serial entrepreneurs, executive directors, property managers, and more. If you run something and feel behind your own potential, it's built for you.",
-        "Not sure which path fits? The intake determines it. The discovery call is free, takes 15 minutes, and Camden reviews every application personally.",
-      ],
-    },
-  ],
-  cta: {
-    headline: "Still have questions?",
-    body: "The fastest way to get answers is to apply. Camden reviews every application personally.",
-    buttonLabel: "See If You Qualify",
-    buttonHref: "/apply",
-  },
-};
-
-export const contact = {
-  eyebrow: "GET IN TOUCH",
-  headline: "Start with the application.",
-  body: "The fastest path to working together is the application form. Nine questions. Takes about five minutes. Camden reviews every submission personally and responds within one business day.",
-  body2: "If it looks like a fit, you'll receive a link to schedule a 20-minute discovery conversation — not a sales call. A real conversation about whether Pallume is the right tool for your situation.",
-  buttonLabel: "Apply Now",
-  buttonHref: "/apply",
-  directContact: {
-    label: "Prefer to reach out directly?",
-    email: "camden@pallume.com",
-  },
-};
-
-export const services = {
-  eyebrow: "THE DIAGNOSTIC",
-  headline: "Is the problem you, your business, or both?",
-  subheadline:
-    "Your answer shapes everything we build. Three paths. One intake process. No two systems are the same.",
-  cta: {
-    headline: "Not sure which path is yours?",
-    body: "The qualifier takes 90 seconds. Camden reviews every submission personally.",
-    buttonLabel: "See If You Qualify",
-    buttonHref: "/#qualifier",
-  },
-};
-
+// Kept until the attorney-reviewed rewrite: /privacy-policy imports it.
 export const privacyPolicy = {
   title: "Privacy Policy",
   effectiveDate: "March 26, 2026",
@@ -890,156 +137,12 @@ export const privacyPolicy = {
   ],
 };
 
-export const pricing = {
-  meta: {
-    title: "Pricing — Pallume",
-    description:
-      "Pallume Path A starts at $1,000/month for individuals. Path B starts at $1,500/month for teams. Path C is custom-scoped. No lock-in — you own the system.",
-  },
-  hero: {
-    eyebrow: "INVESTMENT",
-    headline: "What Pallume costs — and what it's worth.",
-  },
-  investmentContext: {
-    eyebrow: "THE INVESTMENT IN CONTEXT.",
-    paragraphs: [
-      "A qualified business coach might run $500 to $1,500 per session. One session, once or twice a month, with significant context-switching between their other clients. Valuable — but the execution window is narrow. Between sessions you're on your own.",
-      "Pallume operates at your actual working cadence. Daily, not weekly. Not monthly. Full context retained across your entire engagement. Camden reviews your behavioral data weekly — not a 50-minute snapshot, but weeks of accumulated pattern recognition.",
-      "At $1,000 a month for three months, that's around $8 a day averaged over the year. Less than many businesses spend on software they're not fully using — for a system that actively manages your execution every morning, gets sharper every week, and stays with you after the active coaching is complete.",
-    ],
-  },
-  pathA: {
-    eyebrow: "PATH A — INDIVIDUAL",
-    eyebrowColor: "#DC2626",
-    headline: "One person. One system. Built from a real conversation.",
-    body: [
-      "PATH A is for one person — a solo operator, executive, or business owner who works hard and can't close the gap between intention and result. The system handles whatever your life contains. Business, personal, or both. PATH A doesn't separate domains — it captures what's in your head and finds the patterns across all of it.",
-      "The engagement begins with a 60–75 minute deep-dive interview. Camden maps your goals, decision framework, behavioral patterns, and specific avoidance loops. The result is a custom AI system that runs inside your own Claude account, knows what you said you'd do, and won't let you forget it.",
-    ],
-    price: "$1,000/month",
-    includes: [
-      "Intake form",
-      "Deep-dive interview",
-      "Custom Project Instructions",
-      "Interview Summary with coaching feedback",
-      "Setup Email",
-      "Weekly progress review",
-      "Progressive system upgrades as you level up",
-      "Your system lives in your own account — keeps running even if you stop working with Camden",
-    ],
-    cta: { label: "Apply for a Discovery Call", href: "/apply" },
-  },
-  pathB: {
-    eyebrow: "PATH B — ORGANIZATIONAL",
-    eyebrowColor: "#7C3AED",
-    headline: "Multiple people. Organizational scope. Executable Monday morning.",
-    body: [
-      "PATH B is for teams of up to three people where the problem isn't one person's productivity — it's how the organization operates, markets, communicates, or executes. The bottlenecks live between people, in workflows, in systems that don't exist yet.",
-      "The trigger is simple: does solving this require building systems for more than one person? If yes — PATH B.",
-      "Every engagement starts with a diagnostic. Camden maps the people, their workflows, and where time disappears before designing anything. Deliverables include a bottleneck map, a people map, named Claude Projects configured for each person executing the work, and a phased implementation plan with clear ownership and time estimates.",
-    ],
-    price: "$1,500/month (2–3 person teams)",
-    priceNote:
-      "Larger organizations and project-based engagements are quoted after a discovery conversation.",
-    includes: [
-      "Organizational diagnostic",
-      "Bottleneck and people mapping",
-      "Individual Claude Project deployments for each team member",
-      "Phased implementation plan",
-    ],
-    includesNote:
-      "Standard PATH B configures and deploys existing systems — websites, custom dashboards, and purpose-built applications are separate engagements.",
-    cta: { label: "Start the conversation", href: "/apply" },
-  },
-  pathC: {
-    eyebrow: "PATH C — SPECIAL PROJECTS",
-    eyebrowColor: "#06B6D4",
-    headline: "When the situation requires more than configuration.",
-    body: [
-      "PATH C triggers when the team size or problem complexity requires Camden to produce custom deliverables that live outside the Pallume Journal structure — specialized Claude projects, a knowledge resource, or system architecture built for a specific business situation.",
-      "Pallume strategy within Claude is still the foundation. The extra work is the overlay.",
-      "Not sure which path applies to you? The intake determines it. Most clients find out during the discovery conversation.",
-    ],
-    price: "Custom quote based on scope.",
-    scopeParagraph:
-      "PATH C scope is determined during the discovery conversation. Every engagement is custom — deliverables, structure, and timeline are scoped together before anything is built.",
-    cta: { label: "Apply for a Discovery Call", href: "/apply" },
-  },
-  riskReversal: {
-    eyebrow: "HOW THIS WORKS — BEFORE YOU COMMIT.",
-    paragraphs: [
-      "Pallume doesn't take every client who applies.",
-      "The discovery conversation is a mutual evaluation. You're assessing whether this is the right fit for your business. Camden is assessing whether he can produce the results you're looking for. If it isn't a fit — for either side — that gets said directly. No pressure close. No follow-up sequences.",
-      "The intake process exists because the wrong engagement serves no one. A client who isn't ready to show up consistently won't get results. A business Camden can't move forward isn't worth the calendar time. The filter protects both parties.",
-      "If you get through the application process and Camden believes he can produce results for your situation, you'll know exactly what the first 90 days look like before you agree to anything.",
-    ],
-  },
-  faq: {
-    eyebrow: "COMMON QUESTIONS",
-    headline: "A few things people ask before committing.",
-    items: [
-      {
-        question: "Is there a minimum commitment?",
-        answer: [
-          "Three months is the recommended baseline. That's the minimum time for the system to accumulate real pattern data and produce results you can measure. The minimum commitment is two months.",
-        ],
-      },
-      {
-        question: "Do you offer discounts?",
-        answer: [
-          "No. If the scope isn't right, we adjust the scope. Discounting a price that was set correctly doesn't serve either of us.",
-        ],
-      },
-      {
-        question: "What does it cost to run the system day-to-day?",
-        answer: [
-          "A Claude account runs approximately $20/month. That's yours — separate from the coaching investment. You own it whether we're working together or not.",
-        ],
-      },
-      {
-        question: "What if Pallume isn't the right fit?",
-        answer: [
-          "Request a refund within 14 days of receiving your custom Pallume system. We retain a $250 setup fee covering the intake interview and initial build. After 14 days, the engagement is non-refundable.",
-          "To request, email camden@livewyoming.net within the 14-day window.",
-        ],
-      },
-      {
-        question: "How do I know when I'm ready to launch?",
-        answer: [
-          "Launch happens when you hit the Maturity Milestone — not on a fixed timeline. Three conditions have to be true: your daily journal is calibrated to how you actually work, your first system has been built with Camden around the highest-leverage friction in your week, and you have the operational skill to build the next one yourself.",
-          "When those three are met, Camden's role shifts from builder to second pair of eyes. The daily journal and weekly review continue as the Diagnostic Loop — the same rhythm, now running under your own direction.",
-          "Most clients hit the Maturity Milestone somewhere in months two to four. Some take longer. There's no fixed date — the goal is genuine independence.",
-        ],
-      },
-    ],
-  },
-  footerCta: {
-    headline: "The system starts at $1,000/month.",
-    subheadline:
-      "",
-    cta: { label: "Apply for a Discovery Call", href: "/apply" },
-    microCopy:
-      "No commitment until there's a fit. Camden reviews every application personally.",
-  },
-};
-
-export const theWork = {
-  headline:
-    "Case studies, process writing, and field notes from inside the system. Written for business owners who've already tried the standard solutions.",
-  cta: {
-    eyebrow: "READY TO START?",
-    body: "The articles explain the thinking. The application starts the build.",
-    buttonLabel: "See If You Qualify",
-    buttonHref: "/#qualifier",
-  },
-};
-
 // ════════════════════════════════════════════════════════════════════════════
 // SITE 2026 — the new offer. Written by Pallume Productization, 10/11/2026.
-// Writer of this file's words: Productization (DESIGN.md §11). The Website
-// session builds pages from `site2026`, then deletes the retired exports above
-// (they describe the 1:1 coaching model, Paths A/B/C, and $1,000/month, all
-// retired). Design rules: ~/Overwatch/02-businesses/pallume/DESIGN.md.
+// Writer of this file's words: Productization only (DESIGN.md §11). The Website
+// session builds pages from `site2026` and never edits this file. The two
+// exports above are the only survivors of the retired coaching-era copy
+// (removed 10/14/2026). Design rules: ~/Overwatch/02-businesses/pallume/DESIGN.md.
 // Voice rules: ~/Overwatch/02-businesses/pallume/VOICE-SIGNATURE.md (D-50).
 // Module words are NOT here: they live in
 // ~/Overwatch/02-businesses/pallume/module-descriptions.json — sync that file
@@ -1064,8 +167,6 @@ export const site2026 = {
       { label: "About", href: "/about" },
       { label: "FAQ", href: "/faq" },
     ],
-    cta: "Apply for consulting",
-    ctaHref: "/apply",
   },
 
   // FirstLightHero: the image and the wordmark only. The tagline stays off the
@@ -1083,6 +184,14 @@ export const site2026 = {
       "It's nine at night and the laptop is still open on the kitchen table. You answered everything today. You can't name one thing that moved.",
       "You know what matters. You knew it this morning. The day went to everyone else's version of urgent, the way it did yesterday and the way it will tomorrow.",
     ],
+  },
+
+  // Leads the homepage straight after the opener (Camden, 10/12/2026). Consulting
+  // is a one-line footnote to the product, linking /consulting, not a section.
+  home: {
+    productLine:
+      "The Pallume System is a daily journal that reads what gets in your way, and the tools that fix it, all running in Claude on your own computer. You buy it once. It opens this winter.",
+    consultingFootnote: "Separately, I take fixed-scope consulting on business problems worth at least $50,000.",
   },
 
   // Rhythm 2. Reframes the problem from willpower to system.
@@ -1147,8 +256,6 @@ export const site2026 = {
       { name: "You can feel it, but can't name it", body: "I find the cause first, then fix that." },
       { name: "You can't tell yet", body: "A full diagnostic of the business comes first. This is the only starting point that begins there." },
     ],
-    cta: "Apply for consulting",
-    ctaHref: "/apply",
   },
 
   founder: {
@@ -1165,8 +272,6 @@ export const site2026 = {
   // The founding tenet belongs on the About page and the sales page (Voice Signature).
   closing: {
     tenet: "Stop doing things that sound nice and don't matter.",
-    cta: "Apply for consulting",
-    ctaHref: "/apply",
   },
 
   // Rule 8 of the Voice Signature: the tagline closes everything.
@@ -1177,6 +282,25 @@ export const site2026 = {
       { label: "Privacy", href: "/privacy-policy" },
       { label: "Terms", href: "/terms-of-service" },
     ],
+  },
+
+  // The banner on every first visit. Nothing loads before a yes.
+  analyticsConsent: {
+    body: "May this site use Google Analytics? It counts visits and which pages get read, and it sets cookies. Nothing loads unless you say yes.",
+    allow: "Allow",
+    decline: "No thanks",
+    settings: "Analytics settings",
+  },
+
+  // On /consulting only; the site's one form. No apply buttons anywhere.
+  // {email} stays literal; the site fills in footer.contact.
+  contactForm: {
+    name: "Name",
+    email: "Email",
+    message: "What's the problem, and what is it costing you?",
+    send: "Send",
+    sent: "Sent. I read every message myself.",
+    error: "That didn't send. Email {email} instead.",
   },
 
   about: {
@@ -1198,7 +322,24 @@ export const site2026 = {
       title: "Consulting — Pallume",
       description: "Fixed-scope, fixed-fee work on business problems worth at least $50,000, with a defined end."
     },
-    applyNote: "Applications are read by me, not a funnel.",
+  },
+
+  faqPage: {
+    meta: {
+      title: "FAQ — Pallume",
+      description:
+        "What you need to run Pallume, how much time it takes, who can read what you write, and how the consulting works.",
+    },
+    headline: "Questions worth asking before you buy.",
+  },
+
+  reviewsPage: {
+    meta: {
+      title: "Reviews — Pallume",
+      description: "Two clients describe what changed in their own work, in their own words, unedited.",
+    },
+    headline: "In their own words.",
+    lead: "Unedited, and printed with permission. Two clients describe what changed in their own work, and why.",
   },
 
   faq: [

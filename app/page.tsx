@@ -11,10 +11,8 @@ import { pageMeta } from "@/lib/metadata";
 export const metadata = pageMeta({ ...site2026.meta, path: "" });
 
 // The product leads, straight after the opener; consulting is a footnote to it
-// (Camden, 10/12/2026). Both lines come from the site description until
-// Productization gives them their own keys.
-const [productLine, ...restOfDescription] = site2026.meta.description.split(/(?<=\.)\s+/);
-const consultingFootnote = restOfDescription.join(" ");
+// (Camden, 10/12/2026). This order is a draft until the messaging work is done.
+const { productLine, consultingFootnote } = site2026.home;
 
 export default function Home() {
   const { hero, opener, diagnosis, howItWorks, requirements, privacy, closing } = site2026;
@@ -37,7 +35,7 @@ export default function Home() {
         <section className="pl-section" style={{ background: "var(--night-raised)" }}>
           <div className="pl-container">
             <div className="pl-reading">
-              <h2 className="pl-h2" style={{ margin: 0, color: "var(--text)" }}>
+              <h2 className="pl-h2" style={{ margin: 0, color: "var(--text)", fontSize: "clamp(32px, 4.5vw, 56px)" }}>
                 {productLine}
               </h2>
               <div style={{ marginTop: "48px" }}>
