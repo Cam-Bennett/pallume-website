@@ -369,7 +369,7 @@ export const site2026 = {
     },
     {
       q: "Can I get a refund?",
-      a: "Yes, within 21 days, once you've written at least ten journal entries. Your journal will tell you how many you've written; send that with your request.",
+      a: "Yes. You have 14 days from purchase. Once you set up Overwatch, it's 10 days from that day instead. A refund switches off Overwatch's engine; your journal and your notes stay yours.",
     },
     {
       q: "Can I use my work account?",
