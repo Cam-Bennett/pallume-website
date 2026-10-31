@@ -1272,7 +1272,7 @@ export const setupPage = {
     step1: {
       folder: "~/Documents",
       firstLine:
-        "Set up Overwatch. If this isn't Documents or Overwatch is already here, stop and tell me. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip it right here (the zip holds Overwatch), delete the zip. My key:",
+        "Set up Overwatch. If ~/Documents/Overwatch already exists, stop and tell me. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip it into ~/Documents (the zip holds Overwatch), delete the zip. My key:",
       label: "Get my Overwatch files",
     },
     // The working-folder check, exactly as Foolproof-Setup-Design-v0.2 section D.
@@ -1367,7 +1367,7 @@ export const setupPage = {
       done: "It worked if Claude says it unzipped the files and Documents now holds a folder named Overwatch.",
       ifNot: [
         "**Claude says the key was refused.** Copy the key from the email again, close that session, and start step 1 over. Refused twice: send a message through {{contact}}.",
-        "**Claude says this isn't Documents, or nothing opens.** Make sure the Claude app is open and signed in, then click the link once more. Still not working: send a message through {{contact}} and say you're on step 1.",
+        "**Claude can't write to Documents, or nothing opens.** Make sure the Claude app is open and signed in, then click the link once more. Still not working: send a message through {{contact}} and say you're on step 1.",
         "**Claude says Overwatch is already here.** Stop. Don't move or delete anything. Send a message through {{contact}}.",
       ],
       doneCamden: "What the session says when it finishes has only been seen against the local stand-in, never the real address; check this line against the rehearsal (Plan B test path, step 6).",
