@@ -1272,7 +1272,7 @@ export const setupPage = {
     step1: {
       folder: "~/Documents",
       firstLine:
-        "Set up Overwatch. If ~/Documents/Overwatch already exists, stop and tell me. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip it into ~/Documents (the zip holds Overwatch), delete the zip. My key:",
+        "Set up Overwatch. If ~/Documents/Overwatch exists, stop and tell me. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip into ~/Documents (the zip holds Overwatch), delete the zip, then say only: Done. Go to step 2. My key:",
       label: "Get my Overwatch files",
     },
     // The working-folder check, exactly as Foolproof-Setup-Design-v0.2 section D.
@@ -1387,7 +1387,7 @@ export const setupPage = {
           ],
         },
       ],
-      notes: ["If Claude asks whether to trust the Overwatch folder, say yes."],
+      notes: ["If Claude asks whether to trust the Overwatch folder, say yes.", "If a session ever offers to move itself to another folder, say no."],
       slots: [
         { kind: "Video", id: "V4, Mac", shows: "Step 2: click Open Overwatch, allow the browser box, the new session on Overwatch with the line typed, Return, and the answer beginning 'Overwatch is ready.'" },
         { kind: "Image", id: "S4, Mac", shows: "The answer, right and wrong: 'Overwatch is ready.' and what follows it, beside a 'Wrong folder' answer naming Documents." },
