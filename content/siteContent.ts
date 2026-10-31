@@ -1267,12 +1267,12 @@ export const setupPage = {
 
   // The two first lines the links type into Claude (typed, not sent).
   // Kept short on purpose: two earlier link failures with long first lines were
-  // never explained. Line one is 254 characters; the buyer pastes the key after it.
+  // never explained. Line one is 253 characters (rehearsed up to 255); the buyer pastes the key after it.
   links: {
     step1: {
       folder: "~/Documents",
       firstLine:
-        "Set up Overwatch. If ~/Documents/Overwatch exists, stop and tell me. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip into ~/Documents (the zip holds Overwatch), delete the zip, then say only: Done. Go to step 2. My key:",
+        "If ~/Documents/Overwatch exists, stop and tell me. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip into ~/Documents (the zip holds Overwatch), delete the zip, then say only: Done. Go to step 2. My key:",
       label: "Get my Overwatch files",
     },
     // The working-folder check, exactly as Foolproof-Setup-Design-v0.2 section D.
