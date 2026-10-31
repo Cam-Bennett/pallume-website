@@ -1248,3 +1248,208 @@ export const site2026 = {
     },
   ],
 };
+
+// ── /setup: the unlisted Plan B setup page (D-222, D-219) ────────────────────
+// Unlisted: noindex, disallowed in robots.txt, absent from the sitemap, the nav,
+// the footer and every internal link. The page needs no key to view; the key is
+// pasted into Claude, never into this page.
+// Markup in these strings: **bold**, and {{token}} for a link the page supplies:
+// {{step1Link}}, {{step2Link}}, {{claudeDownload}}, {{contact}}.
+// Every `slot` is a placeholder for a real screenshot or video Camden records.
+// Every `camden` line is an open item for Camden and renders visibly on the page,
+// so the page cannot ship with one unanswered by accident.
+// DRAFT for Camden's review (10/30/2026). Public copy: his wording governs.
+export const setupPage = {
+  meta: {
+    title: "Set up Overwatch — Pallume",
+    description: "Setup steps for Overwatch.",
+  },
+
+  // The two first lines the links type into Claude (typed, not sent).
+  // Kept short on purpose: two earlier link failures with long first lines were
+  // never explained. Line one is 254 characters; the buyer pastes the key after it.
+  links: {
+    step1: {
+      folder: "~/Documents",
+      firstLine:
+        "Set up Overwatch. If this isn't Documents or Overwatch is already here, stop and tell me. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip it right here (the zip holds Overwatch), delete the zip. My key:",
+      label: "Get my Overwatch files",
+    },
+    // The working-folder check, exactly as Foolproof-Setup-Design-v0.2 section D.
+    step2: {
+      folder: "~/Documents/Overwatch",
+      firstLine:
+        "If your working folder is named Overwatch, reply: Overwatch is ready. If not, reply: Wrong folder, and tell me the name of the folder you are in.",
+      label: "Open Overwatch",
+    },
+    claudeDownload: { label: "claude.com/download", href: "https://claude.com/download" },
+    // D-220: the contact form is the one contact route. /contact redirects to
+    // /consulting; the anchor lands on the form itself.
+    contact: { label: "the contact form", href: "/consulting#contact" },
+  },
+
+  headline: ["Set up Overwatch.", "Two steps, on your Mac."],
+  intro: [
+    "Claude downloads your Overwatch files and puts them in a new folder named Overwatch, inside Documents. Then you open that folder, and Overwatch takes it from there.",
+    "Keep this page open beside Claude. Your key is in the email that sent you here. It's yours: paste it only where step 1 says.",
+  ],
+  pc: {
+    text: "On a Windows PC? These steps are for a Mac, and the PC version isn't ready. Don't start yet. Send a message through {{contact}} first.",
+    camden: "PC wording and PC steps. The claude:// links with ~ are untested on Windows (design doc U1); nothing here claims they work there.",
+    slot: { kind: "Windows", id: "PC", shows: "The PC version of every step, video and still on this page, once U1 passes on a Windows PC." },
+  },
+
+  sections: [
+    {
+      id: "before",
+      heading: "Before you start",
+      groups: [
+        {
+          steps: [
+            "Install the Claude app from {{claudeDownload}}.",
+            "Open it and sign in to your own paid Claude account.",
+            "Open the email with your key.",
+          ],
+        },
+      ],
+      slots: [
+        { kind: "Video", id: "V1, Mac", shows: "Installing the Claude app: claude.com/download, Download for macOS, drag Claude onto Applications, open it, sign in. Fresh Mac account, nothing personal on screen. Captioned, no sound needed." },
+      ],
+      camden: [],
+    },
+    {
+      id: "files",
+      heading: "Step 1. Get your Overwatch files",
+      groups: [
+        {
+          steps: [
+            "Copy your key from the email. Only the key, nothing around it.",
+            "Click this link: {{step1Link}}",
+            "Your browser asks whether to open Claude. Click **Allow** in Safari, or **Open Claude** in Chrome.",
+            "Claude opens a new session with a line already typed. Click at the very end of it, right after **My key:**, and paste your key (Command-V).",
+            "Press **Return**.",
+          ],
+        },
+      ],
+      notes: ["If Claude asks whether to trust this folder, say yes."],
+      slots: [
+        { kind: "Image", id: "S3, Mac", shows: "The browser's open-Claude box, Safari and Chrome side by side, Allow and Open Claude circled, Cancel crossed out. Real boxes, captured on the shoot." },
+        { kind: "Video", id: "B1, Mac", shows: "Step 1 end to end on a fresh Mac account: copy the key, click the link, allow the browser box, paste the key at the end of the typed line, Return, the permission box (small arrow, Allow once), and Claude reporting the Overwatch folder in Documents. Key blurred." },
+      ],
+      camden: [
+        "The browser box wording (Allow, Open Claude) is from the design doc and has not been captured on this flow; correct it from the real boxes.",
+      ],
+    },
+    {
+      id: "allow-once",
+      heading: "When Claude asks permission",
+      lead: [
+        "Before it downloads, Claude stops and asks. The box shows two buttons: **Deny** and **Always allow**. Don't click either one.",
+      ],
+      groups: [
+        {
+          steps: [
+            "Click the small arrow at the right edge of **Always allow**.",
+            "Choose **Allow once**.",
+          ],
+        },
+      ],
+      notes: [
+        "Claude may ask again before its next command. Do the same each time: the small arrow, then Allow once.",
+        "Why not Always allow? It lets Claude run that kind of command again without asking you. Setup only needs it once.",
+      ],
+      slots: [
+        { kind: "Image", id: "AO, Mac", shows: "Camden's real screenshot of the permission box, with an arrow drawn to the small arrow at the right edge of Always allow, and Allow once showing in the menu it opens. Nothing personal visible; the key not visible." },
+      ],
+      camden: [
+        "Whether the unzip asks a second time was not seen in testing; the 'may ask again' line covers it either way.",
+      ],
+      done: "It worked if Claude says it unzipped the files and Documents now holds a folder named Overwatch.",
+      ifNot: [
+        "**Claude says the key was refused.** Copy the key from the email again, close that session, and start step 1 over. Refused twice: send a message through {{contact}}.",
+        "**Claude says this isn't Documents, or nothing opens.** Make sure the Claude app is open and signed in, then click the link once more. Still not working: send a message through {{contact}} and say you're on step 1.",
+        "**Claude says Overwatch is already here.** Stop. Don't move or delete anything. Send a message through {{contact}}.",
+      ],
+      doneCamden: "What the session says when it finishes has only been seen against the local stand-in, never the real address; check this line against the rehearsal (Plan B test path, step 6).",
+    },
+    {
+      id: "open",
+      heading: "Step 2. Open Overwatch",
+      lead: [
+        "This needs a new session, from the link below. Don't type in the step 1 session.",
+      ],
+      groups: [
+        {
+          steps: [
+            "Click this link: {{step2Link}}",
+            "Your browser asks again. Click **Allow** or **Open Claude**.",
+            "Claude opens a new session on your Overwatch folder with a line already typed. Press **Return**.",
+          ],
+        },
+      ],
+      notes: ["If Claude asks whether to trust the Overwatch folder, say yes."],
+      slots: [
+        { kind: "Video", id: "V4, Mac", shows: "Step 2: click Open Overwatch, allow the browser box, the new session on Overwatch with the line typed, Return, and the answer beginning 'Overwatch is ready.'" },
+        { kind: "Image", id: "S4, Mac", shows: "The answer, right and wrong: 'Overwatch is ready.' and what follows it, beside a 'Wrong folder' answer naming Documents." },
+      ],
+      camden: [
+        "Overwatch's reply to this line is not built yet: the Executor carries no 'Overwatch is ready' rule (design doc section D, the Executor change owed). Confirm the right-folder reply before a buyer sees this page.",
+      ],
+      done: "It worked if the answer begins **Overwatch is ready.** That's Overwatch. Setup is done; keep going in that session.",
+      ifNot: [
+        "**It says Wrong folder, answers like an ordinary chat, or nothing opens.** Use the steps just below.",
+      ],
+    },
+    {
+      id: "wrong-folder",
+      heading: "If it says Wrong folder",
+      lead: [
+        "The link didn't reach your Overwatch folder. That happens, and it's not something you did. Open the folder by hand.",
+      ],
+      groups: [
+        {
+          heading: "Open a new session",
+          steps: [
+            "In Claude, click **+ New** at the top left.",
+            "Under the box where you type, click the folder button. It may say Choose folder.",
+            "Choose **Open folder**.",
+          ],
+        },
+        {
+          heading: "Pick Overwatch",
+          steps: [
+            "Click **Documents** on the left.",
+            "**Double-click Overwatch**, so you're inside it.",
+            "Click **Open**.",
+          ],
+        },
+        {
+          heading: "Run the check",
+          steps: [
+            "Copy the line below.",
+            "Click in Claude's box and paste it (Command-V).",
+            "Press **Return**.",
+          ],
+          copy: "step2",
+        },
+      ],
+      notes: ["Buttons above the box instead of under it? The same clicks, up there."],
+      slots: [
+        { kind: "Video", id: "V5, Mac", shows: "The folder button path: + New, the folder button, Open folder, Documents, double-click Overwatch, Open, copy the line from this page, paste, Return, and 'Overwatch is ready.' Includes a 4-second cut of the older layout with the buttons above the box." },
+        { kind: "Image", id: "S5, Mac", shows: "The folder window inside Overwatch (title reads Overwatch, Open circled), beside the wrong state: the window on Documents with nothing selected." },
+      ],
+      camden: [],
+      done: "It worked if the answer begins **Overwatch is ready.**",
+      ifNot: [
+        "**Still Wrong folder.** Send a message through {{contact}} and say which step you're on.",
+      ],
+    },
+  ],
+
+  copyLabel: "Copy",
+  copiedLabel: "Copied",
+  typedLineSummary: "What the step 1 line asks Claude to do",
+
+  // Voice Signature rule 8: the tagline closes everything.
+  tagline: "Pallume. Clarity for your business.",
+} as const;
