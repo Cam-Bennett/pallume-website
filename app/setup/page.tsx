@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+// Draft markers (the open-item notes and the screenshot/video slots) show only in local development or when
+// NEXT_PUBLIC_SETUP_DRAFT=1 is set on a preview build. Visitors on the live page never see them (11/01/2026).
+// The full list of what each slot must show is kept in the Pallume folder, Setup-Page-Placeholders.
+const showDrafts = process.env.NODE_ENV !== "production" || process.env.NEXT_PUBLIC_SETUP_DRAFT === "1";
+
 type Slot = { readonly kind: string; readonly id: string; readonly shows: string };
 type Group = { readonly heading?: string; readonly steps: readonly string[]; readonly copy?: "step2" };
 type Section = {
@@ -85,6 +90,7 @@ function Rich({ text }: { text: string }) {
 }
 
 function CamdenNote({ text }: { text: string }) {
+  if (!showDrafts) return null;
   return (
     <p
       role="note"
@@ -166,7 +172,7 @@ function SetupSection({ section }: { section: Section }) {
       )}
 
       {section.slots.map((slot) => (
-        <SetupSlot key={slot.id} kind={slot.kind} id={slot.id} shows={slot.shows} />
+        showDrafts ? <SetupSlot key={slot.id} kind={slot.kind} id={slot.id} shows={slot.shows} /> : null
       ))}
       {section.camden.map((c) => (
         <CamdenNote key={c} text={c} />
@@ -194,7 +200,7 @@ export default function SetupPage() {
             <p className="pl-body" style={{ margin: "24px 0 0", fontSize: "16px" }}>
               <Rich text={setupPage.pc.text} />
             </p>
-            <SetupSlot kind={setupPage.pc.slot.kind} id={setupPage.pc.slot.id} shows={setupPage.pc.slot.shows} />
+            {showDrafts && <SetupSlot kind={setupPage.pc.slot.kind} id={setupPage.pc.slot.id} shows={setupPage.pc.slot.shows} />}
             <CamdenNote text={setupPage.pc.camden} />
           </header>
 
