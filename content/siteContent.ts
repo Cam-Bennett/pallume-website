@@ -1267,12 +1267,12 @@ export const setupPage = {
 
   // The two first lines the links type into Claude (typed, not sent).
   // Kept short on purpose: two earlier link failures with long first lines were
-  // never explained. Line one is 253 characters (rehearsed up to 255); the buyer pastes the key after it.
+  // never explained. Line one is 254 characters (rehearsed up to 255; the 253 version ended "Done. Go to step 2.", changed 11/06/2026 so the buyer knows step 2 is on this page); the buyer pastes the key after it.
   links: {
     step1: {
       folder: "~/Documents",
       firstLine:
-        "If ~/Documents/Overwatch exists, stop and tell me. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip into ~/Documents (the zip holds Overwatch), delete the zip, then say only: Done. Go to step 2. My key:",
+        "If ~/Documents/Overwatch exists, stop and say so. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip into ~/Documents, delete the zip, then say only: Done. Go to step 2 on the Overwatch setup page. My key:",
       label: "Get my Overwatch files",
     },
     // The working-folder check, exactly as Foolproof-Setup-Design-v0.2 section D.
@@ -1324,7 +1324,7 @@ export const setupPage = {
         {
           steps: [
             "Copy your key from the email. Only the key, nothing around it.",
-            "Click this link: {{step1Link}}",
+            "Click the button: {{step1Link}}",
             "Your browser asks whether to open Claude. Click **Allow** in Safari, or **Open Claude** in Chrome.",
             "Claude opens a new session with a line already typed. Click at the very end of it, right after **My key:**, and paste your key (Command-V).",
             "Press **Return**.",
@@ -1364,10 +1364,10 @@ export const setupPage = {
       camden: [
         "Whether the unzip asks a second time was not seen in testing; the 'may ask again' line covers it either way.",
       ],
-      done: "It worked if Claude says it unzipped the files and Documents now holds a folder named Overwatch.",
+      done: "It worked if Claude says: Done. Go to step 2 on the Overwatch setup page. Documents now holds a folder named Overwatch.",
       ifNot: [
         "**Claude says the key was refused.** Copy the key from the email again, close that session, and start step 1 over. Refused twice: send a message through {{contact}}.",
-        "**Claude can't write to Documents, or nothing opens.** Make sure the Claude app is open and signed in, then click the link once more. Still not working: send a message through {{contact}} and say you're on step 1.",
+        "**Claude can't write to Documents, or nothing opens.** Make sure the Claude app is open and signed in, then click the button once more. Still not working: send a message through {{contact}} and say you're on step 1.",
         "**Claude says Overwatch is already here.** Stop. Don't move or delete anything. Send a message through {{contact}}.",
       ],
       doneCamden: "What the session says when it finishes has only been seen against the local stand-in, never the real address; check this line against the rehearsal (Plan B test path, step 6).",
@@ -1376,12 +1376,12 @@ export const setupPage = {
       id: "open",
       heading: "Step 2. Open Overwatch",
       lead: [
-        "This needs a new session, from the link below. Don't type in the step 1 session.",
+        "This needs a new session, from the button below. Don't type in the step 1 session.",
       ],
       groups: [
         {
           steps: [
-            "Click this link: {{step2Link}}",
+            "Click the button: {{step2Link}}",
             "Your browser asks again. Click **Allow** or **Open Claude**.",
             "Claude opens a new session on your Overwatch folder with a line already typed. Press **Return**.",
           ],

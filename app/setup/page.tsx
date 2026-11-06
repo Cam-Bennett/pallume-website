@@ -46,12 +46,12 @@ const hrefs = {
 
 const tokens: Record<string, ReactNode> = {
   step1Link: (
-    <a href={hrefs.step1} className="pl-link" style={{ fontWeight: 500 }}>
+    <a href={hrefs.step1} className="pl-button" style={{ marginLeft: "12px", marginTop: "4px" }}>
       {links.step1.label}
     </a>
   ),
   step2Link: (
-    <a href={hrefs.step2} className="pl-link" style={{ fontWeight: 500 }}>
+    <a href={hrefs.step2} className="pl-button" style={{ marginLeft: "12px", marginTop: "4px" }}>
       {links.step2.label}
     </a>
   ),
