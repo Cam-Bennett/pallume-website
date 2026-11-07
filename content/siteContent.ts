@@ -730,8 +730,8 @@ export const faq = {
     {
       question: "What if Pallume isn't the right fit?",
       answer: [
-        "Request a refund within 14 days of receiving your custom Pallume system. We retain a $250 setup fee covering the intake interview and initial build. After 14 days, the engagement is non-refundable.",
-        "To request, email camden@livewyoming.net within the 14-day window.",
+        "Request a refund within 21 days of purchase. No conditions, and no setup fee is kept.",
+        "To request, send a message through the contact form within the 21 days.",
       ],
     },
     {
@@ -999,8 +999,8 @@ export const pricing = {
       {
         question: "What if Pallume isn't the right fit?",
         answer: [
-          "Request a refund within 14 days of receiving your custom Pallume system. We retain a $250 setup fee covering the intake interview and initial build. After 14 days, the engagement is non-refundable.",
-          "To request, email camden@livewyoming.net within the 14-day window.",
+          "Request a refund within 21 days of purchase. No conditions, and no setup fee is kept.",
+          "To request, send a message through the contact form within the 21 days.",
         ],
       },
       {
