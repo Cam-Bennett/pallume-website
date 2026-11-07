@@ -1130,7 +1130,7 @@ export const site2026 = {
   },
 
   privacy: {
-    headline: "Pallume knows what you bought. Never what you write.",
+    headline: "Your work stays in your own Claude. We don't collect it.",
     body: "Your journal and everything built from it live in a folder on your computer and in your own Claude account. Nothing you write is sent to Pallume. Not a summary, not a sample, not a number.",
   },
 
@@ -1216,7 +1216,7 @@ export const site2026 = {
     },
     {
       q: "Can Pallume read my journal?",
-      a: "No. It lives on your computer and in your Claude account. Pallume knows what you bought, never what you write.",
+      a: "No. It lives on your computer and in your Claude account.",
     },
     {
       q: "Is it a subscription?",
@@ -1228,7 +1228,7 @@ export const site2026 = {
     },
     {
       q: "Can I get a refund?",
-      a: "Yes, within 21 days of the day you buy it, with no conditions. A refund switches your copy off.",
+      a: "Yes, within 21 days of purchase, no conditions. A refund switches your copy off.",
     },
     {
       q: "Can I use my work account?",
@@ -1236,7 +1236,7 @@ export const site2026 = {
     },
     {
       q: "When can I buy it?",
-      a: "It opens this winter. Webinar dates will be posted here first."
+      a: "Webinar dates will be posted here first."
     },
     {
       q: "Is the consulting coaching?",
