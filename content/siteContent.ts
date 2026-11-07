@@ -728,13 +728,6 @@ export const faq = {
       ],
     },
     {
-      question: "What if Pallume isn't the right fit?",
-      answer: [
-        "Request a refund within 21 days of purchase. No conditions, and no setup fee is kept.",
-        "To request, send a message through the contact form within the 21 days.",
-      ],
-    },
-    {
       question: "How do I know when I'm ready to launch?",
       answer: [
         "Launch happens when you hit the Maturity Milestone — not on a fixed timeline. Three conditions have to be true: your daily journal is calibrated to how you actually work, your first system has been built with Camden around the highest-leverage friction in your week, and you have the operational skill to build the next one yourself.",
@@ -994,13 +987,6 @@ export const pricing = {
         question: "What does it cost to run the system day-to-day?",
         answer: [
           "A Claude account runs approximately $20/month. That's yours — separate from the coaching investment. You own it whether we're working together or not.",
-        ],
-      },
-      {
-        question: "What if Pallume isn't the right fit?",
-        answer: [
-          "Request a refund within 21 days of purchase. No conditions, and no setup fee is kept.",
-          "To request, send a message through the contact form within the 21 days.",
         ],
       },
       {
