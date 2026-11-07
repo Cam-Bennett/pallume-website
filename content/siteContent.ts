@@ -1228,7 +1228,7 @@ export const site2026 = {
     },
     {
       q: "Can I get a refund?",
-      a: "Yes, within 21 days of purchase, no conditions. A refund switches your copy off.",
+      a: "Yes, within 21 days of purchase, no conditions.",
     },
     {
       q: "Can I use my work account?",
