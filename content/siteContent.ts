@@ -1310,6 +1310,7 @@ export const setupPage = {
           steps: [
             "Have the Claude app from {{claudeDownload}}, signed in to your paid account.",
             "Have your key, from the email.",
+            "Use a Claude account and a computer only you use: Overwatch keeps your work in a folder there.",
           ],
         },
       ],
