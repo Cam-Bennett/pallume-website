@@ -1228,7 +1228,7 @@ export const site2026 = {
     },
     {
       q: "Can I get a refund?",
-      a: "Yes, within 21 days, once you've written at least ten journal entries. Your journal will tell you how many you've written; send that with your request.",
+      a: "Yes, within 21 days of the day you buy it, with no conditions. A refund switches your copy off.",
     },
     {
       q: "Can I use my work account?",
