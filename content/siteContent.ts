@@ -1253,12 +1253,12 @@ export const setupPage = {
 
   // The two first lines the links type into Claude (typed, not sent).
   // Kept short on purpose: two earlier link failures with long first lines were
-  // never explained. Line one is 254 characters (rehearsed up to 255; the 253 version ended "Done. Go to step 2.", changed 11/06/2026 so the buyer knows step 2 is on this page); the buyer pastes the key after it.
+  // never explained. Line one is 228 characters since 11/15/2026 (the zip's SETUP.txt now carries the key step, the zip delete and the closing words; Connector-Install-Design-2026-11-15.md; the 254 version was rehearsed, this one is not yet; rehearsed up to 255; the 253 version ended "Done. Go to step 2.", changed 11/06/2026 so the buyer knows step 2 is on this page); the buyer pastes the key after it.
   links: {
     step1: {
       folder: "~/Documents",
       firstLine:
-        "If ~/Documents/Overwatch exists, stop and say so. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip into ~/Documents, delete the zip, then say only: Done. Go to step 2 on the Overwatch setup page. My key:",
+        "If ~/Documents/Overwatch exists, stop and say so. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip into ~/Documents, then follow ~/Documents/Overwatch/SETUP.txt exactly. My key:",
       label: "Get my Overwatch files",
     },
     // The working-folder check, exactly as Foolproof-Setup-Design-v0.2 section D.
@@ -1294,7 +1294,9 @@ export const setupPage = {
       groups: [
         {
           steps: [
-            "Have the Claude app from {{claudeDownload}}, signed in to your paid account.",
+            "Make a Claude account at claude.ai with your own email, if you don't have one.",
+            "Choose the Pro plan in Claude's settings, under Billing. You pay Anthropic directly; it is separate from Overwatch.",
+            "Get the Claude app from {{claudeDownload}} and sign in.",
             "Have your key, from the email.",
             "Use a Claude account and a computer only you use: Overwatch keeps your work in a folder there.",
           ],
@@ -1303,7 +1305,9 @@ export const setupPage = {
       slots: [
         { kind: "Video", id: "V1, Mac", shows: "Installing the Claude app: claude.com/download, Download for macOS, drag Claude onto Applications, open it, sign in. Fresh Mac account, nothing personal on screen. Captioned, no sound needed." },
       ],
-      camden: [],
+      camden: [
+        "The first three steps were added 11/15/2026 for a buyer who has never paid for Claude. The menu names (settings, Billing, Pro) have not been read from a fresh account; correct them on the Mac install run.",
+      ],
     },
     {
       id: "files",
@@ -1355,6 +1359,9 @@ export const setupPage = {
         "Overwatch's reply to this line is not built yet: the Executor carries no 'Overwatch is ready' rule (design doc section D, the Executor change owed). Confirm the right-folder reply before a buyer sees this page.",
       ],
       done: "**Done when** the answer begins: Overwatch is ready.",
+      ifNot: [
+        "**Claude says the Pallume connector did not answer?** Quit Claude, open it again, and click the step 2 button once more. If it says so again, send a message through {{contact}}.",
+      ],
     },
     {
       id: "wrong-folder",
