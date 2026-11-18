@@ -93,7 +93,7 @@ Production rules: 16:9, generated at the tool's largest size, upscaled 2× (Ligh
 ## 6. Motion
 
 Website: exactly two motions.
-1. **Hero scroll zoom.** The hero pins for ~1.2 screen heights while the image scales 1.0 → 1.35 toward the horizon (`transform-origin: 50% 42%`) and the wordmark fades and lifts 48px. Component: `components/sections/FirstLightHero.tsx`.
+1. **Hero scroll (home page, 11/17/2026, D-424 and D-438).** The hero pins for 3.7 screen heights while a canvas draws the frame of take 1 that matches the scroll position, forward and back: the first 84% of the scroll plays the video, then the calm frame holds. Words in Cormorant Garamond 400, `--text`: "From chaos…" (italic, low left) fades to "to Clarity." (upright, same place), which fades to "Pallume" alone, large, upper left. Phones (max-width 767px) load only the 50 vertical frames in `public/images/hero/mobile/`; wider screens only the 100 in `public/images/hero/desktop/`. Reduced motion: the calm frame as a still with "Pallume", nothing preloaded. Component: `components/sections/ChaosToClarityHero.tsx`. *(The first-light zoom, `FirstLightHero.tsx`, stays on `/preview/hero` only.)*
 2. **Page-load reveal.** One fade-and-rise on first paint, 600ms. Optional.
 
 Board: no motion except state changes (toggle, checkbox).

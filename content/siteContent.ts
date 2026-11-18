@@ -1030,6 +1030,19 @@ export const site2026 = {
     imageAlt: "A person seated on a granite outcrop before dawn, a lantern lit beside them, fog over a mountain lake below.",
   },
 
+  // ChaosToClarityHero, the home page first screen (D-424, D-438, take 1 final
+  // 11/17/2026). The words run in this order as the visitor scrolls; the wordmark
+  // above ("Pallume") ends the sequence. Open with Camden: capital C in "to
+  // Clarity." vs the lower-case headline "From chaos to clarity." (D-424); change
+  // it here, in `to` and `heading`, in one edit.
+  chaosHero: {
+    from: "From chaos…",
+    to: "to Clarity.",
+    // Screen readers get one heading for the whole sequence.
+    heading: "From chaos to Clarity. Pallume.",
+    scrollHint: "Scroll",
+  },
+
   // First section below the image. Two-tone headline (DESIGN.md §3): first
   // sentence in --text, second in --text-muted. Rhythm 7, the anchor.
   opener: {

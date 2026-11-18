@@ -10,6 +10,8 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-serif",
   weight: ["400", "500", "600"],
+  // Italic for the home hero's "From chaos…" (D-438).
+  style: ["normal", "italic"],
   display: "swap",
 });
 

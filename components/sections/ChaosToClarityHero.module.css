@@ -1,0 +1,131 @@
+/* Home page first screen: the chaos-to-clarity scroll (D-424, D-438).
+   Values match the approved reference, productization/journal-product/briefs/
+   hero-chaos-to-clarity/preview-scroll-2026-11-17.html. */
+
+/* The scroll track: its height sets how much scrolling the whole move takes. */
+.track {
+  position: relative;
+  height: 470vh;
+  background: #0a1120;
+}
+
+.stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.still,
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.still {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* "Two voices": the words sit low and left, clear of his face. */
+.shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(15, 27, 45, 0.74) 0%, rgba(15, 27, 45, 0.22) 42%, rgba(15, 27, 45, 0) 62%),
+    linear-gradient(0deg, rgba(15, 27, 45, 0.5) 0%, rgba(15, 27, 45, 0) 40%);
+}
+
+.shadeMark {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: radial-gradient(120% 90% at 0% 0%, rgba(15, 27, 45, 0.8) 0%, rgba(15, 27, 45, 0.3) 38%, rgba(15, 27, 45, 0) 60%);
+}
+
+.word {
+  position: absolute;
+  left: 5.5vw;
+  bottom: 16vh;
+  margin: 0;
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: clamp(44px, 8.2vw, 132px);
+  letter-spacing: -0.01em;
+  color: #f8f6f0;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.55);
+  will-change: opacity, transform;
+}
+
+.from {
+  font-style: italic;
+}
+
+.to {
+  opacity: 0;
+}
+
+.mark {
+  position: absolute;
+  left: 5vw;
+  top: 6vh;
+  margin: 0;
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: clamp(64px, 11.5vw, 190px);
+  letter-spacing: -0.01em;
+  color: #f8f6f0;
+  text-shadow: 0 2px 26px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4vh;
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+  color: #f8f6f0;
+  opacity: 0.7;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Reduced motion: the calm frame as a still with "Pallume"; no scroll, no scrubbing. */
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    height: 100vh;
+    height: 100svh;
+  }
+  .canvas,
+  .word,
+  .hint {
+    display: none;
+  }
+  .mark,
+  .shadeMark {
+    opacity: 1;
+  }
+}

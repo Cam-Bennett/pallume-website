@@ -7,20 +7,28 @@ import { isLiveRoute } from "@/lib/routes";
 type Props = {
   // Transparent over the homepage hero until the visitor scrolls (DESIGN.md §7).
   overHero?: boolean;
+  // When the hero is taller than one screen (the home page scroll), the nav stays
+  // clear until that element's end reaches the top of the screen.
+  heroId?: string;
 };
 
-export default function Nav({ overHero = false }: Props) {
+export default function Nav({ overHero = false, heroId }: Props) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const links = site2026.nav.links.filter((link) => isLiveRoute(link.href));
 
   useEffect(() => {
     if (!overHero) return;
-    const onScroll = () => setScrolled(window.scrollY > window.innerHeight * 0.9);
+    const onScroll = () => {
+      const hero = heroId ? document.getElementById(heroId) : null;
+      setScrolled(
+        hero ? hero.getBoundingClientRect().bottom < window.innerHeight * 0.9 : window.scrollY > window.innerHeight * 0.9,
+      );
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [overHero]);
+  }, [overHero, heroId]);
 
   useEffect(() => {
     if (!open) return;

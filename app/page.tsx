@@ -1,7 +1,7 @@
 import { site2026 } from "@/content/siteContent";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
-import FirstLightHero from "@/components/sections/FirstLightHero";
+import ChaosToClarityHero from "@/components/sections/ChaosToClarityHero";
 import TwoTone from "@/components/site/TwoTone";
 import Paragraphs from "@/components/site/Paragraphs";
 import ConsultingSection from "@/components/site/ConsultingSection";
@@ -13,13 +13,22 @@ export const metadata = pageMeta({ ...site2026.meta, path: "" });
 
 // Holding homepage, Phase 0 (10/11/2026). Section order set by the Phase 0 prompt.
 export default function Home() {
-  const { hero, opener, diagnosis, howItWorks, requirements, privacy, closing } = site2026;
+  const { hero, chaosHero, opener, diagnosis, howItWorks, requirements, privacy, closing } = site2026;
 
   return (
     <>
-      <Nav overHero />
+      <Nav overHero heroId="hero" />
       <main>
-        <FirstLightHero wordmark={hero.wordmark} imageAlt={hero.imageAlt} />
+        {/* First screen: the chaos-to-clarity scroll, take 1 (D-424, D-438). */}
+        <div id="hero">
+          <ChaosToClarityHero
+            from={chaosHero.from}
+            to={chaosHero.to}
+            wordmark={hero.wordmark}
+            heading={chaosHero.heading}
+            scrollHint={chaosHero.scrollHint}
+          />
+        </div>
 
         <section className="pl-section" style={{ paddingTop: "48px" }}>
           <div className="pl-container">
