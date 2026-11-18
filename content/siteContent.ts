@@ -1035,6 +1035,25 @@ export const site2026 = {
   // above ("Pallume") ends the sequence. Open with Camden: capital C in "to
   // Clarity." vs the lower-case headline "From chaos to clarity." (D-424); change
   // it here, in `to` and `heading`, in one edit.
+  // First block under the hero, Camden's words (11/18/2026 11:28 AM, "Let's go with this for now.
+  // it needs some revision, but I want to see it on the page"). Source:
+  // productization/journal-product/briefs/hero-chaos-to-clarity/Home-Top-Words-2026-11-18.md, Section one.
+  // The checklist is Claude's visual idea, not ruled.
+  endOfDay: {
+    headline: "End of Day. Zero Accomplishments. Check.",
+    subtitle: "This was me. This is why I built Pallume.",
+    paragraphs: [
+      "Many days were like digging holes and filling them in. Hard work with little to show for it. I responded to everything. Said yes to everyone. I was overwhelmed, exhausted, and burned out.",
+      "These are symptoms of working without a system. When nothing decides what's most important, everything is. I realized I didn't know how to work efficiently. It's not intuitive and no one ever taught me. I needed a solution. So I built Pallume.",
+      "It's a system that pairs the power of AI with real world practices to guide your day, set priorities, and keep the details from slipping through the cracks. It's a method and an assistant in one: the method decides what matters, and the assistant keeps track of everything else. It's already built, so you never start from a blank page.",
+    ],
+    checklist: {
+      label: "Today",
+      done: ["Answered every email", "Returned every call", "Said yes to everyone", "Handled what was loudest"],
+      open: "Anything that mattered",
+    },
+  },
+
   chaosHero: {
     from: "From chaos…",
     to: "to Clarity.",

@@ -7,6 +7,7 @@ import Paragraphs from "@/components/site/Paragraphs";
 import ConsultingSection from "@/components/site/ConsultingSection";
 import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
+import EndOfDay from "@/components/site/EndOfDay";
 import { pageMeta } from "@/lib/metadata";
 
 export const metadata = pageMeta({ ...site2026.meta, path: "" });
@@ -30,7 +31,10 @@ export default function Home() {
           />
         </div>
 
-        <section className="pl-section" style={{ paddingTop: "48px" }}>
+        {/* First block under the hero (11/18/2026); the sections below are unchanged for now. */}
+        <EndOfDay />
+
+        <section className="pl-section">
           <div className="pl-container">
             <div className="pl-reading">
               <TwoTone lines={opener.headline} />

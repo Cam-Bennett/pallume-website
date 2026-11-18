@@ -1,0 +1,95 @@
+/* First block under the hero (11/18/2026): warm cream, not navy; gold only on the rule and the ticks. */
+.section {
+  background: #f6f1e7;
+  color: #1c2230;
+  padding: 96px 16px 104px;
+}
+@media (min-width: 768px) {
+  .section { padding: 160px 32px 168px; }
+}
+.container { max-width: 1200px; margin: 0 auto; }
+.top {
+  display: grid;
+  gap: 48px;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .top { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 64px; }
+}
+.headline {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(44px, 6.4vw, 88px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-align: left;
+}
+.subtitle {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.5;
+  color: #4a5160;
+  margin: 24px 0 0;
+}
+.rule {
+  border: 0;
+  border-top: 1px solid #c9952f;
+  width: 72px;
+  margin: 64px 0 48px;
+}
+.body { max-width: 640px; }
+.body p {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #2b3140;
+  margin: 0 0 24px;
+}
+.body p:last-child { margin-bottom: 0; }
+
+/* The drawn checklist */
+.card {
+  background: #fffdf8;
+  border: 1px solid #e6ddcb;
+  border-radius: 12px;
+  padding: 24px 28px;
+  box-shadow: 0 10px 30px rgba(28, 34, 48, 0.06);
+  max-width: 380px;
+  width: 100%;
+  justify-self: start;
+}
+@media (min-width: 900px) { .card { justify-self: end; } }
+.cardLabel {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a8f99;
+  margin: 0 0 12px;
+}
+.list { list-style: none; margin: 0; padding: 0; }
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 11px 0;
+  border-top: 1px solid #efe8da;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 16px;
+  color: #6b7080;
+}
+.row:first-child { border-top: 0; }
+.done .text { text-decoration: line-through; text-decoration-color: rgba(107, 112, 128, 0.5); }
+.box {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #c9952f;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.open { color: #1c2230; font-weight: 500; }
+.open .box { border-color: #9aa0ab; }
