@@ -1187,6 +1187,43 @@ export const site2026 = {
     applyNote: "Applications are read by me, not a funnel.",
   },
 
+  // /contact, its own page (D-426, Camden 11/17/2026: "Approve as drafted").
+  // Reply-time line verbatim per D-351. Meta title and description are not
+  // part of the approved words; they reuse the headline and line 1.
+  contactPage: {
+    meta: {
+      title: "Write to me — Pallume",
+      description:
+        "Own Overwatch or still deciding, this form comes straight to me. No phone, no help desk, nobody else reading it.",
+    },
+    headline: "Write to me.",
+    paragraphs: [
+      "Own Overwatch or still deciding, this form comes straight to me. No phone, no help desk, nobody else reading it.",
+      "I read every message, usually within one business day.",
+    ],
+    webinarPrompt: "Haven't seen how it works yet?",
+    webinarButton: "Save a seat",
+  },
+
+  // The one contact form, on /contact and /consulting (D-426). The API accepts
+  // only these five purposes; the email subject is "{purpose} from {name}".
+  contactForm: {
+    nameLabel: "Name",
+    emailLabel: "Email",
+    purposeLabel: "What's this about?",
+    purposes: [
+      "A question before I buy",
+      "Help with my Overwatch",
+      "Feedback or a request",
+      "A refund (within 21 days)",
+      "Consulting",
+    ],
+    messageLabel: "Your message",
+    send: "Send",
+    sent: "Sent. I read every message myself.",
+    error: "That didn't send. Try again in a minute.",
+  },
+
   faq: [
     {
       q: "Isn't this just ChatGPT with extra steps?",

@@ -1,11 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
+import { site2026 } from "@/content/siteContent";
 
-// Consulting page contact form. Fixed recipient, plain-text body, length caps,
-// and a honeypot: it can only ever send one kind of note to one inbox.
+// The site's contact form (/contact and /consulting, D-426). Fixed recipient,
+// plain-text body, length caps, a fixed list of purposes, and a honeypot: it
+// can only ever send one kind of note to one inbox.
 const TO = process.env.CONTACT_TO ?? "camden@pallume.com";
 const FROM = process.env.CONTACT_FROM ?? "Pallume Website <onboarding@resend.dev>";
 const EMAIL = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/;
+const PURPOSES: readonly string[] = site2026.contactForm.purposes;
 
 function clean(value: unknown, max: number) {
   return typeof value === "string" ? value.replace(/[\r\n]+/g, " ").trim().slice(0, max) : "";
@@ -27,8 +30,9 @@ export async function POST(req: NextRequest) {
   const name = clean(body.name, 120);
   const email = clean(body.email, 200);
   const message = typeof body.message === "string" ? body.message.trim().slice(0, 5000) : "";
+  const purpose = typeof body.purpose === "string" ? body.purpose : "";
 
-  if (!name || !EMAIL.test(email) || message.length < 2) {
+  if (!name || !EMAIL.test(email) || message.length < 2 || !PURPOSES.includes(purpose)) {
     return NextResponse.json({ error: "missing fields" }, { status: 400 });
   }
 
@@ -42,8 +46,8 @@ export async function POST(req: NextRequest) {
     from: FROM,
     to: TO,
     replyTo: email,
-    subject: `Consulting inquiry from ${name}`,
-    text: `From: ${name} <${email}>\nPage: pallume.com/consulting\n\n${message}`,
+    subject: `${purpose} from ${name}`,
+    text: `From: ${name} <${email}>\nAbout: ${purpose}\nPage: pallume.com/contact\n\n${message}`,
   });
 
   if (error) {

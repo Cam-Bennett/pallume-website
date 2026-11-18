@@ -4,6 +4,7 @@ const LIVE_ROUTES = new Set([
   "/",
   "/about",
   "/consulting",
+  "/contact",
   "/faq",
   "/reviews",
   "/privacy-policy",
@@ -13,3 +14,8 @@ const LIVE_ROUTES = new Set([
 export function isLiveRoute(href: string) {
   return LIVE_ROUTES.has(href);
 }
+
+// The webinar registration page (D-391: every page leads to it). NOT BUILT YET
+// (11/17/2026): links to it 404 until app/webinar/page.tsx ships. Kept out of
+// LIVE_ROUTES on purpose.
+export const WEBINAR_ROUTE = "/webinar";

@@ -3,10 +3,9 @@ const nextConfig = {
   redirects: async () => [
     { source: "/privacy", destination: "/privacy-policy", statusCode: 301 },
     { source: "/services", destination: "/", statusCode: 301 },
-    // No application form or contact page (Camden, 10/12/2026). The one contact
-    // form is on /consulting.
+    // No application form (Camden, 10/12/2026). /contact is its own page since
+    // D-426 (11/17/2026); its redirect to /consulting is removed.
     { source: "/apply", destination: "/consulting", statusCode: 301 },
-    { source: "/contact", destination: "/consulting", statusCode: 301 },
     // Retired 10/11/2026 (coaching model). statusCode 301, not permanent (308).
     { source: "/pallume-light", destination: "/", statusCode: 301 },
     { source: "/pricing", destination: "/", statusCode: 301 },

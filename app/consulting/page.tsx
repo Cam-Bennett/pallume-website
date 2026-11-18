@@ -9,7 +9,7 @@ export const metadata = pageMeta({ ...site2026.consultingPage.meta, path: "/cons
 
 const consultingLabel = site2026.nav.links.find((l) => l.href === "/consulting")?.label ?? "Consulting";
 
-// The site's one contact form lives here (Camden, 10/12/2026).
+// The contact form, preset to Consulting (D-426); /contact carries the selector.
 export default function ConsultingPage() {
   return (
     <>
@@ -21,7 +21,7 @@ export default function ConsultingPage() {
         </section>
         <section id="contact" className="pl-section" style={{ background: "var(--night-raised)" }}>
           <div className="pl-container">
-            <ContactForm />
+            <ContactForm purpose="Consulting" />
           </div>
         </section>
       </main>

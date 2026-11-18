@@ -47,4 +47,4 @@ Read `DESIGN.md` before any UI work and obey it over defaults. Direction (10/11/
 
 ## SITE STRUCTURE
 
-`/` home · `/about` · `/consulting` (the site's one contact form, posting to `/api/contact` via Resend) · `/faq` · `/reviews` · `/privacy-policy` · `/terms-of-service`. No apply form and no call-to-action buttons (Camden, 10/12/2026); `/apply` and `/contact` 301 to `/consulting`. Retired with 301s to `/`: `/pallume-light`, `/pricing`, `/how-it-works`, `/the-work`.
+`/` home · `/about` · `/consulting` (contact form preset to Consulting) · `/contact` (the contact page with the purpose selector, D-426, 11/17/2026; both post to `/api/contact` via Resend) · `/faq` · `/reviews` · `/privacy-policy` · `/terms-of-service`. No apply form and no call-to-action buttons (Camden, 10/12/2026); `/apply` 301s to `/consulting`. Retired with 301s to `/`: `/pallume-light`, `/pricing`, `/how-it-works`, `/the-work`.
