@@ -1054,6 +1054,58 @@ export const site2026 = {
     },
   },
 
+  // Webinar registration page, the site's one destination (D-391). Waiting state, no date (D-343).
+  // Items 1 to 3 approved (D-433, D-436, D-440); items 4 to 6 are drafts built for Camden to judge on
+  // the page (11/18/2026 12:01 PM: "I need to see it"). Drafts: productization/journal-product/briefs/
+  // Webinar-Page-Drafts-2026-11-17.md. The form is not wired to any list yet (email service not chosen).
+  webinarPage: {
+    meta: {
+      title: "The cure for your overwhelm | Pallume",
+      description: "A live session: watch Overwatch knock out a full task list in about 15 minutes. Leave your email for the date.",
+    },
+    headline: "The cure for your overwhelm.*",
+    lede: "Hear it from me first.",
+    waiting: {
+      status: "No date yet.",
+      line: "Leave your email and I'll send you the date the day it's set.",
+      emailLabel: "Email",
+      button: "Send me the date",
+      confirmation: "You're on the list. The date comes from me.",
+    },
+    ruled: [
+      "Watch Overwatch knock out a full task list in about 15 minutes, live.",
+      "Hear why I built it and what it has done for my own work.",
+    ],
+    answersLead: "Live, I'll answer:",
+    answers: [
+      "Why did the last system you tried stop working?",
+      "Do you have to be technical to make AI do real work?",
+      "Where does the time come from to set it up and keep it going?",
+      "What it costs, and why you buy it once.",
+    ],
+    whoFor: [
+      "Pallume is for a type of person, not a type of job.",
+      "For business owners and the people who keep the business running.",
+    ],
+    needs: [
+      "Needs a paid Claude plan (Pro or higher), billed by Anthropic, separate from Overwatch.",
+      "Runs on a Mac or PC.",
+    ],
+    price: "Overwatch is $495, one time.",
+    // Shown only once a date is set (item 5 recommendation; D-212's reason).
+    discount: "Everyone who signs up gets a discount code, with a time limit.",
+    questionsLabel: "Short questions",
+    questions: [
+      { q: "Do I have to be there live?", a: "No. Everyone who signs up gets the replay for a limited time." },
+      { q: "Is this a how-to class?", a: "No. You'll watch it do real work. There's no build lesson." },
+      { q: "Is there a pitch?", a: "Yes, at the end. I'll show you the price and the discount." },
+      { q: "Is it a subscription?", a: "No. You buy it once. Your Claude plan is the only other cost, and you pay Anthropic directly." },
+      { q: "Can I get my money back?", a: "If it's not for you, ask within 21 days and you get your money back." },
+    ],
+    tagline: "Pallume. Clarity for your business.",
+    footnote: "*Results vary with effort.",
+  },
+
   chaosHero: {
     from: "From chaos…",
     to: "to Clarity.",
