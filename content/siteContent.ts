@@ -1041,7 +1041,7 @@ export const site2026 = {
   // The checklist is Claude's visual idea, not ruled.
   endOfDay: {
     headline: "End of Day. Zero Accomplishments. Check.",
-    subtitle: "This was me. This is why I built Pallume.",
+    subtitle: "Sound familiar? This is why I built Pallume.", // Camden 11/18/2026 11:49 AM
     paragraphs: [
       "Many days were like digging holes and filling them in. Hard work with little to show for it. I responded to everything. Said yes to everyone. I was overwhelmed, exhausted, and burned out.",
       "These are symptoms of working without a system. When nothing decides what's most important, everything is. I realized I didn't know how to work efficiently. It's not intuitive and no one ever taught me. I needed a solution. So I built Pallume.",

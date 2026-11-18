@@ -12,6 +12,10 @@ export default function EndOfDay() {
           <div>
             <h2 id="end-of-day-heading" className={styles.headline}>
               {headline}
+              {/* Drawn tick after "Check." (Camden 11/18/2026 11:49 AM); decorative, so the heading reads the same. */}
+              <svg className={styles.headTick} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <path d="M3.5 13 9.5 19 21 5" stroke="#c9952f" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </h2>
             <p className={styles.subtitle}>{subtitle}</p>
           </div>

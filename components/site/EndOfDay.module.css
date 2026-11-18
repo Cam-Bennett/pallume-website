@@ -93,3 +93,12 @@
 }
 .open { color: #1c2230; font-weight: 500; }
 .open .box { border-color: #9aa0ab; }
+
+/* Tick after "Check." in the headline, about the cap height of the serif */
+.headTick {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  margin-left: 0.16em;
+  vertical-align: baseline;
+}
