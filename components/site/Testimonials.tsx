@@ -5,7 +5,7 @@ type Props = {
   full?: boolean;
 };
 
-// The two client testimonials, verbatim. Both clients gave permission (D-94–D-100, 10/11/2026).
+// Overwatch user reviews, verbatim, once the first users give them (D-392, D-432). Empty renders nothing.
 export default function Testimonials({ full = false }: Props) {
   const items = testimonials.items.filter((t) => t.name && t.paragraphs.length > 0);
   if (items.length === 0) return null;
