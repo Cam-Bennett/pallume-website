@@ -1128,6 +1128,19 @@ export const site2026 = {
     },
   },
 
+  // Home section three, DRAFT (11/19/2026). Headline is Camden's (11/18/2026 6:17 AM); subtitle and body are
+  // Claude's draft, not approved, on the page for his review ("Keep shipping tasking to the workers", 9:50 AM).
+  // Source: Home-Top-Words-2026-11-18.md, "Section three". No step count until the setup page decides it.
+  newToAI: {
+    headline: "New to AI? No problem.",
+    subtitle: "\u201cWhere do I even start?\u201d is the question almost everyone asks.",
+    paragraphs: [
+      "Most people know AI could help them. What stops them is the first step: which tool, which settings, how to set it up, and who has time to figure it out?",
+      "With Pallume Overwatch you don't have to. It's already built. You set it up once, and from there you talk to it the way you'd talk to an assistant: what's on your plate, what's worrying you, what has to happen today. It does the organizing.",
+      "If you can type a sentence, you can run it. And if you already use AI every day, you skip building all of this yourself.",
+    ],
+  },
+
   chaosHero: {
     from: "From chaos…",
     to: "to Clarity.",

@@ -9,6 +9,7 @@ import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
 import EndOfDay from "@/components/site/EndOfDay";
 import HypeSection from "@/components/site/HypeSection";
+import NewToAI from "@/components/site/NewToAI";
 import { pageMeta } from "@/lib/metadata";
 
 export const metadata = pageMeta({ ...site2026.meta, path: "" });
@@ -37,6 +38,9 @@ export default function Home() {
 
         {/* Section two (11/19/2026), then the board picture, a DRAFT placeholder. */}
         <HypeSection />
+
+        {/* Section three, DRAFT (11/19/2026). */}
+        <NewToAI />
 
         <section className="pl-section">
           <div className="pl-container">

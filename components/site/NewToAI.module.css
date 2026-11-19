@@ -1,0 +1,17 @@
+/* Home section three (11/19/2026, DRAFT): warm cream, headline left, body right. */
+.section { background: #f6f1e7; color: #1c2230; padding: 96px 16px 104px; }
+@media (min-width: 768px) { .section { padding: 160px 32px 168px; } }
+.container { max-width: 1200px; margin: 0 auto; display: grid; gap: 40px; }
+@media (min-width: 900px) {
+  .container { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 88px; align-items: start; }
+}
+.headline {
+  font-family: var(--font-serif), Georgia, serif; font-weight: 400;
+  font-size: clamp(44px, 6vw, 80px); line-height: 1.02; letter-spacing: -0.01em; margin: 0;
+}
+.subtitle { font-family: var(--font-sans), system-ui, sans-serif; font-size: clamp(18px, 2vw, 22px); line-height: 1.5; color: #4a5160; margin: 24px 0 0; }
+.rule { border: 0; border-top: 1px solid #c9952f; width: 72px; margin: 48px 0 0; }
+.body { max-width: 600px; }
+@media (min-width: 900px) { .body { padding-top: 12px; } }
+.body p { font-family: var(--font-sans), system-ui, sans-serif; font-size: 18px; line-height: 1.75; color: #2b3140; margin: 0 0 24px; }
+.body p:last-child { margin-bottom: 0; }
