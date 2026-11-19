@@ -1,0 +1,55 @@
+/* Home section two (11/19/2026): white, section one flipped; fragments left, text right. */
+.section { background: #ffffff; color: #1c2230; padding: 96px 16px 104px; }
+@media (min-width: 768px) { .section { padding: 160px 32px 168px; } }
+.container { max-width: 1200px; margin: 0 auto; display: grid; gap: 48px; }
+@media (min-width: 900px) {
+  .container { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 72px; align-items: start; }
+}
+
+/* Fragments: small, muted, slightly rotated, never touching */
+.fragments { position: relative; height: 260px; max-width: 420px; width: 100%; }
+@media (min-width: 900px) { .fragments { height: 520px; max-width: none; position: sticky; top: 140px; } }
+.tile {
+  position: absolute; background: #f7f8fa; border: 1px solid #e6e8ec; border-radius: 10px;
+  padding: 8px; box-shadow: 0 6px 18px rgba(28, 34, 48, 0.05);
+}
+.svg { display: block; width: 100%; height: auto; }
+.t1 { width: 34%; left: 2%;  top: 4%;  transform: rotate(-5deg); }
+.t2 { width: 32%; left: 54%; top: 0%;  transform: rotate(4deg); }
+.t3 { width: 36%; left: 30%; top: 38%; transform: rotate(-2deg); }
+.t4 { width: 30%; left: 2%;  top: 70%; transform: rotate(3deg); }
+.t5 { width: 40%; left: 58%; top: 72%; transform: rotate(-4deg); }
+@media (min-width: 900px) {
+  .t1 { width: 40%; left: 0%;  top: 2%; }
+  .t2 { width: 36%; left: 56%; top: 8%; }
+  .t3 { width: 42%; left: 22%; top: 38%; }
+  .t4 { width: 34%; left: 0%;  top: 72%; }
+  .t5 { width: 44%; left: 50%; top: 78%; }
+}
+
+.headline {
+  font-family: var(--font-serif), Georgia, serif; font-weight: 400;
+  font-size: clamp(44px, 6vw, 80px); line-height: 1.02; letter-spacing: -0.01em; margin: 0;
+}
+.subtitle { font-family: var(--font-sans), system-ui, sans-serif; font-size: clamp(18px, 2vw, 22px); line-height: 1.5; color: #4a5160; margin: 24px 0 0; }
+.rule { border: 0; border-top: 1px solid #c9952f; width: 72px; margin: 56px 0 40px; }
+.body { max-width: 640px; }
+.body p { font-family: var(--font-sans), system-ui, sans-serif; font-size: 18px; line-height: 1.75; color: #2b3140; margin: 0 0 24px; }
+.handoff {
+  font-family: var(--font-serif), Georgia, serif; font-size: clamp(28px, 3vw, 36px); line-height: 1.2;
+  color: #1c2230; margin: 48px 0 0;
+}
+
+/* The board, full width on navy */
+.band { background: var(--night); padding: 64px 16px 72px; }
+@media (min-width: 768px) { .band { padding: 96px 32px 104px; } }
+.bandInner { max-width: 1200px; margin: 0 auto; }
+.board {
+  display: block; width: 100%; height: auto; border-radius: 12px;
+  border: 1px solid rgba(248, 246, 240, 0.12); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+/* Phones get the tall phone picture, cropped from the top so the band stays one screen or so */
+@media (max-width: 767px) {
+  .board { aspect-ratio: 780 / 1300; object-fit: cover; object-position: top; }
+}

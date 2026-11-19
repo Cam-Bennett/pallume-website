@@ -8,6 +8,7 @@ import ConsultingSection from "@/components/site/ConsultingSection";
 import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
 import EndOfDay from "@/components/site/EndOfDay";
+import HypeSection from "@/components/site/HypeSection";
 import { pageMeta } from "@/lib/metadata";
 
 export const metadata = pageMeta({ ...site2026.meta, path: "" });
@@ -33,6 +34,9 @@ export default function Home() {
 
         {/* First block under the hero (11/18/2026); the sections below are unchanged for now. */}
         <EndOfDay />
+
+        {/* Section two (11/19/2026), then the board picture, a DRAFT placeholder. */}
+        <HypeSection />
 
         <section className="pl-section">
           <div className="pl-container">
