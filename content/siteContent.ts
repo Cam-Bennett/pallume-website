@@ -1164,7 +1164,7 @@ export const site2026 = {
     headline: ["You don't have a discipline problem.", "You have a defaults problem."],
     paragraphs: [
       "Every unexamined yes, every inbox opened before the real work, every Tuesday that runs itself. None of it is a character flaw. It's a system nobody designed, running exactly as built.",
-      "Pallume gives you a different one, built from how your days actually go.",
+      "Pallume Overwatch gives you a different one, built from how your days actually go.",
     ],
   },
 
@@ -1231,7 +1231,7 @@ export const site2026 = {
     imageAlt: "Camden Bennett, founder of Pallume",
     paragraphs: [
       "Fifteen years in the Navy, first as a diver, then as an intelligence officer. Both jobs run on accurate information, read clearly and acted on. Then I came home to Wyoming and ran the top-producing brokerage in Sublette County, with my time finally my own, and found out what reactive mode really costs.",
-      "I built the system for myself first. I run it every morning on my own business, and every part of Pallume ran on my real work before anyone else saw it.",
+      "I built the system for myself first. I run it every morning on my own business, and every part of Pallume Overwatch ran on my real work before anyone else saw it.",
     ],
     pullQuote: "I don't sell anything I haven't run on my own work first.",
   },
@@ -1257,7 +1257,7 @@ export const site2026 = {
     meta: {
       title: "About Camden Bennett — Pallume",
       description:
-        "Navy diver and intelligence officer, Wyoming real estate broker, and the first user of every part of Pallume.",
+        "Navy diver and intelligence officer, Wyoming real estate broker, and the first user of every part of Pallume Overwatch.",
     },
     headline: ["Stop doing things that sound nice", "and don't matter."],
     paragraphs: [
