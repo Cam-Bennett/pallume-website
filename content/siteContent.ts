@@ -1041,10 +1041,10 @@ export const site2026 = {
   // The checklist is Claude's visual idea, not ruled.
   endOfDay: {
     headline: "End of Day. Zero Accomplishments. Check.",
-    subtitle: "Sound familiar? This is why I built Pallume.", // Camden 11/18/2026 11:49 AM
+    subtitle: "Sound familiar? This is why I built Pallume Overwatch.", // D-443 // Camden 11/18/2026 11:49 AM
     paragraphs: [
       "Many days were like digging holes and filling them in. Hard work with little to show for it. I responded to everything. Said yes to everyone. I was overwhelmed, exhausted, and burned out.",
-      "These are symptoms of working without a system. When nothing decides what's most important, everything is. I realized I didn't know how to work efficiently. It's not intuitive and no one ever taught me. I needed a solution. So I built Pallume.",
+      "These are symptoms of working without a system. When nothing decides what's most important, everything is. I realized I didn't know how to work efficiently. It's not intuitive and no one ever taught me. I needed a solution. So I built Pallume Overwatch.", // D-443
       "It's a system that pairs the power of AI with real world practices to guide your day, set priorities, and keep the details from slipping through the cracks. It's a method and an assistant in one: the method decides what matters, and the assistant keeps track of everything else. It's already built, so you never start from a blank page.",
     ],
     checklist: {
@@ -1108,7 +1108,7 @@ export const site2026 = {
 
   // Home section two, Camden's words verbatim (11/19/2026 9:26 AM, "My changes:"). Source:
   // productization/journal-product/briefs/hero-chaos-to-clarity/Home-Top-Words-2026-11-18.md, "Section two, the hype".
-  // Open with him: the two quoted titles, and "Pallume" vs "Pallume Overwatch".
+  // Open with him: the two quoted titles and "Claude" on the page. Product name settled: D-443.
   hype: {
     headline: "It's Not More AI Hype",
     subtitle: "How is AI so cool, yet so hard to implement?",
