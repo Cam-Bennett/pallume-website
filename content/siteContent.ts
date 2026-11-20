@@ -1208,8 +1208,8 @@ export const site2026 = {
     list: [
       // Pro wording: Camden 11/20/2026 2:07 PM, "Use it".
       "A Claude account in your own name, on a paid plan. Pro is enough to start. Heavier use may call for a higher plan.",
-      // Mac only (D-370), per Camden 11/20/2026 2:03 PM (D-449). Mac vs "Mac or PC" (D-212) open with Camden.
-      "The Claude desktop app on your Mac. Everything runs there, in a folder on your own computer.",
+      // "Mac or PC" on both pages (D-212), Camden 11/20/2026 3:20 PM: "Mac or PC on both".
+      "The Claude desktop app on your Mac or PC. Everything runs there, in a folder on your own computer.",
       "Your own account, not your employer's. What you write is yours.",
     ],
   },
