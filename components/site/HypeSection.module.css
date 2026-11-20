@@ -40,13 +40,13 @@
   color: #1c2230; margin: 48px 0 0;
 }
 
-/* The picture of Overwatch, on navy. Landscape 1240 x 760; full width on phones. */
+/* The picture of Overwatch, on navy. Landscape 1240 x 860; full width on phones. */
 .band { background: var(--night); padding: 64px 0 56px; }
 @media (min-width: 768px) { .band { padding: 96px 32px 88px; } }
 .bandInner { max-width: 1240px; margin: 0 auto; }
 .boardLink { display: block; }
 .board, .slot {
-  display: block; width: 100%; height: auto; aspect-ratio: 1240 / 760;
+  display: block; width: 100%; height: auto; aspect-ratio: 1240 / 860;
 }
 .board { border-radius: 12px; border: 1px solid rgba(248, 246, 240, 0.12); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45); }
 .slot {
