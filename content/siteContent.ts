@@ -1176,20 +1176,22 @@ export const site2026 = {
   },
 
   // A real sequence, so numbering is information (DESIGN.md: structure is information).
+  // Rewritten 11/20/2026: Claude's draft, approved by Camden 2:03 PM ("Use the rewrite"). Replaces the Journal →
+  // baseline → Overwatch stages (retired by D-166, D-382; "first few weeks" by D-375).
   howItWorks: {
-    headline: ["It starts with what you write.", "Then it gets to work."],
+    headline: ["You talk. It keeps track.", "Then it gets to work."],
     steps: [
       {
-        name: "The Journal",
-        body: "One entry a day, in two parts: what got in your way, and what's on your mind. The journal reads them back, names what keeps showing up, and builds a list of things worth fixing, in your words.",
+        name: "The morning entry",
+        body: "A few minutes each morning: what's in your way, what's on your mind. Overwatch names what keeps showing up.",
       },
       {
-        name: "The baseline",
-        body: "Over the first few weeks it learns how your work and life actually run: your tools, your time, your people, where things rub. When the picture is complete, it tells you, and writes your strategy from what you wrote.",
+        name: "The board",
+        body: "Everything that matters goes on one board: today's three priorities, what's waiting, and what's coming.",
       },
       {
-        name: "Overwatch",
-        body: "Then the work starts. Overwatch builds what the journal found: the checklists, drafts, routines, and the board that shows your whole operation at a glance. The journal keeps going beside it.",
+        name: "The weekly review",
+        body: "Once a week it looks back with you: what moved, what didn't, and what to fix next.",
       },
     ],
     modulesIntro: "Overwatch runs the modules you need as the need shows up, not before.",
@@ -1205,9 +1207,18 @@ export const site2026 = {
     ],
     list: [
       "A Claude account in your own name, on a paid plan. Pro is enough.",
-      "The Claude desktop app on your Mac or PC. Everything runs there, in a folder on your own computer.",
+      // Mac only (D-370), per Camden 11/20/2026 2:03 PM (D-449). "Pro is enough" wording not yet ruled.
+      "The Claude desktop app on your Mac. Everything runs there, in a folder on your own computer.",
       "Your own account, not your employer's. What you write is yours.",
     ],
+  },
+
+  // Home consulting line, D-420 (approved 11/17/2026), replaces the full consulting block on the home page
+  // per Camden 11/20/2026 2:03 PM (D-449). The full block stays on /consulting.
+  consultingLine: {
+    lead: "Bigger problem than this solves?",
+    link: { label: "Apply for consulting.", href: "/consulting" },
+    rest: "The application is free. Consulting is paid.",
   },
 
   privacy: {

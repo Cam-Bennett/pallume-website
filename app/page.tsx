@@ -4,7 +4,6 @@ import Footer from "@/components/sections/Footer";
 import ChaosToClarityHero from "@/components/sections/ChaosToClarityHero";
 import TwoTone from "@/components/site/TwoTone";
 import Paragraphs from "@/components/site/Paragraphs";
-import ConsultingSection from "@/components/site/ConsultingSection";
 import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
 import EndOfDay from "@/components/site/EndOfDay";
@@ -16,7 +15,7 @@ export const metadata = pageMeta({ ...site2026.meta, path: "" });
 
 // Holding homepage, Phase 0 (10/11/2026). Section order set by the Phase 0 prompt.
 export default function Home() {
-  const { hero, chaosHero, opener, diagnosis, howItWorks, requirements, privacy, closing } = site2026;
+  const { hero, chaosHero, howItWorks, requirements, privacy, consultingLine, closing } = site2026;
 
   return (
     <>
@@ -42,23 +41,9 @@ export default function Home() {
         {/* Section three, DRAFT (11/19/2026). */}
         <NewToAI />
 
-        <section className="pl-section">
-          <div className="pl-container">
-            <div className="pl-reading">
-              <TwoTone lines={opener.headline} />
-              <Paragraphs items={opener.paragraphs} />
-            </div>
-          </div>
-        </section>
+        {/* "Your day holds no surprises" cut (Camden 11/20/2026 2:01 PM, "Cut it"). */}
 
-        <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
-          <div className="pl-container">
-            <div className="pl-reading">
-              <TwoTone lines={diagnosis.headline} />
-              <Paragraphs items={diagnosis.paragraphs} />
-            </div>
-          </div>
-        </section>
+        {/* "You have a defaults problem" cut (Camden 11/20/2026 2:02 PM, "Cut it"). */}
 
         <section className="pl-section" style={{ background: "var(--night-raised)" }}>
           <div className="pl-container">
@@ -122,8 +107,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="consulting" className="pl-section" style={{ background: "var(--night-raised)" }}>
-          <ConsultingSection />
+        {/* Consulting, one line (D-420; Camden 11/20/2026 2:03 PM, D-449). The full block lives on /consulting. */}
+        <section id="consulting" className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
+          <div className="pl-container">
+            <p className="pl-h3" style={{ margin: 0, maxWidth: "880px", color: "var(--text)" }}>
+              {consultingLine.lead}{" "}
+              <a href={consultingLine.link.href} className="pl-link">
+                {consultingLine.link.label}
+              </a>{" "}
+              {consultingLine.rest}
+            </p>
+          </div>
         </section>
 
         <section className="pl-section">
