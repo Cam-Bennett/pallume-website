@@ -1118,17 +1118,18 @@ export const site2026 = {
       "Pallume Overwatch is that system. It brings everything you do into one place: all the skills and capabilities and routine functions you need daily are right in front of you. And it's customizable to your workflow. I run my own business on it.",
     ],
     handoff: "Here's what it looks like.",
-    // The picture (Camden, 11/20/2026 11:09-11:12 AM layout and skin; 11:29 AM dark chat side; 11:31 AM "Yes, put it on"):
+    // The picture (Camden, 11/20/2026 11:09-11:12 AM layout and skin; 11:29 AM dark chat side; 11:31 AM "Yes, put it on"; 11:31 AM "I want 1, 2, and 3", three cards):
     // chat on the left, his current board design in the side panel, the garden skin, made-up work.
     // Source: briefs/hero-chaos-to-clarity/demo-board/current-design/png/layout-chat-plus-board.png, as WebP.
     // Caption is Claude's draft, not ruled by Camden. Set src to null to show the marked slot again.
     board: {
       src: "/images/home/overwatch-chat-and-board.webp" as string | null,
       width: 1240,
-      height: 860,
-      alt: "Pallume Overwatch: a chat on the left and the board beside it, showing the day's first priority.",
+      height: 1020,
+      // Alt wording "first three priorities" is Claude's (11/20/2026 11:33 AM, three cards per Camden 11:31 AM).
+      alt: "Pallume Overwatch: a chat on the left and the board beside it, showing the day's first three priorities.",
       caption: "Made-up work, shown in the garden skin.", // DRAFT, Claude's words
-      slotLabel: "Picture slot, 1240 x 860",
+      slotLabel: "Picture slot, 1240 x 1020",
       slotNote: "Chat on the left, the board in the side panel, garden skin, made-up work.",
       openLabel: "Open the full-size picture",
     },
