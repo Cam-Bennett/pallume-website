@@ -1206,8 +1206,9 @@ export const site2026 = {
       "It has nothing to work with except what you write. A few minutes a day, three mornings a week at the least, and it starts to see what you can't.",
     ],
     list: [
-      "A Claude account in your own name, on a paid plan. Pro is enough.",
-      // Mac only (D-370), per Camden 11/20/2026 2:03 PM (D-449). "Pro is enough" wording not yet ruled.
+      // Pro wording: Camden 11/20/2026 2:07 PM, "Use it".
+      "A Claude account in your own name, on a paid plan. Pro is enough to start. Heavier use may call for a higher plan.",
+      // Mac only (D-370), per Camden 11/20/2026 2:03 PM (D-449). Mac vs "Mac or PC" (D-212) open with Camden.
       "The Claude desktop app on your Mac. Everything runs there, in a folder on your own computer.",
       "Your own account, not your employer's. What you write is yours.",
     ],
@@ -1339,7 +1340,7 @@ export const site2026 = {
     },
     {
       q: "What do I need?",
-      a: "A paid Claude plan in your own name (Pro is enough), the Claude desktop app on a Mac or PC, and the willingness to write a little most days.",
+      a: "A paid Claude plan in your own name (Pro is enough to start, and heavier use may call for a higher plan), the Claude desktop app on a Mac or PC, and the willingness to write a little most days.",
     },
     {
       q: "How much time does it take?",
