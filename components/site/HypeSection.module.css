@@ -41,8 +41,8 @@
 }
 
 /* The picture of Overwatch, on navy. Landscape 1240 x 1020; full width on phones. */
-.band { background: var(--night); padding: 64px 0 56px; }
-@media (min-width: 768px) { .band { padding: 96px 32px 88px; } }
+.band { background: var(--night); padding: 64px 0 64px; }
+@media (min-width: 768px) { .band { padding: 96px 32px 96px; } }
 .bandInner { max-width: 1240px; margin: 0 auto; }
 .boardLink { display: block; }
 .board, .slot {

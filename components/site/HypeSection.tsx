@@ -103,9 +103,10 @@ export default function HypeSection() {
               <p className={styles.slotNote}>{board.slotNote}</p>
             </div>
           )}
-          <figcaption className={styles.caption}>
-            {board.caption || (board.src ? null : "Caption line, one sentence.")}
-          </figcaption>
+          {/* No caption line on the picture (Camden, 11/20/2026 1:56 PM); only the empty slot shows one. */}
+          {(board.caption || !board.src) && (
+            <figcaption className={styles.caption}>{board.caption || "Caption line, one sentence."}</figcaption>
+          )}
         </figure>
       </section>
     </>

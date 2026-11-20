@@ -1128,7 +1128,7 @@ export const site2026 = {
       height: 1020,
       // Alt wording "first three priorities" is Claude's (11/20/2026 11:33 AM, three cards per Camden 11:31 AM).
       alt: "Pallume Overwatch: a chat on the left and the board beside it, showing the day's first three priorities.",
-      caption: "Made-up work, shown in the garden skin.", // DRAFT, Claude's words
+      caption: "", // removed (Camden 11/20/2026 1:56 PM, "remove the caption")
       slotLabel: "Picture slot, 1240 x 1020",
       slotNote: "Chat on the left, the board in the side panel, garden skin, made-up work.",
       openLabel: "Open the full-size picture",
