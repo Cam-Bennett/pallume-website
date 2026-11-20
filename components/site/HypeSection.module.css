@@ -40,16 +40,26 @@
   color: #1c2230; margin: 48px 0 0;
 }
 
-/* The board, full width on navy */
-.band { background: var(--night); padding: 64px 16px 72px; }
-@media (min-width: 768px) { .band { padding: 96px 32px 104px; } }
-.bandInner { max-width: 1200px; margin: 0 auto; }
-.board {
-  display: block; width: 100%; height: auto; border-radius: 12px;
-  border: 1px solid rgba(248, 246, 240, 0.12); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+/* The picture of Overwatch, on navy. Landscape 1240 x 760; full width on phones. */
+.band { background: var(--night); padding: 64px 0 56px; }
+@media (min-width: 768px) { .band { padding: 96px 32px 88px; } }
+.bandInner { max-width: 1240px; margin: 0 auto; }
+.boardLink { display: block; }
+.board, .slot {
+  display: block; width: 100%; height: auto; aspect-ratio: 1240 / 760;
 }
-
-/* Phones get the tall phone picture, cropped from the top so the band stays one screen or so */
+.board { border-radius: 12px; border: 1px solid rgba(248, 246, 240, 0.12); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45); }
+.slot {
+  border: 2px dashed rgba(242, 190, 92, 0.6); border-radius: 12px; background: rgba(248, 246, 240, 0.04);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  padding: 16px; text-align: center; color: rgba(248, 246, 240, 0.78);
+}
+.slotLabel { margin: 0; font-family: var(--font-sans), system-ui, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f2be5c; }
+.slotNote { margin: 0; max-width: 560px; font-family: var(--font-sans), system-ui, sans-serif; font-size: 15px; line-height: 1.5; }
+.caption {
+  margin: 20px 16px 0; text-align: center; min-height: 1.5em;
+  font-family: var(--font-sans), system-ui, sans-serif; font-size: 16px; line-height: 1.5; color: rgba(248, 246, 240, 0.72);
+}
 @media (max-width: 767px) {
-  .board { aspect-ratio: 780 / 1300; object-fit: cover; object-position: top; }
+  .board, .slot { border-radius: 0; border-left: 0; border-right: 0; }
 }

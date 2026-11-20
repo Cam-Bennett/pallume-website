@@ -1118,13 +1118,18 @@ export const site2026 = {
       "Pallume Overwatch is that system. It brings everything you do into one place: all the skills and capabilities and routine functions you need daily are right in front of you. And it's customizable to your workflow. I run my own business on it.",
     ],
     handoff: "Here's what it looks like.",
-    // DRAFT placeholder: made-up landscaping work, not yet seen or approved by Camden.
+    // The picture slot (Camden, 11/20/2026 11:09-11:12 AM): chat on the left, his current board design in the
+    // side panel, the garden skin, made-up work. The file comes from the Productization session; until then src is
+    // null and the page shows a marked empty slot. Set src, alt and caption together when the file arrives.
     board: {
-      src: "/images/home/demo-board-draft.webp",
-      phoneSrc: "/images/home/demo-board-draft-phone.webp", // 780 x 3030, shown cropped from the top
-      width: 1600,
-      height: 1380,
-      alt: "The Overwatch board for one workday: today's date over a mountain photo, a note that two items are waiting to be placed, a check-in row, a short brief for the day, and three tasks that move the day forward.",
+      src: null as string | null, // e.g. "/images/home/overwatch-chat-and-board.webp"
+      width: 1240,
+      height: 760,
+      alt: "",
+      caption: "", // one line, under the picture
+      slotLabel: "Picture slot, 1240 x 760",
+      slotNote: "Chat on the left, the board in the side panel, garden skin, made-up work. Coming from the Productization session.",
+      openLabel: "Open the full-size picture",
     },
   },
 

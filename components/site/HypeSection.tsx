@@ -2,7 +2,7 @@ import { site2026 } from "@/content/siteContent";
 import styles from "./HypeSection.module.css";
 
 // Home section two, "It's Not More AI Hype" (Camden, 11/19/2026 9:26 AM). Section one flipped:
-// fragments on the left, text on the right; then the board picture in a navy band (DRAFT).
+// fragments on the left, text on the right; then the picture of Overwatch in a navy band (slot until the file arrives).
 function Fragments() {
   return (
     <div className={styles.fragments} aria-hidden="true">
@@ -80,23 +80,33 @@ export default function HypeSection() {
         </div>
       </section>
 
-      <section className={styles.band} aria-label="The Overwatch board">
-        <div className={styles.bandInner}>
-          {/* DRAFT placeholder picture (made-up work), not yet approved. */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <picture>
-            <source media="(max-width: 767px)" srcSet={board.phoneSrc} />
-          <img
-            src={board.src}
-            width={board.width}
-            height={board.height}
-            alt={board.alt}
-            loading="lazy"
-            decoding="async"
-            className={styles.board}
-          />
-          </picture>
-        </div>
+      <section className={styles.band} aria-label="What Pallume Overwatch looks like">
+        <figure className={styles.bandInner}>
+          {board.src ? (
+            // Tap opens the full-size file, so a phone can pinch to zoom.
+            <a href={board.src} className={styles.boardLink} aria-label={board.openLabel}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={board.src}
+                width={board.width}
+                height={board.height}
+                alt={board.alt}
+                loading="lazy"
+                decoding="async"
+                className={styles.board}
+              />
+            </a>
+          ) : (
+            // Marked empty slot until the picture arrives (Camden, 11/20/2026).
+            <div className={styles.slot} data-slot="home-board-picture">
+              <p className={styles.slotLabel}>{board.slotLabel}</p>
+              <p className={styles.slotNote}>{board.slotNote}</p>
+            </div>
+          )}
+          <figcaption className={styles.caption}>
+            {board.caption || (board.src ? null : "Caption line, one sentence.")}
+          </figcaption>
+        </figure>
       </section>
     </>
   );
