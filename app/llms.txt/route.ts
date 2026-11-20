@@ -51,7 +51,7 @@ function build() {
     "## About the founder",
     "",
     ...s.founder.paragraphs.flatMap((p) => [p, ""]),
-    `Contact: [${s.footer.contact}](mailto:${s.footer.contact})`,
+    `Contact: [the contact form](${BASE}${s.footer.contact.href})`,
     "",
   ];
   return lines.join("\n");

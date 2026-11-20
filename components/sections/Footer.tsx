@@ -15,8 +15,8 @@ export default function Footer() {
           className="flex flex-wrap items-center"
           style={{ gap: "16px 32px", marginTop: "40px", fontSize: "15px" }}
         >
-          <a href={`mailto:${footer.contact}`} className="pl-link">
-            {footer.contact}
+          <a href={footer.contact.href} className="pl-link">
+            {footer.contact.label}
           </a>
           {footer.links.map((link) => (
             <a

@@ -1251,7 +1251,9 @@ export const site2026 = {
   // Rule 8 of the Voice Signature: the tagline closes everything.
   footer: {
     tagline: "Pallume. Clarity for your business.",
-    contact: "camden@pallume.com",
+    // D-447 (Camden 11/20/2026 11:27 AM, "Yes, form only"; applies D-220): the contact form is the one route.
+    // The address stays live and forwarding; it is not shown on the site.
+    contact: { label: "Questions? Use the contact form", href: "/contact" },
     links: [
       { label: "Privacy", href: "/privacy-policy" },
       { label: "Terms", href: "/terms-of-service" },

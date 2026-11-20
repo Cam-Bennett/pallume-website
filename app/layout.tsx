@@ -61,7 +61,7 @@ const orgSchema = {
       logo: "https://pallume.com/icon.png",
       slogan: footer.tagline,
       description: meta.description,
-      email: footer.contact,
+      contactPoint: { "@type": "ContactPoint", contactType: "customer support", url: "https://pallume.com/contact" },
       founder: { "@id": "https://pallume.com/#person" },
       address: {
         "@type": "PostalAddress",
@@ -86,7 +86,6 @@ const orgSchema = {
       description: about.meta.description,
       url: "https://pallume.com/about",
       image: `https://pallume.com${founder.imageSrc}`,
-      email: footer.contact,
       worksFor: { "@id": "https://pallume.com/#organization" },
       sameAs: ["https://www.youtube.com/@camdenbennett"],
     },
