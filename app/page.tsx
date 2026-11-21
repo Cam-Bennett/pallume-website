@@ -7,6 +7,7 @@ import Paragraphs from "@/components/site/Paragraphs";
 import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
 import EndOfDay from "@/components/site/EndOfDay";
+import OpeningBlock from "@/components/site/OpeningBlock";
 import HypeSection from "@/components/site/HypeSection";
 import NewToAI from "@/components/site/NewToAI";
 import { pageMeta } from "@/lib/metadata";
@@ -33,7 +34,10 @@ export default function Home() {
           />
         </div>
 
-        {/* First block under the hero (11/18/2026); the sections below are unchanged for now. */}
+        {/* The opening block (Camden 11/21/2026 11:08 AM). The blocks below stay, unchanged, until he rules. */}
+        <OpeningBlock />
+
+        {/* Block under the hero since 11/18/2026; now second. Not ruled yet. */}
         <EndOfDay />
 
         {/* Section two (11/19/2026), then the board picture, a DRAFT placeholder. */}

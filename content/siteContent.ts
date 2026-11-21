@@ -1039,6 +1039,18 @@ export const site2026 = {
   // it needs some revision, but I want to see it on the page"). Source:
   // productization/journal-product/briefs/hero-chaos-to-clarity/Home-Top-Words-2026-11-18.md, Section one.
   // The checklist is Claude's visual idea, not ruled.
+  // The opening block, first under the hero (Camden 11/21/2026 11:08 AM, "take it, put it on the page").
+  // Words exactly from Home-Top-Words-2026-11-18.md. Headline his (10:53 AM); body his 11:06 AM draft with
+  // Claude's four fixes ("putting AI to work", "What you don't have", "No hours of study.", the last sentence).
+  // To check before it ships: "No technical knowledge required." against the buyer's real setup steps.
+  opening: {
+    headline: "You know AI can do more for your work. You just don't know where to start.",
+    paragraphs: [
+      "You're good at what you do. You work hard and you get results. You see your peers and competitors putting AI to work, and you don't just want to keep up. You want to compete and thrive. What you don't have is the hours to study AI tools, or the technical background to set up your own system.",
+      "You don't need either. Pallume Overwatch is a working system already built for you. No technical knowledge required. No hours of study. You get more done, and you get your time back.",
+    ],
+  },
+
   endOfDay: {
     headline: "End of Day. Zero Accomplishments. Check.",
     subtitle: "Sound familiar? This is why I built Pallume Overwatch.", // D-443 // Camden 11/18/2026 11:49 AM
