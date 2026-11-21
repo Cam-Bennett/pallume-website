@@ -1,4 +1,4 @@
-import { site2026 } from "@/content/siteContent";
+import { site2026, testimonials } from "@/content/siteContent";
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import ChaosToClarityHero from "@/components/sections/ChaosToClarityHero";
@@ -16,6 +16,7 @@ export const metadata = pageMeta({ ...site2026.meta, path: "" });
 // Holding homepage, Phase 0 (10/11/2026). Section order set by the Phase 0 prompt.
 export default function Home() {
   const { hero, chaosHero, howItWorks, requirements, privacy, consultingLine, closing } = site2026;
+  const hasReviews = testimonials.items.some((t) => t.name && t.paragraphs.length > 0);
 
   return (
     <>
@@ -120,9 +121,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pl-section">
-          <Testimonials />
-        </section>
+        {/* The reviews block shows only once a review exists (Camden 11/21/2026 10:50 AM, "Yes, keep it"). */}
+        {hasReviews && (
+          <section className="pl-section">
+            <Testimonials />
+          </section>
+        )}
 
         <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
           <Founder />
