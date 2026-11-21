@@ -1051,9 +1051,29 @@ export const site2026 = {
     ],
   },
 
+  // "What can I actually do here?" (Camden 11/21/2026 4:50 PM, approved with two changes: line 3 his rewrite,
+  // line 7 resting on Pallume Trend in the launch). Words exactly from Home-Top-Words-2026-11-18.md, last section.
+  // To check before it ships: line 5 rests on Layout (D-454); line 7 on Trend, true only once Trend is built;
+  // the block names Claude and Anthropic (attorney list).
+  canDo: {
+    headline: "What can I actually do here?",
+    opening:
+      "Overwatch runs on Claude, the AI made by Anthropic. Claude can already do everything below. Most people never learn how. Overwatch puts it all in one system, with a proven method for each job, so you don't have to learn each piece on your own.",
+    items: [
+      "Run your task list in a way that's actually manageable. Say a task once and Overwatch keeps it. It brings tasks back to you at the right time, a few at a time, so you can deal with them.",
+      "Plan your day. Tell it what's on your plate. It sets your top priorities.",
+      "Find anything you store in Overwatch. It lives right in the files on your computer, just like your Documents folder. Ask where a document is. No more digging through files.",
+      "Less context switching. You do more of your work in one place, so you keep your focus.",
+      "Write and edit documents and graphics, in your own words and format with AI assistance.",
+      "Research a decision with Pallume Research. It argues both sides, tries to prove itself wrong, and names every source.",
+      "Review your week, month, or quarter. See where things are moving in your work.",
+      "Turn a job you repeat into a system to speed your workflow.",
+    ],
+  },
+
   // "I already have ChatGPT. Why do I need this?" (Camden 11/21/2026 4:17 PM, "yes, this should have a block";
   // 4:28 PM, "yes, take it."). Words exactly from Home-Top-Words-2026-11-18.md, last section.
-  // Placed after the hype section until "What can I actually do here?" exists; it then goes right after that block.
+  // Placed right after "What can I actually do here?" (router 11/21/2026 4:50 PM).
   // To check before it ships: the ChatGPT, Claude.ai and Claude Code names (attorney list); the memory claim is his observation.
   chatgpt: {
     headline: "I already have ChatGPT. Why do I need this?",

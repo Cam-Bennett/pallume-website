@@ -11,6 +11,7 @@ import OpeningBlock from "@/components/site/OpeningBlock";
 import HypeSection from "@/components/site/HypeSection";
 import NewToAI from "@/components/site/NewToAI";
 import ChatGPTBlock from "@/components/site/ChatGPTBlock";
+import CanDoBlock from "@/components/site/CanDoBlock";
 import { pageMeta } from "@/lib/metadata";
 
 export const metadata = pageMeta({ ...site2026.meta, path: "" });
@@ -44,7 +45,10 @@ export default function Home() {
         {/* Section two (11/19/2026), then the board picture, a DRAFT placeholder. */}
         <HypeSection />
 
-        {/* "I already have ChatGPT" (Camden 11/21/2026 4:28 PM). Here until "What can I actually do here?" is built; then right after it. */}
+        {/* "What can I actually do here?" (Camden 11/21/2026 4:50 PM). */}
+        <CanDoBlock />
+
+        {/* "I already have ChatGPT" (Camden 11/21/2026 4:28 PM), right after "What can I actually do here?". */}
         <ChatGPTBlock />
 
         {/* Section three, DRAFT (11/19/2026). */}
