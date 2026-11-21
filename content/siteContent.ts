@@ -1051,6 +1051,18 @@ export const site2026 = {
     ],
   },
 
+  // "I already have ChatGPT. Why do I need this?" (Camden 11/21/2026 4:17 PM, "yes, this should have a block";
+  // 4:28 PM, "yes, take it."). Words exactly from Home-Top-Words-2026-11-18.md, last section.
+  // Placed after the hype section until "What can I actually do here?" exists; it then goes right after that block.
+  // To check before it ships: the ChatGPT, Claude.ai and Claude Code names (attorney list); the memory claim is his observation.
+  chatgpt: {
+    headline: "I already have ChatGPT. Why do I need this?",
+    paragraphs: [
+      "ChatGPT is a place to ask questions. So is Claude.ai in your web browser. A chat's memory fades. It favors what is recent and loses track of the rest. And a chat gives you no place to store and organize your work.",
+      "Overwatch runs on Claude Code, in the Claude desktop app. It's a place to do your work. It stores your tasks, notes and documents as files on your own hard drive, and it keeps them organized for you. It also keeps Field Notes: a dated record of your rules, what it learns about your work, and what you tell it to remember. That record is permanent. Nothing lives only in a chat.",
+    ],
+  },
+
   endOfDay: {
     headline: "End of Day. Zero Accomplishments. Check.",
     subtitle: "Sound familiar? This is why I built Pallume Overwatch.", // D-443 // Camden 11/18/2026 11:49 AM
