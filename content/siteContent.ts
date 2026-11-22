@@ -1125,7 +1125,7 @@ export const site2026 = {
 
   // The founding tenet belongs on the About page and the sales page (Voice Signature).
   closing: {
-    tenet: "Stop doing things that sound nice and don't matter.",
+    tenet: "If everything is urgent, you're not running your day.", // home close (Camden 11/22/2026 12:06 PM placement; pushed on his 12:53 PM "push the two tenet changes")
     cta: "Apply for consulting",
     ctaHref: "/apply",
   },
@@ -1146,7 +1146,7 @@ export const site2026 = {
       description:
         "Navy diver and intelligence officer, Wyoming real estate broker, and the first user of every part of Pallume.",
     },
-    headline: ["Stop doing things that sound nice", "and don't matter."],
+    headline: ["Do what matters.", "The rest can wait."], // the founding tenet, his words (Camden 11/22/2026 12:42 PM; pushed 12:53 PM)
     paragraphs: [
       "That's the line I wish someone had said to me years earlier. I was the managing broker of the top-producing brokerage in Sublette County, and I knew exactly which work would grow it. I just never got to it. The phone, the questions, the fires, the emails got the best hours of every day.",
       "I tried earlier mornings, headphones, notebooks, three calendars, a shelf of productivity books, and every app with a checkbox. Some of it helped for a week.",
