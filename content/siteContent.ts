@@ -1295,7 +1295,7 @@ export const setupPage = {
         {
           steps: [
             "Make a Claude account at claude.ai with your own email, if you don't have one.",
-            "Choose the Pro plan in Claude's settings, under Billing. You pay Anthropic directly; it is separate from Overwatch.",
+            "In Claude, click your name in the lower left, then Settings, then Billing. Click Upgrade plan, then Get Pro plan. You pay Anthropic directly. It is separate from Overwatch.",
             "Get the Claude app from {{claudeDownload}} and sign in.",
             "Have your key, from the email.",
             "Use a Claude account and a computer only you use: Overwatch keeps your work in a folder there.",
@@ -1306,7 +1306,7 @@ export const setupPage = {
         { kind: "Video", id: "V1, Mac", shows: "Installing the Claude app: claude.com/download, Download for macOS, drag Claude onto Applications, open it, sign in. Fresh Mac account, nothing personal on screen. Captioned, no sound needed." },
       ],
       camden: [
-        "The first three steps were added 11/15/2026 for a buyer who has never paid for Claude. The menu names (settings, Billing, Pro) have not been read from a fresh account; correct them on the Mac install run.",
+        "The first three steps were added 11/15/2026 for a buyer who has never paid for Claude. The Pro step's clicks match Anthropic's help page \"How do I sign up for the Pro plan?\" (dated 08/06/2026, read 11/21/2026); Camden approved spelling them out 11/21/2026 5:17 PM. Not yet seen on a fresh account.",
       ],
     },
     {
