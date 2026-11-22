@@ -11,6 +11,7 @@ import OpeningBlock from "@/components/site/OpeningBlock";
 import HypeSection from "@/components/site/HypeSection";
 import ChatGPTBlock from "@/components/site/ChatGPTBlock";
 import CanDoBlock from "@/components/site/CanDoBlock";
+import AskBlock from "@/components/site/AskBlock";
 import { pageMeta } from "@/lib/metadata";
 
 export const metadata = pageMeta({ ...site2026.meta, path: "" });
@@ -141,6 +142,9 @@ export default function Home() {
         <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
           <Founder />
         </section>
+
+        {/* The ask (D-420), after the founder section (Camden 11/22/2026 9:41 AM). */}
+        <AskBlock />
 
         <section className="pl-section" style={{ borderTop: "1px solid var(--line)", textAlign: "center" }}>
           <div className="pl-container flex flex-col items-center">

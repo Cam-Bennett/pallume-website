@@ -1092,6 +1092,18 @@ export const site2026 = {
       "If you have heard of a second brain, Field Notes is one, already built in. You never file or tag anything. When you correct Overwatch, it keeps the rule. When it notices how you work, it writes that down. It marks the turning points. Say 'remember this' and it keeps your words. In your weekly review, it looks back for patterns. Every note is a dated file in your folder, and you can read it.",
   },
 
+  // The ask, after the founder section (Camden 11/22/2026 9:41 AM). Words approved 11/17/2026: headline 10:31 PM,
+  // the three questions and Save a seat (D-420). The questions match webinarPage.answers 1 to 3.
+  ask: {
+    headline: "When will you start treating your time like it belongs to you?",
+    questions: [
+      "Why did the last system you tried stop working?",
+      "Do you have to be technical to make AI do real work?",
+      "Where does the time come from to set it up and keep it going?",
+    ],
+    button: "Save a seat",
+  },
+
   endOfDay: {
     headline: "End of Day. Zero Accomplishments.", // "Check." cut (Camden 11/22/2026 8:50 AM, "let's get rid of \"check.\"")
     subtitle: "Sound familiar? This is why I built Pallume Overwatch.", // D-443 // Camden 11/18/2026 11:49 AM
