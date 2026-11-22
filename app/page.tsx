@@ -9,7 +9,6 @@ import Founder from "@/components/site/Founder";
 import EndOfDay from "@/components/site/EndOfDay";
 import OpeningBlock from "@/components/site/OpeningBlock";
 import HypeSection from "@/components/site/HypeSection";
-import NewToAI from "@/components/site/NewToAI";
 import ChatGPTBlock from "@/components/site/ChatGPTBlock";
 import CanDoBlock from "@/components/site/CanDoBlock";
 import { pageMeta } from "@/lib/metadata";
@@ -48,8 +47,7 @@ export default function Home() {
         {/* "I already have ChatGPT" (Camden 11/21/2026 4:28 PM), right after "What can I actually do here?". */}
         <ChatGPTBlock />
 
-        {/* Section three, DRAFT (11/19/2026). */}
-        <NewToAI />
+        {/* "New to AI? No problem." cut; its last line moved to the opening block (Camden 11/22/2026 9:22 AM, "Cut it and move the line"). */}
 
         {/* "Your day holds no surprises" cut (Camden 11/20/2026 2:01 PM, "Cut it"). */}
 

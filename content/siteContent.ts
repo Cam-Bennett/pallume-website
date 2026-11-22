@@ -1047,7 +1047,7 @@ export const site2026 = {
     headline: "You know AI can do more for your work. You just don't know where to start.",
     paragraphs: [
       "You're good at what you do. You work hard and you get results. You see your peers and competitors putting AI to work, and you don't just want to keep up. You want to compete and thrive. What you don't have is the hours to study AI tools, or the technical background to set up your own system.",
-      "You don't need either. Pallume Overwatch is a working system already built for you. No technical knowledge required. No hours of study. You get more done, and you get your time back.",
+      "You don't need either. Pallume Overwatch is a working system already built for you. No technical knowledge required. No hours of study. You get more done, and you get your time back. If you can type a sentence, you can run it.", // last sentence moved from "New to AI" (Camden 11/22/2026 9:22 AM, "Cut it and move the line")
     ],
   },
 
