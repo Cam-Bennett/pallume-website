@@ -1,7 +1,7 @@
 import { site2026 } from "@/content/siteContent";
 import styles from "./EndOfDay.module.css";
 
-// First block under the home hero (Camden, 11/18/2026 11:28 AM). Words: site2026.endOfDay.
+// Camden's story, beside the founder section since 11/22/2026 8:50 AM ("move it down the page"); first built 11/18/2026 11:28 AM. The headline tick went with "Check.". Words: site2026.endOfDay.
 export default function EndOfDay() {
   const { headline, subtitle, paragraphs, checklist } = site2026.endOfDay;
 
@@ -12,10 +12,6 @@ export default function EndOfDay() {
           <div>
             <h2 id="end-of-day-heading" className={styles.headline}>
               {headline}
-              {/* Drawn tick after "Check." (Camden 11/18/2026 11:49 AM); decorative, so the heading reads the same. */}
-              <svg className={styles.headTick} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-                <path d="M3.5 13 9.5 19 21 5" stroke="#c9952f" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
             </h2>
             <p className={styles.subtitle}>{subtitle}</p>
           </div>

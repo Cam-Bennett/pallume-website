@@ -1093,7 +1093,7 @@ export const site2026 = {
   },
 
   endOfDay: {
-    headline: "End of Day. Zero Accomplishments. Check.",
+    headline: "End of Day. Zero Accomplishments.", // "Check." cut (Camden 11/22/2026 8:50 AM, "let's get rid of \"check.\"")
     subtitle: "Sound familiar? This is why I built Pallume Overwatch.", // D-443 // Camden 11/18/2026 11:49 AM
     paragraphs: [
       "Many days were like digging holes and filling them in. Hard work with little to show for it. I responded to everything. Said yes to everyone. I was overwhelmed, exhausted, and burned out.",

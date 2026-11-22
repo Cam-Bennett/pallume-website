@@ -39,9 +39,6 @@ export default function Home() {
         {/* The opening block (Camden 11/21/2026 11:08 AM). The blocks below stay, unchanged, until he rules. */}
         <OpeningBlock />
 
-        {/* Block under the hero since 11/18/2026; now second. Not ruled yet. */}
-        <EndOfDay />
-
         {/* Section two (11/19/2026), then the board picture, a DRAFT placeholder. */}
         <HypeSection />
 
@@ -139,6 +136,9 @@ export default function Home() {
             <Testimonials />
           </section>
         )}
+
+        {/* Camden's story, right above the founder section (Camden 11/22/2026 8:50 AM, "move it down the page"). */}
+        <EndOfDay />
 
         <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
           <Founder />
