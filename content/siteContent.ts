@@ -1302,7 +1302,7 @@ export const site2026 = {
   consulting: {
     headline: ["Some problems are worth solving properly.", "Those are the ones I take."],
     paragraphs: [
-      "This isn't coaching. It's problem-first work: I listen, figure out what's actually wrong, and solve it. Fixed scope, fixed fee, and a defined end. No retainer, because a retainer pays me for time, not for the result.",
+      "It's problem-first work: I listen, figure out what's actually wrong, and solve it. Fixed scope, fixed fee, and a defined end. No retainer, because a retainer pays me for time, not for the result.",
       "It fits problems worth at least $50,000 to the business. The fee is set in the conversation, once the problem is clear.",
     ],
     // Was "paths"; path language is retired. Three starting points, not three offers.
@@ -1443,8 +1443,8 @@ export const site2026 = {
       a: "Webinar dates will be posted here first."
     },
     {
-      q: "Is the consulting coaching?",
-      a: "No. It's fixed-scope work on one problem worth solving, with a fixed fee and a defined end. No monthly retainer.",
+      q: "What is the consulting?", // was "Is the consulting coaching?" (Camden 11/22/2026 12:47 PM, "yes, remove \"coaching\"")
+      a: "It's fixed-scope work on one problem worth solving, with a fixed fee and a defined end. No monthly retainer.",
     },
     {
       q: "Is there a free call?",
