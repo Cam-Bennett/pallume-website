@@ -1082,6 +1082,12 @@ export const site2026 = {
       "ChatGPT, Grok, Perplexity and Claude.ai in your web browser are all places to ask questions. A chat's memory fades. It favors what is recent and loses track of the rest. And a chat gives you no place to store and organize your work.",
       "Overwatch runs on Claude Code, in the Claude desktop app. It's a place to do your work. It stores your tasks, notes and documents as files on your own hard drive, and it keeps them organized for you. It also keeps Field Notes: a dated record of your rules, what it learns about your work, and what you tell it to remember. That record is permanent. Nothing lives only in a chat.",
     ],
+    // The Field Notes passage, the block's short second part, no headline (Camden 11/21/2026 5:21 PM,
+    // "Passage 3 for Field Notes"). Words exactly from Home-Top-Words-2026-11-18.md, last section.
+    // To check before it ships: "It marks the turning points." and "Each week it looks back for patterns."
+    // rest on D-463 (events and the weekly reflection), not built yet; Field Notes itself is not yet built in.
+    fieldNotes:
+      "If you have heard of a second brain, Field Notes is one, already built in. You never file or tag anything. When you correct Overwatch, it keeps the rule. When it notices how you work, it writes that down. It marks the turning points. Say 'remember this' and it keeps your words. Each week it looks back for patterns. Every note is a dated file in your folder, and you can read it.",
   },
 
   endOfDay: {
