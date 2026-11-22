@@ -1106,7 +1106,7 @@ export const site2026 = {
 
   endOfDay: {
     headline: "End of Day. Zero Accomplishments.", // "Check." cut (Camden 11/22/2026 8:50 AM, "let's get rid of \"check.\"")
-    subtitle: "Sound familiar? This is why I built Pallume Overwatch.", // D-443 // Camden 11/18/2026 11:49 AM
+    subtitle: "Not all motion is forward motion.", // Camden 11/22/2026 9:38 AM line, placed here 12:06 PM ("Use your suggestion"); was "Sound familiar? This is why I built Pallume Overwatch." (D-443)
     paragraphs: [
       "Many days were like digging holes and filling them in. Hard work with little to show for it. I responded to everything. Said yes to everyone. I was overwhelmed, exhausted, and burned out.",
       "These are symptoms of working without a system. When nothing decides what's most important, everything is. I realized I didn't know how to work efficiently. It's not intuitive and no one ever taught me. I needed a solution. So I built Pallume Overwatch.", // D-443
@@ -1326,7 +1326,7 @@ export const site2026 = {
 
   // The founding tenet belongs on the About page and the sales page (Voice Signature).
   closing: {
-    tenet: "Stop doing things that sound nice and don't matter.",
+    tenet: "If everything is urgent, you're not running your day.", // Camden 11/22/2026 9:38 AM line, placed 12:06 PM ("Use your suggestion"); was the founding tenet, held for rework
     cta: "Apply for consulting",
     ctaHref: "/apply",
   },
