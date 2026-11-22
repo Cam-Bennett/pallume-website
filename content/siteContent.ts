@@ -1204,9 +1204,9 @@ export const site2026 = {
 
   chaosHero: {
     from: "From chaos…",
-    to: "to Clarity.",
+    to: "to clarity.", // lower case (Camden 11/21/2026 5:24 PM, "Keep lower case for \"to clarity.\""); applied 11/22/2026
     // Screen readers get one heading for the whole sequence.
-    heading: "From chaos to Clarity. Pallume.",
+    heading: "From chaos to clarity. Pallume.",
     scrollHint: "Scroll",
   },
 
