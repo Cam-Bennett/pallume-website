@@ -1086,8 +1086,10 @@ export const site2026 = {
     // "Passage 3 for Field Notes"). Words exactly from Home-Top-Words-2026-11-18.md, last section.
     // To check before it ships: "It marks the turning points." and "Each week it looks back for patterns."
     // rest on D-463 (events and the weekly reflection), not built yet; Field Notes itself is not yet built in.
+    // "Each week it looks back for patterns." became "In your weekly review, it looks back for patterns."
+    // (Camden 11/21/2026 5:26 PM, "Yes, change it": the buyer starts the review; it is not automatic).
     fieldNotes:
-      "If you have heard of a second brain, Field Notes is one, already built in. You never file or tag anything. When you correct Overwatch, it keeps the rule. When it notices how you work, it writes that down. It marks the turning points. Say 'remember this' and it keeps your words. Each week it looks back for patterns. Every note is a dated file in your folder, and you can read it.",
+      "If you have heard of a second brain, Field Notes is one, already built in. You never file or tag anything. When you correct Overwatch, it keeps the rule. When it notices how you work, it writes that down. It marks the turning points. Say 'remember this' and it keeps your words. In your weekly review, it looks back for patterns. Every note is a dated file in your folder, and you can read it.",
   },
 
   endOfDay: {
