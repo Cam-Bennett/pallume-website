@@ -1164,12 +1164,14 @@ export const site2026 = {
   // productization/journal-product/briefs/hero-chaos-to-clarity/Home-Top-Words-2026-11-18.md, "Section two, the hype".
   // Open with him: the two quoted titles and "Claude" on the page. Product name settled: D-443.
   hype: {
-    headline: "It's Not More AI Hype",
+    headline: "It's Not More AI Hype. And It's Not Another App.", // Camden 11/22/2026 9:29 AM, "Yes, put both on the page."
     subtitle: "How is AI so cool, yet so hard to implement?",
     paragraphs: [
       "AI hype is real, just look at the headlines coming out daily on YouTube and social media. Claims like, \u201cClaude Runs My Life\u201d and \u201cHow to Make $1mil This Year With AI Agents,\u201d grab your attention. And then there's the simpler stuff: image and video generation, email, data handling and presentation, meeting summaries, and app building. But every new feature is one more moving part you need to learn and track.",
       "The problem is that without a system to integrate these capabilities, each one ends up being just another fragment to lose. More pieces. More overwhelm.",
-      "Pallume Overwatch is that system. It brings everything you do into one place: all the skills and capabilities and routine functions you need daily are right in front of you. And it's customizable to your workflow. I run my own business on it.",
+      // His 11/21/2026 11:20 AM draft with lane B's fixes (Camden 11/22/2026 9:29 AM, "Yes, put both on the page.").
+      // To check before it ships: "email, calendar" is true only if the initial Overwatch connects them (Claude's connectors).
+      "Pallume Overwatch is that system. It isn't another app to check. It's the one place that runs your entire workday. Your tasks, priorities, contacts, email, calendar, files and documents all come together here. It teaches you as you go, and you shape it to your workflow. I built it by running my own business on it.",
     ],
     handoff: "Here's what it looks like.",
     // The picture (Camden, 11/20/2026 11:09-11:12 AM layout and skin; 11:29 AM dark chat side; 11:31 AM "Yes, put it on"; 11:31 AM "I want 1, 2, and 3", three cards):
