@@ -1,12 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 import { site2026 } from "@/content/siteContent";
 import Paragraphs from "@/components/site/Paragraphs";
 
 type Props = {
   headingLevel?: "h2" | "h3";
+  // Home page: photo, name, quote and a link; the full bio lives on /about
+  // (Camden 11/22/2026 12:56 PM, "Yes, shorten it").
+  short?: boolean;
 };
 
-export default function Founder({ headingLevel: Heading = "h2" }: Props) {
+export default function Founder({ headingLevel: Heading = "h2", short = false }: Props) {
   const { founder } = site2026;
 
   return (
@@ -25,7 +29,7 @@ export default function Founder({ headingLevel: Heading = "h2" }: Props) {
         <Heading className="pl-h2" style={{ margin: 0, color: "var(--text)" }}>
           {founder.name}
         </Heading>
-        <Paragraphs items={founder.paragraphs} first="32px" />
+        {!short && <Paragraphs items={founder.paragraphs} first="32px" />}
         <blockquote
           className="font-serif"
           style={{
@@ -39,6 +43,13 @@ export default function Founder({ headingLevel: Heading = "h2" }: Props) {
         >
           {founder.pullQuote}
         </blockquote>
+        {short && (
+          <p className="pl-body" style={{ margin: "32px 0 0" }}>
+            <Link href="/about" className="pl-link">
+              {founder.moreLabel}
+            </Link>
+          </p>
+        )}
       </div>
     </div>
   );

@@ -140,7 +140,7 @@ export default function Home() {
         <EndOfDay />
 
         <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>
-          <Founder />
+          <Founder short />
         </section>
 
         {/* The ask (D-420), after the founder section (Camden 11/22/2026 9:41 AM). */}

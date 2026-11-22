@@ -1316,6 +1316,7 @@ export const site2026 = {
   },
 
   founder: {
+    moreLabel: "More about me", // home link to /about (Camden 11/22/2026 12:56 PM)
     name: "Camden Bennett",
     imageSrc: "/images/camden-headshot.jpg",
     imageAlt: "Camden Bennett, founder of Pallume",
