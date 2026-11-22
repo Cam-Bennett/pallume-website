@@ -1351,7 +1351,7 @@ export const site2026 = {
       description:
         "Navy diver and intelligence officer, Wyoming real estate broker, and the first user of every part of Pallume Overwatch.",
     },
-    headline: ["Stop doing things that sound nice", "and don't matter."],
+    headline: ["Do what matters.", "The rest can wait."], // the founding tenet, his words (Camden 11/22/2026 12:42 PM); was "Stop doing things that sound nice and don't matter."
     paragraphs: [
       "That's the line I wish someone had said to me years earlier. I was the managing broker of the top-producing brokerage in Sublette County, and I knew exactly which work would grow it. I just never got to it. The phone, the questions, the fires, the emails got the best hours of every day.",
       "I tried earlier mornings, headphones, notebooks, three calendars, a shelf of productivity books, and every app with a checkbox. Some of it helped for a week.",
