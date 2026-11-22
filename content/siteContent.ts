@@ -1278,7 +1278,8 @@ export const site2026 = {
 
   privacy: {
     headline: "Your work stays in your own Claude. We don't collect it.",
-    body: "Your journal and everything built from it live in a folder on your computer and in your own Claude account. Nothing you write is sent to Pallume. Not a summary, not a sample, not a number.",
+    body: "Your journal and everything built from it live in a folder on your computer and in your own Claude account. Nothing you write is sent to Pallume. Not a summary, not a sample, not a number. The Pallume connector only records which setup step ran and when, tied to your key.",
+    // Last sentence added (Camden 11/21/2026 6:14 PM, "Yes, add it"): the connector's log line, pallume-connector lib/log.ts.
   },
 
 
