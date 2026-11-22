@@ -1062,7 +1062,7 @@ export const site2026 = {
     items: [
       "Run your task list in a way that's actually manageable. Say a task once and Overwatch keeps it. It brings tasks back to you at the right time, a few at a time, so you can deal with them.",
       "Plan your day. Tell it what's on your plate. It sets your top priorities.",
-      "Find anything you store in Overwatch. It lives right in the files on your computer, just like your Documents folder. Ask where a document is. No more digging through files.",
+      "Find anything you store in Overwatch. It lives right in the files on your computer, just like your Documents folder. Ask where a document is. No more digging through folders.",
       "Less context switching. You do more of your work in one place, so you keep your focus.",
       "Write and edit documents and graphics, in your own words and format with AI assistance.",
       "Research a decision with Pallume Research. It argues both sides, tries to prove itself wrong, and names every source.",
