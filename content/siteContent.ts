@@ -1279,6 +1279,8 @@ export const site2026 = {
       // "Mac or PC" on both pages (D-212), Camden 11/20/2026 3:20 PM: "Mac or PC on both".
       "The Claude desktop app on your Mac or PC. Everything runs there, in a folder on your own computer.",
       "Your own account, not your employer's. What you write is yours.",
+      // The cost answer (Camden 11/22/2026 12:13 PM, "Yes, add it"). No figure here: the price is on the webinar page only (D-391).
+      "Overwatch is one payment, not a subscription. The price is on the webinar page.",
     ],
   },
 
