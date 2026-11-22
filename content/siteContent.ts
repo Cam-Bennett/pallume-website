@@ -1126,7 +1126,8 @@ export const site2026 = {
       confirmation: "You're on the list. The date comes from me.",
     },
     ruled: [
-      "Watch Overwatch knock out a full task list in about 15 minutes, live.",
+      // Full name at first use, short form after (Camden 11/21/2026 5:27 PM, "Yes, short form"; 6:10 PM, "Yes, both").
+      "Watch Pallume Overwatch knock out a full task list in about 15 minutes, live.",
       "Hear why I built it and what it has done for my own work.",
     ],
     answersLead: "Live, I'll answer:",
@@ -1137,7 +1138,7 @@ export const site2026 = {
       "What it costs, and why you buy it once.",
     ],
     whoFor: [
-      "Pallume is for a type of person, not a type of job.",
+      "Overwatch is for a type of person, not a type of job.", // was "Pallume is for..." (Camden 11/21/2026 6:10 PM)
       "For business owners and the people who keep the business running.",
     ],
     needs: [
