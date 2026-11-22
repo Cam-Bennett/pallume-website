@@ -1427,7 +1427,8 @@ export const site2026 = {
     },
     {
       q: "Is there a free trial?",
-      a: "No. What's free is the videos and the webinar, where I teach the basic methods, enough to build your own version. The finished system is paid at purchase, because something you didn't commit to is something you won't use.",
+      // Matched to the webinar page, "no build lesson" (Camden 11/22/2026 12:45 PM, "Yes, change it").
+      a: "No. What's free is the videos and the webinar, where you watch it do real work. The finished system is paid at purchase.",
     },
     {
       q: "Can I get a refund?",
