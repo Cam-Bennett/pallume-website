@@ -5,7 +5,6 @@ const LIVE_ROUTES = new Set([
   "/about",
   "/consulting",
   "/faq",
-  "/reviews",
   "/privacy-policy",
   "/terms-of-service",
 ]);

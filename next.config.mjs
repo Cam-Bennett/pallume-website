@@ -3,6 +3,8 @@ const nextConfig = {
   redirects: async () => [
     { source: "/privacy", destination: "/privacy-policy", statusCode: 301 },
     { source: "/services", destination: "/", statusCode: 301 },
+    // Coaching-era reviews removed (Camden 11/22/2026 12:17 PM).
+    { source: "/reviews", destination: "/", statusCode: 301 },
     // No application form or contact page (Camden, 10/12/2026). The one contact
     // form is on /consulting.
     { source: "/apply", destination: "/consulting", statusCode: 301 },

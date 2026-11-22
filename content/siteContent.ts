@@ -408,34 +408,9 @@ export const clientProof = {
 
 export const testimonials = {
   label: "WHAT CLIENTS SAY",
-  items: [
-    {
-      paragraphs: [
-        "I have been utilizing AI tools Camden created to bring more efficiency to my work as Sublette County BOCES Director. One thing it has helped me do is distinguish between time spent on true executive-level work versus time I spend simply providing coverage for our services — a distinction that's easy to lose track of in a day that moves this fast.",
-        "The daily journal has helped me track work progression over time and provides meaningful reminders of where I need to focus. I often capture my day in a voice memo at the end of the day, and it organizes and summarizes everything — then gives me a starting point for the next morning. It also flags board-worthy items as they happen, so I'm not reconstructing a month from memory when it's time to write the board report.",
-        "The value has been significant. It keeps me focused on the work that actually requires me, while surfacing bigger organizational questions I might not have stopped to consider otherwise.",
-      ],
-      name: "Robin Schamber",
-      title: "Director, Sublette County BOCES",
-    },
-    {
-      paragraphs: [
-        "I started working with Camden because I was juggling multiple demanding roles while preparing to take over a retail business. I needed something that could not just keep up with all of it, but actually help me operate more efficiently, give me practical advice, and provide tools that moved the needle.",
-        "When I first met with Camden, he took the time to figure out exactly how I needed help. He went deeper than just getting me organization and got to real answers and systems that could actually take work off my plate and make my life more manageable. That set the tone for everything that followed.",
-        "The journaling framework that is part of the program completely shifted how I start my days. Instead of waking up and reacting to whatever felt most urgent, I had a place to intentionally organize my thoughts and priorities. Having somewhere to brain dump everything stopped me from carrying it all in my head all the time. That alone significantly reduced my mental load.",
-        "Time management has also been a huge shift. I used to operate almost entirely on urgency and whatever was loudest in the moment. Now I have a structure that helps me identify what truly matters today versus what can wait. I am also getting better at boundaries, which honestly does not come naturally to me. Having someone reflect patterns back to me without judgment helped me recognize where I was taking on work that was not mine or saying yes when I should have said no.",
-        "One of the most surprising parts of the process was realizing how much I was actually accomplishing. I constantly felt behind and overwhelmed, but once I started tracking my progress, I could clearly see I was moving things forward every single week. Seeing it documented changed the way I viewed my own output.",
-        "The accountability piece is real. Having a place to openly name what I was avoiding, and then being called out on it directly, helped me finally close loops that otherwise would have drifted for weeks.",
-        "I will also be honest. I was intimidated by the idea of building my own AI program in Claude. I did not think I was smart enough to do it. But as I worked with Camden and went deeper into the process, my mindset started to shift. Eventually, I built my own AI tool completely from scratch. That felt like a huge milestone, and I genuinely do not think I would have gotten there without the confidence this process helped build in me.",
-        "What I appreciate most is that Camden stays with you throughout the process. He continuously tweaks and adjusts the program as your needs evolve and offers practical tips and guidance along the way. It never felt like a one size fits all system. It was built around my life, my responsibilities, and the way my brain works.",
-        "His program works for so many different areas of life, whether it is business, work, personal growth, or managing your private life. What makes it different is that it adapts to your goals, your responsibilities, and the way your brain works, which makes it effective no matter what season of life or business you are in. Camden created something that truly meets people where they are, and that makes all the difference.",
-      ],
-      homepageQuote:
-        "The accountability piece is real. Having a place to openly name what I was avoiding, and then being called out on it directly, helped me finally close loops that otherwise would have drifted for weeks. His program works for so many different areas of life, whether it is business, work, personal growth, or managing your private life. What makes it different is that it adapts to your goals, your responsibilities, and the way your brain works, which makes it effective no matter what season of life or business you are in. Camden created something that truly meets people where they are, and that makes all the difference.",
-      name: "Christy Devlin",
-      title: "Owner, White Bear Boutique and Decor",
-    },
-  ],
+  // The two coaching-era reviews removed from the live site (Camden 11/22/2026 12:17 PM, "Yes, remove them now";
+  // the coaching era is retired, D-392). Overwatch reviews go here once they exist.
+  items: [] as { paragraphs: string[]; name: string; title: string; homepageQuote?: string }[],
 };
 
 export const founder = {

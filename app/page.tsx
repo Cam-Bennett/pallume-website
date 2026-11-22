@@ -5,7 +5,6 @@ import FirstLightHero from "@/components/sections/FirstLightHero";
 import TwoTone from "@/components/site/TwoTone";
 import Paragraphs from "@/components/site/Paragraphs";
 import ConsultingSection from "@/components/site/ConsultingSection";
-import Testimonials from "@/components/site/Testimonials";
 import Founder from "@/components/site/Founder";
 import { pageMeta } from "@/lib/metadata";
 
@@ -103,10 +102,6 @@ export default function Home() {
 
         <section id="consulting" className="pl-section" style={{ background: "var(--night-raised)" }}>
           <ConsultingSection />
-        </section>
-
-        <section className="pl-section">
-          <Testimonials />
         </section>
 
         <section className="pl-section" style={{ borderTop: "1px solid var(--line)" }}>

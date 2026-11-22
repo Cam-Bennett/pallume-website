@@ -43,7 +43,6 @@ function build() {
     `- [${navLabel("/consulting", "Consulting")}](${BASE}/consulting): ${s.consultingPage.meta.description}`,
     `- [${navLabel("/about", "About")}](${BASE}/about): ${s.about.meta.description}`,
     `- [${navLabel("/faq", "FAQ")}](${BASE}/faq)`,
-    `- [Reviews](${BASE}/reviews)`,
     "",
     "## FAQ",
     "",
