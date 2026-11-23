@@ -1057,7 +1057,7 @@ export const site2026 = {
   // line 7 resting on Pallume Trend in the launch). Words exactly from Home-Top-Words-2026-11-18.md, last section.
   // To check before it ships: line 5 rests on Layout (D-454), cleared only once the setup package with Layout is uploaded.
   // Line 7 (Trend): CLEARED (Productization session via the router, 11/23/2026 3:50 PM: production live, connector main 09c0af9).
-  // Also:  // the block names Claude and Anthropic (attorney list).
+  // Also: the block names Claude and Anthropic (attorney list).
   canDo: {
     headline: "What can I actually do here?",
     opening:
