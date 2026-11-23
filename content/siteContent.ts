@@ -1044,7 +1044,7 @@ export const site2026 = {
   // The opening block, first under the hero (Camden 11/21/2026 11:08 AM, "take it, put it on the page").
   // Words exactly from Home-Top-Words-2026-11-18.md. Headline his (10:53 AM); body his 11:06 AM draft with
   // Claude's four fixes ("putting AI to work", "What you don't have", "No hours of study.", the last sentence).
-  // To check before it ships: "No technical knowledge required." against the buyer's real setup steps.
+  // "No technical knowledge required.": CLEARED, the claims check held every claim but "contacts" (Productization session via the router, 11/23/2026).
   opening: {
     headline: "You know AI can do more for your work. You just don't know where to start.",
     paragraphs: [
@@ -1055,8 +1055,9 @@ export const site2026 = {
 
   // "What can I actually do here?" (Camden 11/21/2026 4:50 PM, approved with two changes: line 3 his rewrite,
   // line 7 resting on Pallume Trend in the launch). Words exactly from Home-Top-Words-2026-11-18.md, last section.
-  // To check before it ships: line 5 rests on Layout (D-454); line 7 on Trend, true only once Trend is built;
-  // the block names Claude and Anthropic (attorney list).
+  // To check before it ships: line 5 rests on Layout (D-454), cleared only once the setup package with Layout is uploaded.
+  // Line 7 (Trend): CLEARED (Productization session via the router, 11/23/2026 3:50 PM: production live, connector main 09c0af9).
+  // Also:  // the block names Claude and Anthropic (attorney list).
   canDo: {
     headline: "What can I actually do here?",
     opening:
@@ -1086,8 +1087,7 @@ export const site2026 = {
     ],
     // The Field Notes passage, the block's short second part, no headline (Camden 11/21/2026 5:21 PM,
     // "Passage 3 for Field Notes"). Words exactly from Home-Top-Words-2026-11-18.md, last section.
-    // To check before it ships: "It marks the turning points." and "Each week it looks back for patterns."
-    // rest on D-463 (events and the weekly reflection), not built yet; Field Notes itself is not yet built in.
+    // CLEARED: Field Notes, the turning points and the weekly look back are in the served product (Productization session via the router, 11/23/2026 3:50 PM: production live, connector main 09c0af9).
     // "Each week it looks back for patterns." became "In your weekly review, it looks back for patterns."
     // (Camden 11/21/2026 5:26 PM, "Yes, change it": the buyer starts the review; it is not automatic).
     fieldNotes:
@@ -1186,7 +1186,7 @@ export const site2026 = {
       "AI hype is real, just look at the headlines coming out daily on YouTube and social media. Claims like, \u201cClaude Runs My Life\u201d and \u201cHow to Make $1mil This Year With AI Agents,\u201d grab your attention. And then there's the simpler stuff: image and video generation, email, data handling and presentation, meeting summaries, and app building. But every new feature is one more moving part you need to learn and track.",
       "The problem is that without a system to integrate these capabilities, each one ends up being just another fragment to lose. More pieces. More overwhelm.",
       // His 11/21/2026 11:20 AM draft with lane B's fixes (Camden 11/22/2026 9:29 AM, "Yes, put both on the page.").
-      // "contacts" dropped (Camden 11/23/2026 11:50 AM, Productization session, via the router). To check before it ships: "email, calendar" is true only if the initial Overwatch connects them (Claude's connectors).
+      // "contacts" dropped (Camden 11/23/2026 11:50 AM, Productization session, via the router). "email, calendar": CLEARED, the claims check held it (Productization session via the router, 11/23/2026).
       "Pallume Overwatch is that system. It isn't another app to check. It's the one place that runs your entire workday. Your tasks, priorities, email, calendar, files and documents all come together here. It teaches you as you go, and you shape it to your workflow. I built it by running my own business on it.",
     ],
     handoff: "Here's what it looks like.",
