@@ -404,7 +404,9 @@ export const clientProof = {
 // Overwatch users; until then the list is empty and the Testimonials component renders nothing.
 export const testimonials = {
   label: "WHAT CLIENTS SAY",
-  items: [] as { name: string; title: string; paragraphs: string[]; homepageQuote?: string }[],
+  // The two coaching-era reviews removed from the live site (Camden 11/22/2026 12:17 PM, "Yes, remove them now";
+  // the coaching era is retired, D-392). Overwatch reviews go here once they exist.
+  items: [] as { paragraphs: string[]; name: string; title: string; homepageQuote?: string }[],
 };
 
 export const founder = {
@@ -1331,7 +1333,7 @@ export const site2026 = {
 
   // The founding tenet belongs on the About page and the sales page (Voice Signature).
   closing: {
-    tenet: "If everything is urgent, you're not running your day.", // Camden 11/22/2026 9:38 AM line, placed 12:06 PM ("Use your suggestion"); was the founding tenet, held for rework
+    tenet: "If everything is urgent, you're not running your day.", // home close (Camden 11/22/2026 12:06 PM placement; pushed on his 12:53 PM "push the two tenet changes")
     cta: "Apply for consulting",
     ctaHref: "/apply",
   },
@@ -1354,7 +1356,7 @@ export const site2026 = {
       description:
         "Navy diver and intelligence officer, Wyoming real estate broker, and the first user of every part of Pallume Overwatch.",
     },
-    headline: ["Do what matters.", "The rest can wait."], // the founding tenet, his words (Camden 11/22/2026 12:42 PM); was "Stop doing things that sound nice and don't matter."
+    headline: ["Do what matters.", "The rest can wait."], // the founding tenet, his words (Camden 11/22/2026 12:42 PM; pushed 12:53 PM)
     paragraphs: [
       "That's the line I wish someone had said to me years earlier. I was the managing broker of the top-producing brokerage in Sublette County, and I knew exactly which work would grow it. I just never got to it. The phone, the questions, the fires, the emails got the best hours of every day.",
       "I tried earlier mornings, headphones, notebooks, three calendars, a shelf of productivity books, and every app with a checkbox. Some of it helped for a week.",
@@ -1475,12 +1477,12 @@ export const setupPage = {
 
   // The two first lines the links type into Claude (typed, not sent).
   // Kept short on purpose: two earlier link failures with long first lines were
-  // never explained. Line one is 254 characters (rehearsed up to 255; the 253 version ended "Done. Go to step 2.", changed 11/06/2026 so the buyer knows step 2 is on this page); the buyer pastes the key after it.
+  // never explained. Line one is 228 characters since 11/15/2026 (the zip's SETUP.txt now carries the key step, the zip delete and the closing words; Connector-Install-Design-2026-11-15.md; the 254 version was rehearsed, this one is not yet; rehearsed up to 255; the 253 version ended "Done. Go to step 2.", changed 11/06/2026 so the buyer knows step 2 is on this page); the buyer pastes the key after it.
   links: {
     step1: {
       folder: "~/Documents",
       firstLine:
-        "If ~/Documents/Overwatch exists, stop and say so. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip into ~/Documents, delete the zip, then say only: Done. Go to step 2 on the Overwatch setup page. My key:",
+        "If ~/Documents/Overwatch exists, stop and say so. Else download https://mcp.pallume.com/package with my key as an Authorization: Bearer header, unzip into ~/Documents, then follow ~/Documents/Overwatch/SETUP.txt exactly. My key:",
       label: "Get my Overwatch files",
     },
     // The working-folder check, exactly as Foolproof-Setup-Design-v0.2 section D.
@@ -1516,7 +1518,9 @@ export const setupPage = {
       groups: [
         {
           steps: [
-            "Have the Claude app from {{claudeDownload}}, signed in to your paid account.",
+            "Make a Claude account at claude.ai with your own email, if you don't have one.",
+            "In Claude, click your name in the lower left, then Settings, then Billing. Click Upgrade plan, then Get Pro plan. You pay Anthropic directly. It is separate from Overwatch.",
+            "Get the Claude app from {{claudeDownload}} and sign in.",
             "Have your key, from the email.",
             "Use a Claude account and a computer only you use: Overwatch keeps your work in a folder there.",
           ],
@@ -1525,7 +1529,9 @@ export const setupPage = {
       slots: [
         { kind: "Video", id: "V1, Mac", shows: "Installing the Claude app: claude.com/download, Download for macOS, drag Claude onto Applications, open it, sign in. Fresh Mac account, nothing personal on screen. Captioned, no sound needed." },
       ],
-      camden: [],
+      camden: [
+        "The first three steps were added 11/15/2026 for a buyer who has never paid for Claude. The Pro step's clicks match Anthropic's help page \"How do I sign up for the Pro plan?\" (dated 08/06/2026, read 11/21/2026); Camden approved spelling them out 11/21/2026 5:17 PM. Not yet seen on a fresh account.",
+      ],
     },
     {
       id: "files",
@@ -1577,6 +1583,9 @@ export const setupPage = {
         "Overwatch's reply to this line is not built yet: the Executor carries no 'Overwatch is ready' rule (design doc section D, the Executor change owed). Confirm the right-folder reply before a buyer sees this page.",
       ],
       done: "**Done when** the answer begins: Overwatch is ready.",
+      ifNot: [
+        "**Claude says the Pallume connector did not answer?** Quit Claude, open it again, and click the step 2 button once more. If it says so again, send a message through {{contact}}.",
+      ],
     },
     {
       id: "wrong-folder",
