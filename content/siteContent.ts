@@ -1441,7 +1441,8 @@ export const site2026 = {
     },
     {
       q: "When can I buy it?",
-      a: "Webinar dates will be posted here first."
+      // Matched to the webinar page (Camden 11/23/2026 10:40 AM, "yes").
+      a: "At the webinar. Leave your email on the webinar page, and I'll send you the date the day it's set."
     },
     {
       q: "What is the consulting?", // was "Is the consulting coaching?" (Camden 11/22/2026 12:47 PM, "yes, remove \"coaching\"")
