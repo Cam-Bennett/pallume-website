@@ -1138,7 +1138,7 @@ export const site2026 = {
       emailLabel: "Email",
       button: "Send me the date",
       confirmation: "You're on the list. The date comes from me.",
-      // Claude's draft, not yet ruled (11/23/2026): shown only when the sign-up fails.
+      // Shown only when the sign-up fails. Approved (Camden 11/23/2026 12:34 PM, "I approve the signup forms, airline" [dictated: error line]).
       error: "That didn't go through. Try again in a minute, or use the contact form.",
     },
     ruled: [
