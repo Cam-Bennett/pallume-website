@@ -1136,6 +1136,8 @@ export const site2026 = {
       emailLabel: "Email",
       button: "Send me the date",
       confirmation: "You're on the list. The date comes from me.",
+      // Claude's draft, not yet ruled (11/23/2026): shown only when the sign-up fails.
+      error: "That didn't go through. Try again in a minute, or use the contact form.",
     },
     ruled: [
       // Full name at first use, short form after (Camden 11/21/2026 5:27 PM, "Yes, short form"; 6:10 PM, "Yes, both").
