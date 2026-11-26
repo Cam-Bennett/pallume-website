@@ -1,8 +1,8 @@
 # CLAUDE.md — Pallume Website
 **Path:** ~/claude-code-projects/pallume-website/
-**Branch:** `pallume` (pushed to GitHub; pushes build Vercel previews only)
+**Branch:** `main` (the only branch on GitHub; a push to `main` is a production release)
 **Domain:** pallume.com (live)
-**Last updated:** 10/12/2026
+**Last updated:** 11/26/2026
 
 ---
 
@@ -27,8 +27,9 @@ Read `DESIGN.md` before any UI work and obey it over defaults. Direction (10/11/
 ## TECH STACK
 
 - Next.js 14 App Router + TypeScript; Tailwind CSS 3 JIT (configs use `__dirname`)
-- Live site still on Playfair Display + Inter until the redesign ships
-- Vercel. Production currently deploys from `main` (and past production deploys came from the CLI working tree); `pallume` pushes build previews
+- Live site fonts: Cormorant Garamond (display) and Hanken Grotesk (body), loaded in `app/layout.tsx`
+- Vercel. Production builds from `main`. There is no preview branch: the `pallume` branch was deleted on 11/26/2026 (last commit kept as the local tag `archive/pallume-2026-11-26`)
+- Google Analytics loads on every page with no consent banner (Analytics consent banner decision, D-559, 11/26/2026). Do not rebuild the banner
 
 **Rules:**
 1. All copy lives in `content/siteContent.ts` — never in page or component files
@@ -39,12 +40,12 @@ Read `DESIGN.md` before any UI work and obey it over defaults. Direction (10/11/
 6. 8px spacing grid
 7. Complete files only — no stubs
 
-## OPEN — before the redesign goes to production
+## OPEN
 
-1. **Deploy path.** Settled 10/12/2026: the May files are committed, and `main` was fast-forwarded to `pallume` (Phase 0 release, `6140a11`). Work and preview pushes go to `pallume`; releasing means merging `pallume` into `main`, which Vercel builds as production.
+1. **Deploy path.** Settled 11/26/2026: this session and other sessions (for example Pallume Productization, for `content/siteContent.ts`) commit straight to `main`. Vercel builds every push to `main` as production, so pallume.com changes on each push.
 2. Website copy rewrite (Productization).
 3. Design system and brand images move to Productization (`DESIGN.md` §11).
 
 ## SITE STRUCTURE
 
-`/` home · `/about` · `/consulting` (contact form preset to Consulting) · `/contact` (the contact page with the purpose selector, D-426, 11/17/2026; both post to `/api/contact` via Resend) · `/faq` · `/reviews` · `/privacy-policy` · `/terms-of-service`. No apply form and no call-to-action buttons (Camden, 10/12/2026); `/apply` 301s to `/consulting`. Retired with 301s to `/`: `/pallume-light`, `/pricing`, `/how-it-works`, `/the-work`.
+`/` home · `/about` · `/consulting` (contact form preset to Consulting) · `/contact` (the contact page with the purpose selector, D-426, 11/17/2026; both post to `/api/contact` via Resend) · `/faq` · `/setup` · `/webinar` · `/privacy-policy` · `/terms-of-service`. No apply form and no call-to-action buttons (Camden, 10/12/2026); `/apply` 301s to `/consulting`. Retired with 301s to `/`: `/reviews`, `/pallume-light`, `/pricing`, `/how-it-works`, `/the-work`.
